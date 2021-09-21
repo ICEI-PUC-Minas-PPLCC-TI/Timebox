@@ -11,7 +11,7 @@ Objetivo: fazer um sistema que, incentive os usuários a realizar suas tarefas.
 
 * Edmar de Oliveira 
 * Thais Andreatta da Silva Carmo 
-
+* Jonathan Magalhães de Medeiros
 
 ## Professores responsáveis
 
