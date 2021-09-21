@@ -9,7 +9,7 @@ Objetivo: fazer um sistema que, incentive os usuários a realizar suas tarefas.
 
 ## Alunos integrantes da equipe
 
-* Edmar de Oliveira 
+* Edmar de Oliveira Melandes Junior
 * Thais Andreatta da Silva Carmo 
 * Jonathan Magalhães de Medeiros
 
