@@ -3,7 +3,7 @@
 # Contexto do Projeto:
 
 ## Problema:
-Conseguir organizar o tempo disponível no dia para conciliar as tarefas de trabalho, estudos, de casa e hábitos pessoais para uma maior produtividade e bem-estar.
+Conseguir organizar o tempo disponível no dia para conciliar as tarefas de trabalho, estudos, de casa e hábitos pessoais, ou se lembrar a fazer, para uma maior produtividade e bem-estar. 
 
 ## Objetivo:
 Fazer com que as pessoas possam se organizar o suficiente para que consigam realizar suas tarefas com tempo de sobra.
