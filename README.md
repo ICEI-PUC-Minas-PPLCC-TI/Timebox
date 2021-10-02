@@ -3,8 +3,12 @@
 ## Administração do Tempo 3
 # Contexto do Projeto:
 
+## Introdução
+Com a chegada da pandemia, a população mundial teve que readequar seus hábitos, passando, inclusive, a realizar as tarefas de trabalho e de estudos dentro de suas próprias casas. Sendo assim, muitas se viram “perdidas” com tantas tarefas a serem realizadas e passaram a ter a sensação de falta de tempo. Com isso, trazemos aqui o Timebox, que possui o intuito de ajudar na organização da rotina e das tarefas das pessoas para que elas tenham um melhor aproveitamento de seu tempo. 
+Os principais afetados pelo problema em questão são as pessoas que não conseguem organizar seu tempo, conciliando suas tarefas de trabalho, estudos e até mesmo de casa. Essas pessoas se sentem pressionadas com a sensação de falta de tempo para realizar suas demandas ou seus próprios hobbies.
+
 ## Problema:
-Conseguir organizar o tempo disponível no dia para conciliar as tarefas de trabalho, estudos, de casa e hábitos pessoais, ou se lembrar a fazer, para uma maior produtividade e bem-estar. 
+Conseguir organizar o tempo disponível no dia para conciliar as tarefas de trabalho, estudos, de casa e hábitos pessoais, ou se lembrar a fazer, para uma maior produtividade e bem-estar.
 
 ## Objetivo:
 Fazer com que as pessoas possam se organizar o suficiente para que consigam realizar suas tarefas com tempo de sobra.
