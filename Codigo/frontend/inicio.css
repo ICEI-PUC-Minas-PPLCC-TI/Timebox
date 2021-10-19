@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v92/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+        format("woff2");
+}
+@font-face {
+    font-family: "Material Icons Outlined";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v81/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2)
+        format("woff2");
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f1f1f1;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    padding: 0.75rem 1.25rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.icon-button {
+    font-family: "Material Icons";
+    cursor: pointer;
+    user-select: none;
+    font-size: 2rem;
+}
+
+header {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    min-height: 5rem;
+}
+
+#menu {
+    display: flex;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+#menu-button {
+    font-family: "Material Icons Outlined";
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#main header {
+    padding-left: 0;
+}
+
+.logo {
+    flex-grow: 1;
+    cursor: pointer;
+    user-select: none;
+}
+.logo img {
+    width: 150px;
+}
