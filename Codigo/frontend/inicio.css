@@ -59,10 +59,24 @@ header {
 
 #menu {
     display: flex;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.2);
 }
 .content {
     display: flex;
     flex-direction: column;
+    transition: 0.5s;
+    align-items: center;
+    width: 100%;
+}
+.content h1 {
+    text-align: center;
 }
 #menu-button {
     font-family: "Material Icons Outlined";
@@ -72,9 +86,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-#main header {
-    padding-left: 0;
+    transition: margin-left 0.5s;
 }
 
 .logo {
@@ -84,4 +96,30 @@ header {
 }
 .logo img {
     width: 150px;
+}
+
+section {
+    padding: 1rem 3rem;
+}
+
+.rotina {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(204, 204, 204);
+    border-radius: 1rem;
+    width: 10rem;
+    gap: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+.rotina .name {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+.rotina .icon {
+    font-family: "Material Icons Outlined";
+    font-size: 1.5rem;
 }
