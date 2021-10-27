@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Timebox</title>
-        <link rel="stylesheet" href="inicio.css" />
-        <script src="inicio.js" defer></script>
+        <link rel="stylesheet" href="rotina.css" />
+        <script src="rotina.js" defer></script>
     </head>
     <body>
         <div class="container">
@@ -30,19 +30,25 @@
                     <div class="button">Login</div>
                 </header>
 
-                <section id="rotinas">
-                    <h1>Suas rotinas:</h1>
-                    <div class="rotinas-grid">
-                        <div class="rotina criar">
-                            <div class="name">Nova rotina</div>
-                            <span class="icon">add</span>
-                        </div>
+                <section id="rotina">
+                    <textarea
+                        type="text"
+                        name="title"
+                        id="title"
+                        placeholder="Título..."
+                    ></textarea>
+                    <div class="editavel">
+                        <textarea
+                            placeholder="Campo de texto..."
+                            name="line"
+                            id="line"
+                        ></textarea>
                     </div>
-                </section>
-                <section id="relatorio">
-                    <h1>Relatório:</h1>
-                    <div>
-                        Adicione suas tarefas concluídas para gerar um relatório
+                    <div class="novo-campo" id="novo-campo-texto">
+                        <span>add</span> Novo campo de texto
+                    </div>
+                    <div class="novo-campo" id="novo-campo-task">
+                        <span>add</span> Nova tarefa
                     </div>
                 </section>
             </div>
