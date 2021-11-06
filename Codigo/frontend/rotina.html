@@ -7,12 +7,25 @@
         <title>Timebox</title>
         <link rel="stylesheet" href="rotina.css" />
         <script src="rotina.js" defer></script>
+        <link
+            rel="shortcut icon"
+            href="assets/favicon.svg"
+            type="image/x-icon"
+        />
     </head>
     <body>
         <div class="container">
             <div id="menu">
                 <div class="content">
-                    <h1>Resumo</h1>
+                    <h1
+                        style="
+                            border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+                            width: 100%;
+                        "
+                    >
+                        Resumo
+                    </h1>
+                    <section id="resumo">Não há tarefas!</section>
                 </div>
             </div>
             <div id="main">
@@ -26,7 +39,16 @@
                         </a>
                     </div>
                     <div class="header-info"></div>
-                    <div class="icon-button">notifications</div>
+                    <div id="notification-area">
+                        <div id="notification-btn" class="icon-button">
+                            notifications
+                        </div>
+                        <div id="notificationPopup">
+                            <div class="notifications">
+                                <div class="notification-content"></div>
+                            </div>
+                        </div>
+                    </div>
                     <a href="login.html">
                         <div class="button">Login</div>
                     </a>
