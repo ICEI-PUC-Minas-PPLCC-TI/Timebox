@@ -21,6 +21,10 @@ body {
     font-size: 16px;
     background-color: #f1f1f1;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .container {
     display: flex;
@@ -40,6 +44,13 @@ body {
     cursor: pointer;
     user-select: none;
     background-color: rgba(0, 0, 0, 0.1);
+}
+.button span {
+    font-family: "Material Icons";
+    user-select: none;
+    font-size: 2rem;
+    text-transform: lowercase;
+    margin-right: 1rem;
 }
 .icon-button {
     font-family: "Material Icons";
@@ -166,7 +177,120 @@ section {
 }
 .popup-content {
     background-color: #f1f1f1;
-    height: min-content;
+    max-height: 90%;
+    max-width: 80%;
     padding: 2rem;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.popup-content #info {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.popup-content #info .info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.popup-content #title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-bottom: none;
+    resize: none;
+    display: flex;
+}
+span.icon {
+    font-family: "Material Icons";
+    font-size: 1.5rem;
+    top: 5px;
+    position: relative;
+    margin-right: 0.5rem;
+}
+.popup-content .info-column {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+.popup-content .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.popup-content #buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    margin-top: 1rem;
+}
+.popup-content input {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+.popup-content textarea {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    resize: none;
+}
+.popup-content select {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+.popup-content #campo-repetir input,
+.popup-content #campo-tempo-limite input,
+.popup-content #campo-progress input {
+    width: 50px;
+}
+.popup-content input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.popup-content #buttons div:nth-child(1) {
+    background-color: rgb(164, 237, 255);
+}
+@media (max-width: 689px) {
+    #menu-button {
+        display: none;
+    }
+    #menu {
+        display: none;
+    }
+    #main {
+        margin-left: 0 !important;
+    }
+}
+@media (max-width: 561px) {
+    .popup-content .info-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+    }
+}
+@media (max-width: 425px) {
+    * {
+        font-size: 0.8rem;
+    }
+    .logo img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: left;
+    }
 }

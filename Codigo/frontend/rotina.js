@@ -34,28 +34,68 @@ const createTask = () => {
 
     const popupDiv = document.createElement('div')
     popupDiv.classList.add('popup')
-    const saveButton = document.createElement('button')
-    const cancelButton = document.createElement('button')
-
+    const saveButton = document.createElement('div')
+    const cancelButton = document.createElement('div')
+    saveButton.className = 'button'
+    cancelButton.className = 'button'
+    saveButton.innerHTML = 'Salvar'
+    cancelButton.innerHTML = 'Cancelar'
+    cancelButton.addEventListener('click', () => {
+        popupDiv.style.opacity = '0'
+        setTimeout(() => { popupDiv.remove() }, 200)
+    })
     popupDiv.innerHTML = `
         <div class="popup-content">
             <textarea id="title" placeholder="Título"></textarea>
             <div id="info">
-                <div class="info-item">
-                    <div class="info-item-title"><span class="icon">calendar_today</span>Data:</div>
-                    <input type="date" id="date" value="${new Date().toISOString().split('T')[0]}">
-                    <div class="info-item-optional">
-                        <input type="checkbox" id="repetir">
-                        <label for="repetir">Repetir a cada</label>
-                        <input type="number"> dia(s)
+                        <div class="info-item" id="campo-data">
+                            <div class="info-item-title"><span class="icon">calendar_today</span>Data:</div>
+                            <input type="date" id="date" value="${new Date().toISOString().split('T')[0]}">
+                        <div class="info-item" id="campo-repetir">
+                            <input type="checkbox" id="repetir">
+                            <label for="repetir">Repetir a cada</label>
+                            <input type="number"> dia(s)
+                        </div>
+                        <div class="info-item" id="campo-tempo-limite">
+                            <input type="checkbox" id="limite">
+                            <label for="repetir">Tempo limite</label>
+                            <input type="number"> minuto(s)
+                        </div>
+                            </div>
+                        
+                <div class="info-item" id="campo-notificacao">
+                    <div class="info-item-title"><span class="icon">notifications</span>Notificar:</div>
+                    <input type="time" id="time" value="0">
+                </div>
+                <div class="info-column">
+                    <div class="column">
+                        <div class="info-item" id="campo-description">
+                            <div class="info-item-title"><span class="icon">description</span>Descrição:</div>
+                            <textarea id="description-textarea" placeholder="Descrição"></textarea>
+                        </div>
+                        <div class="button">
+                            <span>backup</span>Adicionar arquivo
+                        </div>
                     </div>
-                    <div class="info-item-optional">
-                        <input type="checkbox" id="limite">
-                        <label for="repetir">Tempo limite</label>
-                        <input type="number">
+                    <div class="column">
+                        <div class="info-item" id="campo-progress">
+                            <div class="info-item-title"><span class="icon">trending_up</span>Progresso:</div>
+                            <input type="number" value="1">
+                        </div>
+                        <div class="info-item" id="campo-categoria">
+                            <div class="info-item-title"><span class="icon">label</span>Categoria:</div>
+                            <select>
+                                <option value="Importante">Importante</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
+                <div class="info-item">
+                    <input type="checkbox" id="campo-concluido">
+                            <label for="concluido">Já concluído?</label>
+                </div>
             </div>
+            <div id="buttons"></div>
         </div>
     `
     const close = (mouse) => {
@@ -66,6 +106,8 @@ const createTask = () => {
     }
 
     document.body.appendChild(popupDiv)
+    popupDiv.querySelector('#buttons').appendChild(saveButton)
+    popupDiv.querySelector('#buttons').appendChild(cancelButton)
     setTimeout(() => { popupDiv.style.opacity = '1' }, 1)
     popupDiv.addEventListener('click', close)
 }
