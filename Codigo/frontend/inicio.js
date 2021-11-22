@@ -1,4 +1,27 @@
 const main = document.querySelector('#main')
+let isLogged = localStorage.getItem('usuario_logado') !== null ? true : false
+if (isLogged) {
+    const loginBtn = document.querySelector('#login-btn'),
+        header = document.querySelector('header'),
+        userDiv = document.createElement('div')
+
+    userDiv.innerHTML = `
+        <div class="user-info">
+            Bem vindo, <span class="user-name">${JSON.parse(localStorage.getItem('usuario_logado')).user}</span>
+        </div>
+        <div class="button">
+            Sair
+        </div>
+    `
+    userDiv.classList.add('user-div')
+    loginBtn.remove()
+    header.classList.add('logged')
+    header.appendChild(userDiv)
+    userDiv.querySelector('.button').addEventListener('click', () => {
+        localStorage.removeItem('usuario_logado')
+        document.location.reload(true)
+    })
+}
 
 // Menu
 const menu = document.querySelector('#menu')

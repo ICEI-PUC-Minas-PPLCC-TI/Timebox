@@ -292,9 +292,7 @@ span.icon {
 }
 .notification-content {
     background-color: #f1f1f1;
-    height: 90%;
-    width: 80%;
-    padding: 2rem;
+    padding: 2rem 0;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -309,6 +307,51 @@ span.icon {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
+}
+.notification-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+}
+.notification-item:hover {
+    background-color: #cfcfcf;
+}
+.notification-item .notification-text {
+    min-width: 150px;
+}
+.task {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.task .check-area label {
+    font-weight: 700;
+}
+.task .check-area .description-area {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.task .date-area {
+    font-size: 0.8rem;
+    align-self: flex-start;
+}
+.task .date-area .icon {
+    font-size: 1rem;
+    margin-right: 0;
+    top: 2px;
+    align-self: flex-start;
+}
+#resumo {
+    padding: 1rem;
+}
+.user-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 @media (max-width: 689px) {
     #menu-button {
