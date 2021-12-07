@@ -169,3 +169,10 @@ const openNotifications = () => {
 }
 
 notificacoesButton.addEventListener('click', openNotifications)
+
+//Ler a rotina
+const rotinaID = window.location.search.split('=')[1],
+    rotinaLS = JSON.parse(localStorage.getItem('rotinas'))[rotinaID],
+    rotinaTitle = document.querySelector('#title')
+
+rotinaTitle.innerHTML = rotinaLS.titulo

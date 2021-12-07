@@ -38,13 +38,6 @@ const toggleMenu = () => {
 }
 menuButton.addEventListener('mousedown', toggleMenu)
 
-// Rotina
-const novaRotinaButton = document.querySelector('.rotina.criar')
-const novaRotina = () => {
-    window.location.href = 'rotina.html'
-}
-novaRotinaButton.addEventListener('mousedown', novaRotina)
-
 //Notificações
 const notificacoesButton = document.querySelector('#notification-btn')
 const openNotifications = () => {
@@ -67,3 +60,92 @@ const openNotifications = () => {
 }
 
 notificacoesButton.addEventListener('click', openNotifications)
+
+// Criação de rotinas
+const adicionarRotinaButton = document.querySelector('#addRotina'),
+    adicionarRotinaInput = document.querySelector('#inputrotina')
+
+const coresAleatorias = () => {
+    const cores = [
+        '#FFADAD',
+        '#FFD6A5',
+        '#FDFFB6',
+        '#CAFFBF',
+        '#9BF6FF',
+        '#A0C4FF',
+        '#BDB2FF',
+        '#FFC6FF',
+        '#B4E4E4',
+        '#BEB9DF',
+    ]
+    const coresAleatorias = []
+    while (coresAleatorias.length < 1) {
+        const cor = cores[Math.floor(Math.random() * cores.length)]
+        if (!coresAleatorias.includes(cor)) {
+            coresAleatorias.push(cor)
+        }
+    }
+
+    return coresAleatorias[0]
+}
+
+const criarRotina = () => {
+    const titulo = adicionarRotinaInput.value
+
+    if (titulo.length > 0) {
+        const rotinasCriadas = JSON.parse(localStorage.getItem('rotinas')) || []
+
+        const rotina = {
+            id: localStorage.getItem('rotinas') !== null ? JSON.parse(localStorage.getItem('rotinas')).length : 0,
+            titulo: titulo,
+            descricao: '',
+            data: new Date().toISOString().split('T')[0],
+            hora: new Date().toLocaleTimeString(),
+            usuario: JSON.parse(localStorage.getItem('usuario_logado')).id,
+            cor: coresAleatorias()
+        }
+
+        localStorage.setItem('rotinas', JSON.stringify(rotinasCriadas.concat(rotina)))
+
+        criarRotinas()
+
+        adicionarRotinaInput.value = ''
+    }
+}
+
+adicionarRotinaInput.addEventListener('keyup', (key) => {
+    if (key.keyCode == 13) {
+        criarRotina()
+    }
+})
+
+adicionarRotinaButton.addEventListener('click', criarRotina)
+
+const criarRotinas = () => {
+    const rotinasCriadas = JSON.parse(localStorage.getItem('rotinas')) || []
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuario_logado')).id
+    const rotinas = document.querySelector('#listarotinas')
+
+    rotinasCriadas.forEach(rotina => {
+        if (rotina.usuario == usuarioLogado && rotinas.querySelector(`#rotina-${rotina.id}`) === null) {
+            const rotinaDiv = document.createElement('li')
+            rotinaDiv.classList.add('rotinas')
+            rotinaDiv.id = `rotina-${rotina.id}`
+            rotinaDiv.innerHTML = `
+            <button class="botaorotina" style="background-color:${rotina.cor}">
+                <i class="fa fa-cube"></i>
+                <div class="rotina-title">
+                    ${rotina.titulo}
+                </div>
+            </button>
+        `
+            rotinas.insertBefore(rotinaDiv, rotinas.firstChild)
+
+            rotinaDiv.addEventListener('click', () => {
+                window.location.href = `./rotina.html?id=${rotina.id}`
+            })
+        }
+    })
+}
+criarRotinas()
+

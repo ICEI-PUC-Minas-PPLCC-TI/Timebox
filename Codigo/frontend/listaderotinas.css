@@ -72,7 +72,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    background-color: #D8D8D8;
+    background-color: #d8d8d8;
     border-radius: 13px;
     border: none;
     height: 60px;
@@ -146,7 +146,7 @@ form {
 
 select {
     margin-left: 15px;
-    background-color: #D8D8D8;
+    background-color: #d8d8d8;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
@@ -157,7 +157,7 @@ form input {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    background-color: #D8D8D8;
+    background-color: #d8d8d8;
     border: none;
     border-radius: 5px;
     padding-top: 8px;
@@ -238,7 +238,7 @@ form input {
     padding-right: 10px;
     margin-right: 10px;
     margin-left: 30px;
-    background-color: #D8D8D8;
+    background-color: #d8d8d8;
     font-size: 80%;
 }
 
