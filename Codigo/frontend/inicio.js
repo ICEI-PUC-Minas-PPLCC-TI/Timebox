@@ -98,11 +98,12 @@ const criarRotina = () => {
         const rotina = {
             id: localStorage.getItem('rotinas') !== null ? JSON.parse(localStorage.getItem('rotinas')).length : 0,
             titulo: titulo,
-            descricao: '',
             data: new Date().toISOString().split('T')[0],
             hora: new Date().toLocaleTimeString(),
             usuario: JSON.parse(localStorage.getItem('usuario_logado')).id,
-            cor: coresAleatorias()
+            cor: coresAleatorias(),
+            tarefas: [],
+            subtitulos: []
         }
 
         localStorage.setItem('rotinas', JSON.stringify(rotinasCriadas.concat(rotina)))
