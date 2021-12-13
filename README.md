@@ -36,7 +36,7 @@ Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir e
 - [Como o uso dos Processos e acessórios podem melhorar a sua produtividade](https://www.contabeis.com.br/noticias/49544/como-o-uso-dos-processos-e-acessorios-podem-melhorar-a-sua-produtividade/)
 - [Como aumentar a sua produtividade no home office](https://www.migalhas.com.br/depeso/355693/como-aumentar-a-sua-produtividade-no-home-office)
 
-# Solução Proposta
+# Solução Proposta:
 ## [Personas e Histórias de usuário](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/b64ec579a9dc6516dc686876a368063786f83204/Artefatos/Personas%20e%20Hist%C3%B3rias%20de%20Usu%C3%A1rios.md)
 
 ## Objetivo
@@ -65,7 +65,7 @@ Funcionalidades:
 -	O aplicativo deve se restringir às tecnologias básicas da Web no Frontend.
 -	O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final.
 
-# Projeto de Interfaces
+# Projeto de Interfaces:
 ## Fluxo de Telas
 ![image](https://user-images.githubusercontent.com/57562448/135178985-ff9f667d-ec65-4627-a281-b702f901507a.png)
 
