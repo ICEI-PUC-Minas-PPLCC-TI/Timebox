@@ -1,4 +1,4 @@
-# Artefatos do projeto:
+# Artefatos do projeto
 ## [Metodologia:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/3a7983145b268448608b4b1557c3d26a2c05963e/Artefatos/Metodologia.md)
 ### Plataformas
 
