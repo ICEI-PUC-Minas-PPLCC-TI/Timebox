@@ -21,7 +21,8 @@ https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1
 - Thais: Códigos e interações HTML, CSS e JavaScript
 
 ## [Mapa de Stakeholders](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/3a7983145b268448608b4b1557c3d26a2c05963e/Artefatos/Mapa%20de%20Stakeholders.pdf)
-![image](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/3a7983145b268448608b4b1557c3d26a2c05963e/Artefatos/Mapa%20de%20Stakeholders.pdf)
+![image]([Mapa de Stakeholders.pdf](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/files/7706669/Mapa.de.Stakeholders.pdf)
+
 
 
 ## Mapa de Empatia
