@@ -30,12 +30,12 @@ https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1
 ![Matriz CSD_page-0001](https://user-images.githubusercontent.com/89612369/145881782-ec8d4738-6622-4c0e-a220-83133be2b654.jpg)
 
 ## [Personas e Histórias de Usuários](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/aa7e025e9fd641b4868aee3ff0c65a4849b8290a/Artefatos/Personas%20e%20Hist%C3%B3rias%20de%20Usu%C3%A1rios.md)
-# Como foi realizado o estudo:
+### Como foi realizado o estudo:
 Os membros da equipe realizaram pesquisas com 24 voluntários e a partir dos
 resultados foi possível compreender exatamente qual é o problema a ser lidado. Foram
 geradas as tabelas a seguir contendo as principais personas do projeto e suas histórias de usuários.
 
-# Personas
+### Personas
 ![Screenshot 2021-10-01 224459](https://user-images.githubusercontent.com/57562448/135700024-4d77e219-d80d-4282-9553-b6bf1f32b8b8.png) | Carolina Alves | Idade: 19 |Ocupação: estudante e estagiária |
 --- | --- | --- | ---|
 Motivações | Maximizar o aprendizado | Melhorar a qualidade de vida | Alcançar um cargo bom aonde trabalha |
@@ -50,7 +50,7 @@ Frustrações | Desorganização | Muitas tarefas pra fazer | Esquecimento de al
 Hobbies | Jogar videogame | Sair com os amigos | Jogar futebol |
 Ferramentas | Bloco de notas do celular | Planilhas do Excel | Alarme do celular | 
 
-# Histórias de Usuários
+### Histórias de Usuários
 A partir da compreensão do dia a dia das personas identificadas para o projeto, foram
 registradas as seguintes histórias de usuários.
 
@@ -65,7 +65,7 @@ Diogo Costa | Lembrar de todas as tarefas que preciso realizar | Ser bem visto p
 Carolina Alves | Visualizar um resumo das minhas tarefas diárias | Poder realizá-las sem a sensação de que estou esquecendo algo |
 
 ## [Requisitos e Restrições](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/aa7e025e9fd641b4868aee3ff0c65a4849b8290a/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
-# Requisitos Funcionais
+### Requisitos Funcionais
 
 ID | Descrição | Prioridade
 --- | --- | --- |
@@ -74,7 +74,7 @@ ID | Descrição | Prioridade
 3 | O site deverá criar relatórios. | ALTA |
 4 | O site devera desbloquear conquistas para manter o usuário | ALTA |
 
-# Requisitos Não Funcionais
+### Requisitos Não Funcionais
 
 ID | Descrição | Prioridade
 --- | --- | --- |
@@ -83,7 +83,7 @@ ID | Descrição | Prioridade
 3 | O site deverá ser fácil de usar. | ALTA |
 4 | O site deverá ser leve e rápido. | ALTA |
 
-# Restrições do Projeto
+### Restrições do Projeto
 
 ID | Descrição
 --- | --- |
