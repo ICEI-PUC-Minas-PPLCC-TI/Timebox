@@ -37,6 +37,7 @@ Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir e
 - [Como aumentar a sua produtividade no home office](https://www.migalhas.com.br/depeso/355693/como-aumentar-a-sua-produtividade-no-home-office)
 
 # Solução Proposta: 
+[História dos usuários](Artefatos/Personas e Histórias de Usuários.md)
 
 ## Objetivo:
 Fazer com que as pessoas consigam se organizar de forma a criar um equilíbrio entre o tempo gasto com suas rotinas profissionais e o tempo gasto com suas rotinas pessoais.
