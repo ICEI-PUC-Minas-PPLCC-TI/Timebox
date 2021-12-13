@@ -4,16 +4,16 @@ resultados foi possível compreender exatamente qual é o problema a ser lidado.
 geradas as tabelas a seguir contendo as principais personas e histórias dos usuários.
 
 # Personas
-![Screenshot 2021-10-01 224459](https://user-images.githubusercontent.com/57562448/135700024-4d77e219-d80d-4282-9553-b6bf1f32b8b8.png) | Carolina Alves | Idade: 19 |Ocupação: estudante e estagiária|
+![Screenshot 2021-10-01 224459](https://user-images.githubusercontent.com/57562448/135700024-4d77e219-d80d-4282-9553-b6bf1f32b8b8.png) | Carolina Alves | Idade: 19 |Ocupação: estudante e estagiária |
 --- | --- | --- | ---|
 Motivações | Maximizar o aprendizado | Melhorar a qualidade de vida | Alcançar um cargo bom aonde trabalha |
 Frustrações | Procrastinação | Muito tempo no celular | Não tem tempo para o próprio lazer |
 Hobbies | Assistir filmes e séries | Escutar música | Caminhar |
 Ferramentas | Notion | Trello | Google Agenda | MIRO
 
-![Screenshot 2021-10-01 224508](https://user-images.githubusercontent.com/57562448/135700160-3ced0552-46d7-47a3-b073-d3b20f366785.png) | Diogo Costa | Idade: 20 |Ocupação:  estudante e CLT|
+![Screenshot 2021-10-01 224508](https://user-images.githubusercontent.com/57562448/135700160-3ced0552-46d7-47a3-b073-d3b20f366785.png) | Diogo Costa | Idade: 20 |Ocupação:  estudante e CLT |
 --- | --- | --- | ---|
-Motivações |Ter sua própria empresa de TI | Poder tirar mais proveito de seu tempo e de suas habilidades|  |
+Motivações |Ter sua própria empresa de TI | Poder tirar mais proveito de seu tempo e de suas habilidades| Melhorar sua saúde mental |
 Frustrações | Desorganização | Muitas tarefas pra fazer | Esquecimento de algumas tarefas importantes |
 Hobbies | Jogar videogame | Sair com os amigos | Jogar futebol |
 Ferramentas | Bloco de notas do celular | Planilhas do Excel | Alarme do celular | 
