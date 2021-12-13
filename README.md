@@ -84,10 +84,7 @@ Funcionalidades:
 * Rosilane Ribeiro da Mota
 
 ## Instruções de utilização
-Ao entrar no Timebox, o usuário deve clicar em ‘Login’.
- ![1](https://user-images.githubusercontent.com/89612369/145893129-fb6fc5f0-7bd9-4a64-92de-d18973c23bbb.jpg)
-
-Ao clicar em ‘Login’, o usuário deve logar com sua conta. Caso ainda não possua uma, deve clicar em ‘Novo usuário’. 
+Ao entrar no Timebox, o usuário deve clicar em ‘Login’ e logar com sua conta. Caso ainda não possua uma, deve clicar em ‘Novo usuário’. 
  ![2](https://user-images.githubusercontent.com/89612369/145893143-d11d73e8-d1b5-4837-a581-06d1ad5cdbae.jpg)
 
 Ao clicar em ‘Novo usuário’, o usuário deve cadastrar suas informações no Timebox para criar uma conta e, então, logar na mesma. 
