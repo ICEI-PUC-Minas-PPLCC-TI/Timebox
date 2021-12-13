@@ -37,8 +37,7 @@ Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir e
 
 ## Objetivo:
 Fazer com que as pessoas consigam se organizar de forma a criar um equilíbrio entre o tempo gasto com suas rotinas profissionais e o tempo gasto com suas rotinas pessoais.
-Para isso:
-Criar uma plataforma web onde as pessoas possam criar rotinas e adicionar a elas suas tarefas com a possibilidade de atrelar descrições nas mesmas como prazo, recorrência, alarme, progresso e importância.
+Para isso, criar uma plataforma web onde as pessoas possam criar rotinas e adicionar a elas suas tarefas com a possibilidade de atrelar descrições nas mesmas como prazo, recorrência, alarme, progresso e importância.
 Funcionalidades:
  - Sistema de recompensas para incentivo da utilização da ferramenta
  - Diversidades e templates para melhor usabilidade
@@ -64,7 +63,9 @@ Funcionalidades:
 
 # Projeto de Interfaces
 ## Fluxo de Telas
+![image](https://user-images.githubusercontent.com/57562448/135178985-ff9f667d-ec65-4627-a281-b702f901507a.png)
 ## Wireframes 
+
 ## Protótipo interativo
 
 # Informações Gerais
