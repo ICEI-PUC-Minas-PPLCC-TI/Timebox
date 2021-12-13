@@ -74,18 +74,15 @@ Funcionalidades:
 
 ## [Protótipo Interativo](https://www.figma.com/proto/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?page-id=0%3A1&node-id=2%3A2&viewport=241%2C48%2C0.45&scaling=min-zoom&starting-point-node-id=2%3A204)
 
-# Informações Gerais
+# Informações Gerais:
 ## Alunos integrantes da equipe
-
 * Edmar de Oliveira Melandes Junior
 * Thais Andreatta da Silva Carmo 
 * Jonathan Magalhães de Medeiros
 
 ## Professores responsáveis
-
 * Rommel Vieira Carneiro 
 * Rosilane Ribeiro da Mota
 
 ## Instruções de utilização
-
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
