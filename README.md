@@ -84,4 +84,33 @@ Funcionalidades:
 * Rosilane Ribeiro da Mota
 
 ## Instruções de utilização
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Ao entrar no Timebox, o usuário deve clicar em ‘Login’.
+ ![1](https://user-images.githubusercontent.com/89612369/145893129-fb6fc5f0-7bd9-4a64-92de-d18973c23bbb.jpg)
+
+Ao clicar em ‘Login’, o usuário deve logar com sua conta. Caso ainda não possua uma, deve clicar em ‘Novo usuário’. 
+ ![2](https://user-images.githubusercontent.com/89612369/145893143-d11d73e8-d1b5-4837-a581-06d1ad5cdbae.jpg)
+
+Ao clicar em ‘Novo usuário’, o usuário deve cadastrar suas informações no Timebox para criar uma conta e, então, logar na mesma. 
+ ![3](https://user-images.githubusercontent.com/89612369/145893157-500acd92-3e93-4d11-86f1-2336ce394887.jpg)
+
+Ao ser logado, o usuário será direcionado à página inicial onde poderá visualizar suas rotinas, seu relatório e o resumo das tarefas a serem realizadas. Para criar uma nova rotina, o usuário deve clicar em nova rotina, digitar o nome da mesma e apertar a tecla “Enter” ou clicar no botão “+”.
+ ![4](https://user-images.githubusercontent.com/89612369/145893174-36240843-47c6-4270-8a7b-8fa842826baa.jpg)
+
+Após a criação da rotina, o usuário deve clicar na rotina desejada para editá-la. 
+ ![5](https://user-images.githubusercontent.com/89612369/145893181-b3a9b969-904c-41c2-b788-4cfcda1c1925.jpg)
+
+Ao clicar na rotina, o usuário poderá clicar em ‘Criar subtítulo’ para adicionar subtítulos à rotina e em ‘Nova tarefa’ para adicionar tarefas a cada subtítulo.
+ ![6](https://user-images.githubusercontent.com/89612369/145893202-aff0a12b-adca-45f2-89e2-5a96f1e29626.jpg)
+
+Ao clicar em ‘Nova tarefa’, o usuário deve adicionar um título à tarefa que deseja realizar, aonde poderá especificar suas características, inclusive o subtítulo ao qual a tarefa deve estar atrelada. 
+ ![7](https://user-images.githubusercontent.com/89612369/145893211-99162978-5a41-4ff1-a09d-20f0fadc9fe5.jpg)
+
+Ao clicar em salvar a tarefa estará salva. Para concluir uma tarefa, basta clicar em seu checkbox. 
+ ![8](https://user-images.githubusercontent.com/89612369/145893224-541061a1-522c-4492-b87c-00172f4edf4f.jpg)
+
+Na aba de início, agora, é possível visualizar as rotinas do usuário e o seu relatório. 
+ ![9](https://user-images.githubusercontent.com/89612369/145893241-706646d3-6fa7-4090-b1a3-0ec3da1b74f5.jpg)
+
+Ao clicar na seta no canto superior esquerdo da aba de início, abre-se o resumo das tarefas do usuário a serem concluídas. 
+![10](https://user-images.githubusercontent.com/89612369/145893260-21a1c8d8-7618-42af-ac2b-c8a7b47656b5.jpg)
+
