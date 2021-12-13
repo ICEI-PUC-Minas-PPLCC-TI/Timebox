@@ -165,6 +165,7 @@ const createTask = () => {
             localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
             rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
             popupDiv.style.opacity = '0'
+            window.location.reload()
             mostrarTarefas()
             setTimeout(() => { popupDiv.remove() }, 200)
         }
