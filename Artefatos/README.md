@@ -1,5 +1,5 @@
 # Artefatos do projeto:
-## [Metodologia](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/3a7983145b268448608b4b1557c3d26a2c05963e/Artefatos/Metodologia.md)
+## [Metodologia:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/3a7983145b268448608b4b1557c3d26a2c05963e/Artefatos/Metodologia.md)
 ### Plataformas
 
 Repositório | Projeto de interface | Código
@@ -20,17 +20,17 @@ https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1
 - Jonathan: Códigos e interações HTML, CSS e JavaScript
 - Thais: Códigos e interações HTML, CSS e JavaScript
 
-## [Mapa de Stakeholders](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/3a7983145b268448608b4b1557c3d26a2c05963e/Artefatos/Mapa%20de%20Stakeholders.pdf)
+## [Mapa de Stakeholders:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/3a7983145b268448608b4b1557c3d26a2c05963e/Artefatos/Mapa%20de%20Stakeholders.pdf)
 ![Administração de tempo 3 - Frame 1](https://user-images.githubusercontent.com/89612369/145881432-111e5873-86a7-4eed-9e15-430ea886d312.jpg)
 
-## [Mapa de Empatia](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/87a1283957e5f9a2be027d15e8be07ab5de42291/Artefatos/Mapa%20de%20empatia.pdf)
+## [Mapa de Empatia:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/87a1283957e5f9a2be027d15e8be07ab5de42291/Artefatos/Mapa%20de%20empatia.pdf)
 ![Mapa de empatia_page-0001](https://user-images.githubusercontent.com/89612369/145881688-aac91c7f-4402-4b56-94ae-1d3760a7454d.jpg)
 
-## [Matriz CSD](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/aa7e025e9fd641b4868aee3ff0c65a4849b8290a/Artefatos/Matriz%20CSD.pdf)
+## [Matriz CSD:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/aa7e025e9fd641b4868aee3ff0c65a4849b8290a/Artefatos/Matriz%20CSD.pdf)
 ![Matriz CSD_page-0001](https://user-images.githubusercontent.com/89612369/145881782-ec8d4738-6622-4c0e-a220-83133be2b654.jpg)
 
-## [Personas e Histórias de Usuários](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/aa7e025e9fd641b4868aee3ff0c65a4849b8290a/Artefatos/Personas%20e%20Hist%C3%B3rias%20de%20Usu%C3%A1rios.md)
-### Como foi realizado o estudo:
+## [Personas e Histórias de Usuários:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/aa7e025e9fd641b4868aee3ff0c65a4849b8290a/Artefatos/Personas%20e%20Hist%C3%B3rias%20de%20Usu%C3%A1rios.md)
+### Como foi realizado o estudo
 Os membros da equipe realizaram pesquisas com 24 voluntários e a partir dos
 resultados foi possível compreender exatamente qual é o problema a ser lidado. Foram
 geradas as tabelas a seguir contendo as principais personas do projeto e suas histórias de usuários.
@@ -64,7 +64,7 @@ Carolina Alves | Uma ferramenta com metas e recompensas | Me sentir mais motivad
 Diogo Costa | Lembrar de todas as tarefas que preciso realizar | Ser bem visto pelos meus chefes e professores |
 Carolina Alves | Visualizar um resumo das minhas tarefas diárias | Poder realizá-las sem a sensação de que estou esquecendo algo |
 
-## [Requisitos e Restrições](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/aa7e025e9fd641b4868aee3ff0c65a4849b8290a/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
+## [Requisitos e Restrições:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/aa7e025e9fd641b4868aee3ff0c65a4849b8290a/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
 ### Requisitos Funcionais
 
 ID | Descrição | Prioridade
