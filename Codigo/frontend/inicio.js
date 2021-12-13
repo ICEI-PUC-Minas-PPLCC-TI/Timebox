@@ -7,7 +7,7 @@ if (isLogged) {
 
     userDiv.innerHTML = `
         <div class="user-info">
-            Bem vindo, <span class="user-name">${JSON.parse(localStorage.getItem('usuario_logado')).user}</span>
+            Bem vindo, <span style="font-family:inherit" class="user-name">${JSON.parse(localStorage.getItem('usuario_logado')).user}</span>
         </div>
         <div class="button">
             Sair
@@ -150,3 +150,139 @@ const criarRotinas = () => {
 }
 criarRotinas()
 
+const resumoRotinas = () => {
+    const rotinasCriadas = JSON.parse(localStorage.getItem('rotinas')) || []
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuario_logado')).id
+    const resumo = document.body.querySelector('#resumo .pendentes')
+
+    rotinasCriadas.forEach(rotina => {
+        if (rotina.usuario == usuarioLogado) {
+            const tarefas = rotina.tarefas.filter(tarefa => tarefa.concluido == false)
+            resumo.innerHTML += `
+                <div style="margin-bottom:1rem" class="resumo-tarefa">
+                    <div class="resumo-tarefa-title">
+                        <b>${rotina.titulo}</b>
+                    </div>
+                    <div class="resumo-tarefa-descricao">
+                        ${tarefas.length} tarefa(s) pendente(s)
+                    </div>
+                </div>
+            `
+        }
+    })
+
+    if (resumo.innerHTML === '') {
+        resumo.innerHTML = `
+            <div class="resumo-tarefa">
+                <div class="resumo-tarefa-title">
+                    <b>Nenhuma tarefa pendente</b>
+                </div>
+            </div>
+        `
+    }
+}
+resumoRotinas()
+
+const relatorioRotinasComplete = () => {
+    let rotinasCriadas = JSON.parse(localStorage.getItem('rotinas')) || []
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuario_logado')).id
+    const relArea = document.body.querySelector('#relatorio .rel-area')
+    const relAreaDesc = document.body.querySelector('#relatorio .rel-area-desc')
+    rotinasCriadas = rotinasCriadas.filter(rotina => rotina.usuario == usuarioLogado)
+
+    let data = []
+    let dataBackground = []
+    let dataLabel = []
+    let qntTarefas = 0
+    let qntTarefasConcluidas = 0
+    rotinasCriadas.forEach(rotina => {
+        if (rotina.tarefas.length > 0) {
+            data.push(rotina.tarefas.filter(tarefa => tarefa.concluido == true).length)
+            dataBackground.push(rotina.cor)
+            dataLabel.push(rotina.titulo)
+            qntTarefas += rotina.tarefas.length
+            qntTarefasConcluidas += rotina.tarefas.filter(tarefa => tarefa.concluido == true).length
+        }
+    })
+    if (qntTarefas != qntTarefasConcluidas) {
+        data.push(qntTarefas - qntTarefasConcluidas)
+        dataBackground.push('#fff')
+        dataLabel.push('Pendentes')
+    }
+
+    if (qntTarefas > 0) {
+        const graph = document.createElement('canvas')
+        graph.id = 'grafico'
+        relArea.insertBefore(graph, relArea.firstChild)
+
+
+        var myChart = new Chart(graph, {
+            type: 'doughnut',
+            data:
+            {
+                datasets: [{
+                    data: data,
+                    backgroundColor: dataBackground
+                }],
+                labels: dataLabel
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: true,
+                        labels: {
+                            usePointStyle: true,
+                            pointStyle: 'circle'
+                        },
+                        position: 'bottom',
+                        align: 'center'
+                    },
+                    title: {
+                        display: true,
+                        text: 'Tarefas concluídas'
+                    }
+                }
+            }
+
+        })
+    }
+
+    if (qntTarefasConcluidas === 0 && rotinasCriadas.length > 0) {
+        relAreaDesc.innerHTML += `
+            <div class="rel-area-title">
+                Você ainda não completou nenhuma tarefa
+                <br>
+                Não desista!
+            </div>
+        `
+    }
+
+    if (qntTarefasConcluidas === 0 && rotinasCriadas.length === 0) {
+        relAreaDesc.innerHTML += `
+            <div class="rel-area-title">
+                Não há tarefas para serem exibidas
+                <br>
+                Crie uma rotina para começar
+            </div>
+        `
+    }
+    else if (qntTarefas === qntTarefasConcluidas) {
+        relAreaDesc.innerHTML += `
+            <div class="rel-area-title">
+                Você concluiu todas as tarefas
+                <br>
+                Parabéns!
+            </div>
+        `
+    }
+    else if (qntTarefas > 0 && qntTarefasConcluidas > 0) {
+        relAreaDesc.innerHTML += `
+            <div class="rel-area-title">
+                Você concluiu ${qntTarefasConcluidas} de ${qntTarefas} tarefas
+                <br>
+                Continue assim!
+            </div>
+        `
+    }
+}
+relatorioRotinasComplete()

@@ -195,6 +195,10 @@ section {
 .rel-area {
     display: flex;
 }
+.rel-area-desc {
+    display: flex;
+    align-items: center;
+}
 .rel-area .graph-area {
     position: relative;
 }
@@ -301,6 +305,10 @@ span {
 }
 .botaorotina .rotina-title {
     text-transform: uppercase;
+}
+#grafico {
+    max-width: 33%;
+    max-height: 300px;
 }
 @media (max-width: 689px) {
     #menu-button {

@@ -107,7 +107,7 @@ const createTask = () => {
                         <div class="info-item" id="campo-categoria">
                             <div class="info-item-title"><span class="icon">label</span>Categoria:</div>
                             <select>
-                                <option value="Importante">Importante</option>
+                                ${rotinaLS.subtitulos.map(subtitulo => `<option>${subtitulo}</option>`).join('')}
                             </select>
                         </div>
                     </div>
@@ -144,6 +144,7 @@ const createTask = () => {
             descricao: descricao,
             data: data,
             progresso: progresso,
+            progressoAtual: 0,
             categoria: categoria,
             concluido: concluido,
             repetir: repetir,
@@ -153,7 +154,13 @@ const createTask = () => {
 
         if (titulo === '') {
             alert('Preencha o título')
-        } else {
+        } else if ((repetir && repetirValue < 1) || (repetir && repetirValue < 1)) {
+            alert('Preencha o campo repetir')
+        }
+        else if (progresso < 1) {
+            alert('Preencha o campo progresso')
+        }
+        else {
             rotinasSalvas[rotinaID].tarefas.push(tarefa)
             localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
             rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
@@ -168,6 +175,136 @@ const createTask = () => {
     setTimeout(() => { popupDiv.style.opacity = '1' }, 1)
     popupDiv.addEventListener('click', close)
 }
+const editTask = (tarefa) => {
+    const popupDiv = document.createElement('div')
+    popupDiv.classList.add('popup')
+    const saveButton = document.createElement('div')
+    const cancelButton = document.createElement('div')
+    const deleteButton = document.createElement('div')
+    saveButton.className = 'button'
+    cancelButton.className = 'button'
+    saveButton.innerHTML = 'Salvar'
+    cancelButton.innerHTML = 'Cancelar'
+    deleteButton.innerHTML = 'Excluir'
+    deleteButton.className = 'button'
+    cancelButton.addEventListener('click', () => {
+        popupDiv.style.opacity = '0'
+        setTimeout(() => { popupDiv.remove() }, 200)
+    })
+    popupDiv.innerHTML = `
+        <div class="popup-content">
+            <textarea id="title" placeholder="Título">${tarefa.titulo}</textarea>
+            <div id="info">
+                        <div class="info-item" id="campo-data">
+                            <div class="info-item-title"><span class="icon">calendar_today</span>Data:</div>
+                            <input type="date" id="date" value="${tarefa.data}">
+                        <div class="info-item" id="campo-repetir">
+                            <input type="checkbox" checked="${tarefa.repetir}" id="repetir">
+                            <label for="repetir">Repetir a cada</label>
+                            <input type="number" value="${tarefa.repetirValue}"> dia(s)
+                        </div>
+                            </div>
+                        
+                <div class="info-item" id="campo-notificacao">
+                    <div class="info-item-title"><span class="icon">notifications</span>Notificar:</div>
+                    <input type="time" id="time" value="${tarefa.notificar}">
+                </div>
+                <div class="info-column">
+                    <div class="column">
+                        <div class="info-item" id="campo-description">
+                            <div class="info-item-title"><span class="icon">description</span>Descrição:</div>
+                            <textarea id="description-textarea" placeholder="Descrição">${tarefa.descricao}</textarea>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="info-item" id="campo-progress">
+                            <div class="info-item-title"><span class="icon">trending_up</span>Progresso:</div>
+                            <input type="number" value="${tarefa.progresso}">
+                        </div>
+                        <div class="info-item" id="campo-categoria">
+                            <div class="info-item-title"><span class="icon">label</span>Categoria:</div>
+                            <select>
+                                ${rotinaLS.subtitulos.map(subtitulo => `<option>${subtitulo}</option>`).join('')}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <input type="checkbox" id="campo-concluido">
+                            <label for="concluido">Já concluído?</label>
+                </div>
+            </div>
+            <div id="buttons"></div>
+        </div>
+    `
+    document.body.appendChild(popupDiv)
+
+    deleteButton.addEventListener('click', () => {
+        rotinasSalvas[rotinaID].tarefas.splice(rotinasSalvas[rotinaID].tarefas.indexOf(tarefa), 1)
+        localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
+        rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
+        popupDiv.style.opacity = '0'
+        mostrarTarefas()
+        window.location.reload()
+        setTimeout(() => { popupDiv.remove() }, 200)
+    })
+
+    saveButton.addEventListener('click', () => {
+        const titulo = popupDiv.querySelector('#title').value
+        const descricao = popupDiv.querySelector('#description-textarea').value
+        const data = popupDiv.querySelector('#date').value
+        const progresso = popupDiv.querySelector('#campo-progress input').value
+        const categoria = popupDiv.querySelector('#campo-categoria select').value
+        const concluido = popupDiv.querySelector('#campo-concluido').checked
+        const repetir = popupDiv.querySelector('#repetir').checked
+        const repetirValue = popupDiv.querySelector('#campo-repetir input[type="number"]').value
+        const notificar = popupDiv.querySelector('#campo-notificacao input').value
+
+        const nTarefa = {
+            titulo: titulo,
+            descricao: descricao,
+            data: data,
+            progresso: progresso,
+            progressoAtual: 0,
+            categoria: categoria,
+            concluido: concluido,
+            repetir: repetir,
+            repetirValue: repetirValue,
+            notificar: notificar
+        }
+
+        if (titulo === '') {
+            alert('Preencha o título')
+        } else if (repetir && repetirValue < 1 && repetirValue !== '') {
+            alert('Preencha o campo repetir')
+        }
+        else if (progresso < 1) {
+            alert('Preencha o campo progresso')
+        }
+        else {
+            rotinasSalvas[rotinaID].tarefas[rotinasSalvas[rotinaID].tarefas.indexOf(tarefa)] = nTarefa
+            localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
+            rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
+            popupDiv.style.opacity = '0'
+            window.location.reload()
+            mostrarTarefas()
+            setTimeout(() => { popupDiv.remove() }, 200)
+        }
+    })
+    const close = (mouse) => {
+        if (mouse.target === popupDiv) {
+            popupDiv.style.opacity = '0'
+            setTimeout(() => { popupDiv.remove() }, 200)
+        }
+    }
+    popupDiv.querySelector('#buttons').appendChild(saveButton)
+    saveButton.style.backgroundColor = rotinaLS.cor
+    popupDiv.querySelector('#buttons').appendChild(cancelButton)
+    popupDiv.querySelector('#buttons').appendChild(deleteButton)
+    deleteButton.style.backgroundColor = 'red'
+    setTimeout(() => { popupDiv.style.opacity = '1' }, 1)
+    popupDiv.addEventListener('click', close)
+}
 const createTextField = (texto, index) => {
     const textField = document.createElement('textarea')
     textField.classList.add('text-field')
@@ -176,6 +313,7 @@ const createTextField = (texto, index) => {
     textField.id = "line"
     textField.name = "line"
     if (texto.length > 0) {
+        textField.setAttribute('data-value', texto)
         textField.value = texto
     }
     textField.addEventListener('input', () => { autoGrowing(textField) })
@@ -213,68 +351,128 @@ rotinaLS.subtitulos.forEach((subtitulo, index) => {
 })
 
 const mostrarTarefas = () => {
+    const insertAfter = (referenceNode, newNode) => {
+        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling)
+    }
+    const formatarData = (data) => {
+        const dataFormatada = data.split('-')
+        return `${dataFormatada[2]}/${dataFormatada[1]}/${dataFormatada[0]}`
+    }
     rotinaLS.tarefas.forEach((tarefa, index) => {
         const tarefaDiv = document.createElement('div')
         tarefaDiv.classList.add('tarefa')
         tarefaDiv.classList.add(`tarefa-${index + 1}`)
         tarefaDiv.innerHTML = `
-            <div class="tarefa-info">
-                <div class="tarefa-info-item" id="campo-titulo">
-                    <div class="tarefa-info-item-title"><span class="icon">title</span>Título:</div>
-                    <input type="text" value="${tarefa.titulo}">
-                </div>
-                <div class="tarefa-info-item" id="campo-data">
-                    <div class="tarefa-info-item-title"><span class="icon">event</span>Data:</div>
-                    <input type="date" value="${tarefa.data}">
-                </div>
-                <div class="tarefa-info-item" id="campo-hora">
-                    <div class="tarefa-info-item-title"><span class="icon">notifications</span>Hora:</div>
-                    <input type="time" value="${tarefa.notificar}">
-                </div>
-                <div class="tarefa-info-item" id="campo-progress">
-                    <div class="tarefa-info-item-title"><span class="icon">trending_up</span>Progresso:</div>
-                    <input type="number" value="${tarefa.progresso}">
-                </div>
-                `
-        if (tarefa.concluido) {
-            tarefaDiv.innerHTML += `
-                <div class="tarefa-info-item" id="campo-concluido">
-                    <div class="tarefa-info-item-title"><span class="icon">check_circle</span>Concluído:</div>
-                    <input type="checkbox" checked>
-                </div>
-            `
-        }
-        else {
-            tarefaDiv.innerHTML += `
-                <div class="tarefa-info-item" id="campo-concluido">
-                    <div class="tarefa-info-item-title"><span class="icon">check_circle</span>Concluído:</div>
-                    <input type="checkbox">
-                </div>
-            `
-        }
-        if (tarefa.repetir) {
-            tarefaDiv.innerHTML += `
-                <div class="tarefa-info-item" id="campo-repetir">
-                    <div class="tarefa-info-item-title"><span class="icon">repeat</span>Repetir:</div>
-                    <input type="checkbox" checked>
-                </div>
-            `
-        }
-        else {
-            tarefaDiv.innerHTML += `
-                <div class="tarefa-info-item" id="campo-repetir">
-                    <div class="tarefa-info-item-title"><span class="icon">repeat</span>Repetir:</div>
-                    <input type="checkbox">
-                </div>
-            `
-        }
-        tarefaDiv.innerHTML += `
-            <div class="tarefa-info-item" id="campo-descricao">
-                <div class="tarefa-info-item-title"><span class="icon">description</span>Descrição:</div>
-                <textarea>${tarefa.descricao}</textarea>
+            <div class="tarefa-main">
+                <input type="checkbox" id="tarefa-concluido">
+                <div id="edit-task" class="icon-button">edit</div>
             </div>
-        `
-        document.querySelector('.editavel').appendChild(tarefaDiv)
+            <div class="tarefa-info">
+                <div class="tarefa-info-title">${tarefa.titulo}</div>
+                <div class="tarefa-info-description">${tarefa.descricao}</div>
+                ${parseInt(tarefa.progresso) > 1 ? `<progress value="${tarefa.progressoAtual}" max="${tarefa.progresso}"></progress>` : ''}
+            </div>
+            <div class="tarefa-info-data">
+                <span class="icon">alarm</span>
+                <span class="data">${formatarData(tarefa.data)}</span>
+                ${tarefa.repetir ? `<span class="icon">repeat</span>` : ''}
+            </div>
+                `
+
+        if (document.querySelector('.editavel').querySelector(`.tarefa-${index + 1}`) === null && tarefa.concluido !== true) {
+            if (document.querySelector('.editavel').querySelector(`textarea[data-value="${tarefa.categoria}"]`) === null) {
+                document.body.querySelector('.editavel').appendChild(tarefaDiv)
+            }
+            else {
+                insertAfter(document.querySelector('.editavel').querySelector(`textarea[data-value="${tarefa.categoria}"]`), tarefaDiv)
+            }
+        }
+        tarefaDiv.querySelector('#edit-task').addEventListener('click', () => { editTask(tarefa) })
+        tarefaDiv.querySelector('#tarefa-concluido').addEventListener('change', () => {
+            if (tarefa.concluido === false) {
+                if (tarefa.repetir === true && tarefa.repetirValue > 0) {
+                    if (parseInt(tarefa.progresso) > 1) {
+                        if (tarefa.progressoAtual + 1 >= parseInt(tarefa.progresso)) {
+                            tarefa.concluido = true
+                            tarefaDiv.querySelector('progress').value = tarefa.progressoAtual
+                            tarefaDiv.classList.add('concluido')
+                            tarefaDiv.querySelector('.tarefa-info-description').style.textDecoration = 'line-through'
+                            tarefaDiv.querySelector('.tarefa-info-data').style.display = 'none'
+                            tarefaDiv.querySelector('.tarefa-info-title').style.textDecoration = 'line-through'
+                            tarefaDiv.querySelector('#tarefa-concluido').checked = true
+                            rotinasSalvas[rotinaID].tarefas[index].concluido = true
+                            rotinasSalvas[rotinaID].tarefas[index].progressoAtual = tarefa.progressoAtual
+                            localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
+                            rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
+
+                            let novaTarefa = tarefa
+                            novaTarefa.data = `${new Date(new Date(tarefa.data + ' ').getTime() + (tarefa.repetirValue * 86400000)).getFullYear()}-${new Date(new Date(tarefa.data + ' ').getTime() + (tarefa.repetirValue * 86400000)).getMonth() + 1}-${new Date(new Date(tarefa.data + ' ').getTime() + (tarefa.repetirValue * 86400000)).getDate()}`
+                            novaTarefa.progressoAtual = 0
+                            novaTarefa.concluido = false
+                            rotinasSalvas[rotinaID].tarefas.push(novaTarefa)
+                            localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
+                            rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
+                            window.location.reload()
+                        }
+                    } else {
+                        let novaTarefa = tarefa
+                        novaTarefa.data = `${new Date(new Date(tarefa.data + ' ').getTime() + (tarefa.repetirValue * 86400000)).getFullYear()}-${new Date(new Date(tarefa.data + ' ').getTime() + (tarefa.repetirValue * 86400000)).getMonth() + 1}-${new Date(new Date(tarefa.data + ' ').getTime() + (tarefa.repetirValue * 86400000)).getDate()}`
+                        novaTarefa.concluido = false
+                        rotinasSalvas[rotinaID].tarefas.push(novaTarefa)
+                        localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
+                        rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
+                        window.location.reload()
+
+                    }
+                }
+                if (parseInt(tarefa.progresso) > 1) {
+                    tarefa.progressoAtual++
+                    if (tarefa.progressoAtual >= parseInt(tarefa.progresso)) {
+                        tarefa.concluido = true
+                        tarefaDiv.querySelector('progress').value = tarefa.progressoAtual
+                        tarefaDiv.classList.add('concluido')
+                        tarefaDiv.querySelector('.tarefa-info-description').style.textDecoration = 'line-through'
+                        tarefaDiv.querySelector('.tarefa-info-data').style.display = 'none'
+                        tarefaDiv.querySelector('.tarefa-info-title').style.textDecoration = 'line-through'
+                        tarefaDiv.querySelector('#tarefa-concluido').checked = true
+                        rotinasSalvas[rotinaID].tarefas[index].concluido = true
+                        rotinasSalvas[rotinaID].tarefas[index].progressoAtual = tarefa.progressoAtual
+                        localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
+                        rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
+                    }
+                    else {
+                        tarefaDiv.querySelector('#tarefa-concluido').checked = false
+                        tarefaDiv.querySelector('progress').value = tarefa.progressoAtual
+                        rotinasSalvas[rotinaID].tarefas[index].progressoAtual = tarefa.progressoAtual
+                        localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
+                        rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
+                    }
+
+                } else {
+                    tarefa.concluido = true
+                    tarefaDiv.classList.add('concluido')
+                    tarefaDiv.querySelector('.tarefa-info-description').style.textDecoration = 'line-through'
+                    tarefaDiv.querySelector('.tarefa-info-data').style.display = 'none'
+                    tarefaDiv.querySelector('.tarefa-info-title').style.textDecoration = 'line-through'
+                    tarefaDiv.querySelector('#tarefa-concluido').checked = true
+                    rotinasSalvas[rotinaID].tarefas[index].concluido = true
+                    localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
+                    rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
+                }
+
+            }
+            else {
+                tarefa.concluido = false
+                tarefaDiv.classList.remove('concluido')
+                tarefaDiv.querySelector('.tarefa-info-description').style.textDecoration = 'none'
+                tarefaDiv.querySelector('.tarefa-info-data').style.display = 'flex'
+                tarefaDiv.querySelector('.tarefa-info-title').style.textDecoration = 'none'
+                tarefaDiv.querySelector('#tarefa-concluido').checked = false
+                rotinasSalvas[rotinaID].tarefas[index].concluido = false
+                localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
+                rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
+            }
+        })
     })
 }
 mostrarTarefas()
@@ -312,3 +510,43 @@ rotinaTitle.addEventListener('input', () => {
 
     localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
 })
+
+document.querySelector('#delete-rotina').addEventListener('click', () => {
+    rotinasSalvas.splice(rotinaID, 1)
+    localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
+    rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
+    window.location.href = './inicio.html'
+})
+
+const resumoRotinas = () => {
+    const rotinasCriadas = JSON.parse(localStorage.getItem('rotinas')) || []
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuario_logado')).id
+    const resumo = document.body.querySelector('#resumo .pendentes')
+
+    rotinasCriadas.forEach(rotina => {
+        if (rotina.usuario == usuarioLogado) {
+            const tarefas = rotina.tarefas.filter(tarefa => tarefa.concluido == false)
+            resumo.innerHTML += `
+                <div style="margin-bottom:1rem;cursor:pointer" onclick="window.location.href='./rotina.html?id=${rotina.id}'" class="resumo-tarefa">
+                    <div class="resumo-tarefa-title">
+                        <b>${rotina.titulo}</b>
+                    </div>
+                    <div class="resumo-tarefa-descricao">
+                        ${tarefas.length} tarefa(s) pendente(s)
+                    </div>
+                </div>
+            `
+        }
+    })
+
+    if (resumo.innerHTML === '') {
+        resumo.innerHTML = `
+            <div class="resumo-tarefa">
+                <div class="resumo-tarefa-title">
+                    <b>Nenhuma tarefa pendente</b>
+                </div>
+            </div>
+        `
+    }
+}
+resumoRotinas()
