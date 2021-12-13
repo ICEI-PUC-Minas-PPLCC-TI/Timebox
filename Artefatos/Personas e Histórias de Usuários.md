@@ -22,7 +22,7 @@ Ferramentas | Bloco de notas do celular | Planilhas do Excel | Alarme do celular
 A partir da compreensão do dia a dia das personas identificadas para o projeto, foram
 registradas as seguintes histórias de usuários.
 
-Eu como... |... quero/desejo ... |... para ...|
+Eu... |... quero/desejo ... |... para ...|
 --- | --- | --- | 
 Carolina Alves | Ter uma rotina organizada e sem estresse | Melhorar a minha qualidade de vida e produtividade| 
 Diogo Costa | Realizar todas as minhas tarefas no menor tempo possível | Poder fazer exercícios físicos e descansar mais |
@@ -30,4 +30,4 @@ Carolina Alves | Organizar minhas tarefas | Poder dimensionar melhor o que eu te
 Diogo Costa | Receber notificações com o que tenho que fazer | Poder focar no meu trabalho sem ter que procurar |
 Carolina Alves | Uma ferramenta com metas e recompensas | Me sentir mais motivada a realizar minhas tarefas |
 Diogo Costa | Lembrar de todas as tarefas que preciso realizar | Ser bem visto pelos meus chefes e professores |
-Carolina Alves | 
+Carolina Alves | Visualizar um resumo das minhas tarefas diárias | Poder realizá-las sem a sensação de que estou esquecendo algo |
