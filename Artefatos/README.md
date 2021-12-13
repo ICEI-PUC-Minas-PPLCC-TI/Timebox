@@ -24,28 +24,69 @@ https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1
 ![Administração de tempo 3 - Frame 1](https://user-images.githubusercontent.com/89612369/145881432-111e5873-86a7-4eed-9e15-430ea886d312.jpg)
 
 ## [Mapa de Empatia](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/87a1283957e5f9a2be027d15e8be07ab5de42291/Artefatos/Mapa%20de%20empatia.pdf)
-[Mapa de empatia.pdf](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/files/7706692/Mapa.de.empatia.pdf)
+![Mapa de empatia_page-0001](https://user-images.githubusercontent.com/89612369/145881688-aac91c7f-4402-4b56-94ae-1d3760a7454d.jpg)
 
+## [Matriz CSD](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/aa7e025e9fd641b4868aee3ff0c65a4849b8290a/Artefatos/Matriz%20CSD.pdf)
+![Matriz CSD_page-0001](https://user-images.githubusercontent.com/89612369/145881782-ec8d4738-6622-4c0e-a220-83133be2b654.jpg)
 
-## Matriz CSD
+## [Personas e Histórias de Usuários](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/aa7e025e9fd641b4868aee3ff0c65a4849b8290a/Artefatos/Personas%20e%20Hist%C3%B3rias%20de%20Usu%C3%A1rios.md)
+# Como foi realizado o estudo:
+Os membros da equipe realizaram pesquisas com 24 voluntários e a partir dos
+resultados foi possível compreender exatamente qual é o problema a ser lidado. Foram
+geradas as tabelas a seguir contendo as principais personas do projeto e suas histórias de usuários.
 
-## Personas e Histórias de Usuários
+# Personas
+![Screenshot 2021-10-01 224459](https://user-images.githubusercontent.com/57562448/135700024-4d77e219-d80d-4282-9553-b6bf1f32b8b8.png) | Carolina Alves | Idade: 19 |Ocupação: estudante e estagiária |
+--- | --- | --- | ---|
+Motivações | Maximizar o aprendizado | Melhorar a qualidade de vida | Alcançar um cargo bom aonde trabalha |
+Frustrações | Procrastinação | Muito tempo no celular | Não tem tempo para o próprio lazer |
+Hobbies | Assistir filmes e séries | Escutar música | Caminhar |
+Ferramentas | Notion | Trello | Google Agenda | MIRO
 
-## Requisitos e Restrições
+![Screenshot 2021-10-01 224508](https://user-images.githubusercontent.com/57562448/135700160-3ced0552-46d7-47a3-b073-d3b20f366785.png) | Diogo Costa | Idade: 20 |Ocupação:  estudante e CLT |
+--- | --- | --- | ---|
+Motivações |Ter sua própria empresa de TI | Poder tirar mais proveito de seu tempo e de suas habilidades| Melhorar sua saúde mental |
+Frustrações | Desorganização | Muitas tarefas pra fazer | Esquecimento de algumas tarefas importantes |
+Hobbies | Jogar videogame | Sair com os amigos | Jogar futebol |
+Ferramentas | Bloco de notas do celular | Planilhas do Excel | Alarme do celular | 
 
+# Histórias de Usuários
+A partir da compreensão do dia a dia das personas identificadas para o projeto, foram
+registradas as seguintes histórias de usuários.
 
+Eu... |... quero/desejo ... |... para ...|
+--- | --- | --- | 
+Carolina Alves | Ter uma rotina organizada e sem estresse | Melhorar a minha qualidade de vida e produtividade| 
+Diogo Costa | Realizar todas as minhas tarefas no menor tempo possível | Poder fazer exercícios físicos e descansar mais |
+Carolina Alves | Organizar minhas tarefas | Poder dimensionar melhor o que eu tenho para fazer |
+Diogo Costa | Receber notificações com o que tenho que fazer | Poder focar no meu trabalho sem ter que procurar |
+Carolina Alves | Uma ferramenta com metas e recompensas | Me sentir mais motivada a realizar minhas tarefas |
+Diogo Costa | Lembrar de todas as tarefas que preciso realizar | Ser bem visto pelos meus chefes e professores |
+Carolina Alves | Visualizar um resumo das minhas tarefas diárias | Poder realizá-las sem a sensação de que estou esquecendo algo |
 
-Este diretório mantém os artefatos do projeto. 
+## [Requisitos e Restrições](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/aa7e025e9fd641b4868aee3ff0c65a4849b8290a/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
+# Requisitos Funcionais
 
+ID | Descrição | Prioridade
+--- | --- | --- |
+1 | O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias. | ALTA |
+2 | O site deve enviar notificações / alarme ao usuário. | ALTA |
+3 | O site deverá criar relatórios. | ALTA |
+4 | O site devera desbloquear conquistas para manter o usuário | ALTA |
 
-Liste os artefatos produzidos, com suas localizações e descrição do conteúdo.
+# Requisitos Não Funcionais
 
-Por exemplo, pode-se criar um diretório "atas", que seria descrito da seguinte forma:
-* `/atas`
-	* **Ata_xx_ago_2020.docx**: Ata de reunião do dia xx de agosto de 2020.
+ID | Descrição | Prioridade
+--- | --- | --- |
+1 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). | ALTA |
+2 | O site deverá ser responsivo. | ALTA |
+3 | O site deverá ser fácil de usar. | ALTA |
+4 | O site deverá ser leve e rápido. | ALTA |
 
-Pode-se também criar um diretório "canvas", que seria descrito da seguinte forma:
-* `/canvas`
-	* **BusinessModelCanvas.pdf**: Canvas do modelo de negócios.
+# Restrições do Projeto
 
-Assim, sucessivamente para outros artefatos como `processos` e `DER`, etc.
+ID | Descrição
+--- | --- |
+1 | A equipe não pode subcontratar o desenvolvimento do trabalho.|
+2 | O aplicativo deve se restringir às tecnologias básicas da Web no Frontend |
+3 | O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final |
