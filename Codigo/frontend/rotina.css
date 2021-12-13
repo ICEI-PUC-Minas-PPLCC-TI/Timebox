@@ -357,6 +357,7 @@ span.icon {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 .tarefa .tarefa-info {
     display: flex;
@@ -380,6 +381,18 @@ span.icon {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+.tarefa-notificada {
+    border-radius: 0.5rem;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 0.5rem;
+}
+.tarefa-notificada::after {
+    content: "! Atrasada";
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: red;
 }
 .tarefa .tarefa-main .icon-button {
     font-size: 1.2rem;

@@ -22,6 +22,9 @@ if (isLogged) {
         document.location.reload(true)
     })
 }
+else {
+    window.location.href = './login.html'
+}
 
 // Menu
 const menu = document.querySelector('#menu')
@@ -159,7 +162,7 @@ const resumoRotinas = () => {
         if (rotina.usuario == usuarioLogado) {
             const tarefas = rotina.tarefas.filter(tarefa => tarefa.concluido == false)
             resumo.innerHTML += `
-                <div style="margin-bottom:1rem" class="resumo-tarefa">
+                <div style="margin-bottom:1rem;cursor:pointer" onclick="window.location.href='./rotina.html?id=${rotina.id}'" class="resumo-tarefa">
                     <div class="resumo-tarefa-title">
                         <b>${rotina.titulo}</b>
                     </div>
@@ -286,3 +289,26 @@ const relatorioRotinasComplete = () => {
     }
 }
 relatorioRotinasComplete()
+
+const notificacoesRotina = () => {
+    const rotinasCriadas = JSON.parse(localStorage.getItem('rotinas')) || []
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuario_logado')).id
+    const notificacoes = document.body.querySelector('#notificationPopup .notification-content')
+
+    rotinasCriadas.forEach(rotina => {
+        if (rotina.usuario == usuarioLogado) {
+            const tarefas = rotina.tarefas.filter(tarefa => (tarefa.concluido == false && tarefa.notificar !== '' && new Date(tarefa.data + ' ' + tarefa.notificar).getTime() < new Date().getTime()) || (tarefa.concluido == false && new Date(tarefa.data + ' ').getTime() + 86400000 < new Date().getTime() && tarefa.notificar === ''))
+
+            if (tarefas.length > 0) {
+                notificacoes.innerHTML += `
+                    <div class="notification-item" onclick="window.location.href='./rotina.html?id=${rotina.id}'">
+                        <div class="notificacao-text">
+                            ${tarefas.length} tarefa(s) pendente(s) em <b>${rotina.titulo}</b>
+                        </div>
+                    </div>
+                `
+            }
+        }
+    })
+}
+notificacoesRotina()

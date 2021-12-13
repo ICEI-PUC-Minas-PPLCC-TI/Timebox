@@ -23,6 +23,9 @@ if (isLogged) {
         window.location.href = 'inicio.html'
     })
 }
+else {
+    window.location.href = './login.html'
+}
 
 // Menu
 const menu = document.querySelector('#menu')
@@ -345,6 +348,7 @@ const createTextField = (texto, index) => {
         }
     })
     document.querySelector('.editavel').appendChild(textField)
+    autoGrowing(textField)
 }
 createTaskButton.addEventListener('click', createTask)
 createTextButton.addEventListener('click', createTextField)
@@ -363,6 +367,11 @@ const mostrarTarefas = () => {
     }
     rotinaLS.tarefas.forEach((tarefa, index) => {
         const tarefaDiv = document.createElement('div')
+        if (new Date(tarefa.data + ' ' + tarefa.notificar).getTime() < new Date().getTime() && tarefa.notificar !== '') {
+            tarefaDiv.classList.add('tarefa-notificada')
+        } else if (new Date(tarefa.data + ' ').getTime() + 86400000 < new Date().getTime() && tarefa.notificar === '') {
+            tarefaDiv.classList.add('tarefa-notificada')
+        }
         tarefaDiv.classList.add('tarefa')
         tarefaDiv.classList.add(`tarefa-${index + 1}`)
         tarefaDiv.innerHTML = `
@@ -377,7 +386,9 @@ const mostrarTarefas = () => {
             </div>
             <div class="tarefa-info-data">
                 <span class="icon">alarm</span>
-                <span class="data">${formatarData(tarefa.data)}</span>
+                <span class="data">${formatarData(tarefa.data)} 
+                ${tarefa.notificar !== '' ? `<span class="icon">notifications</span>${tarefa.notificar}` : ''}
+                </span>
                 ${tarefa.repetir ? `<span class="icon">repeat</span>` : ''}
             </div>
                 `
@@ -553,3 +564,26 @@ const resumoRotinas = () => {
     }
 }
 resumoRotinas()
+
+const notificacoesRotina = () => {
+    const rotinasCriadas = JSON.parse(localStorage.getItem('rotinas')) || []
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuario_logado')).id
+    const notificacoes = document.body.querySelector('#notificationPopup .notification-content')
+
+    rotinasCriadas.forEach(rotina => {
+        if (rotina.usuario == usuarioLogado) {
+            const tarefas = rotina.tarefas.filter(tarefa => (tarefa.concluido == false && tarefa.notificar !== '' && new Date(tarefa.data + ' ' + tarefa.notificar).getTime() < new Date().getTime()) || (tarefa.concluido == false && new Date(tarefa.data + ' ').getTime() + 86400000 < new Date().getTime() && tarefa.notificar === ''))
+
+            if (tarefas.length > 0) {
+                notificacoes.innerHTML += `
+                    <div class="notification-item" onclick="window.location.href='./rotina.html?id=${rotina.id}'">
+                        <div class="notificacao-text">
+                            ${tarefas.length} tarefa(s) pendente(s) em <b>${rotina.titulo}</b>
+                        </div>
+                    </div>
+                `
+            }
+        }
+    })
+}
+notificacoesRotina()
