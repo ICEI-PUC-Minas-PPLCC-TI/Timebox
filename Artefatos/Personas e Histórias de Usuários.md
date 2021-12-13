@@ -7,16 +7,16 @@ geradas as tabelas a seguir contendo as principais personas e histórias dos usu
 ![Screenshot 2021-10-01 224459](https://user-images.githubusercontent.com/57562448/135700024-4d77e219-d80d-4282-9553-b6bf1f32b8b8.png) | Carolina Alves | Idade: 19 |Ocupação: estudante e estagiária|
 --- | --- | --- | ---|
 Motivações | Maximizar o aprendizado | Melhorar a qualidade de vida | Alcançar um cargo bom aonde trabalha |
-Frustrações | Procrastinação | Muito tempo no celular | Não tem tempo para o prórpio lazer |
-Hobbies | Assistir filmes e séries | Escutar música | Sair com os amigos | Caminhar |
+Frustrações | Procrastinação | Muito tempo no celular | Não tem tempo para o próprio lazer |
+Hobbies | Assistir filmes e séries | Escutar música | Caminhar |
 Ferramentas | Notion | Trello | Google Agenda | MIRO
 
 ![Screenshot 2021-10-01 224508](https://user-images.githubusercontent.com/57562448/135700160-3ced0552-46d7-47a3-b073-d3b20f366785.png) | Diogo Costa | Idade: 20 |Ocupação:  estudante e CLT|
 --- | --- | --- | ---|
 Motivações |Ter sua própria empresa de TI | Poder tirar mais proveito de seu tempo e de suas habilidades|  |
-Frustrações | Desorganização | Muitas tarefas pra fazer | |
-Hobbies | Jogar videogame | Sair com os amigos | |
-Ferramentas | Bloco de notas do celular | Planilhas do Excel | Alarme do celular | Forest
+Frustrações | Desorganização | Muitas tarefas pra fazer | Esquecimento de algumas tarefas importantes |
+Hobbies | Jogar videogame | Sair com os amigos | Jogar futebol |
+Ferramentas | Bloco de notas do celular | Planilhas do Excel | Alarme do celular | 
 
 # Histórias de Usuário
 A partir da compreensão do dia a dia das personas identificadas para o projeto, foram
