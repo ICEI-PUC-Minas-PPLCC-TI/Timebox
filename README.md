@@ -71,6 +71,7 @@ Funcionalidades:
 ![image](https://user-images.githubusercontent.com/57562448/135178985-ff9f667d-ec65-4627-a281-b702f901507a.png)
 
 ### [Wireframes](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/f4b004f01e2c64e4906618d0fad9b65f4826b14e/Artefatos/Interface/README.md)
+![10](https://user-images.githubusercontent.com/89612369/145893260-21a1c8d8-7618-42af-ac2b-c8a7b47656b5.jpg)
 
 
 # Informações Gerais:
