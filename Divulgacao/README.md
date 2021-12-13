@@ -1,4 +1,4 @@
-# Divulgação: [Apresentação do Projeto](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/master/Divulgacao/Apresentacao/TIAW%20slide.pdf)
+# Divulgação: [Apresentação do Projeto](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/master/Divulgacao/TIAW%20slide.pdf)
 
 
 
