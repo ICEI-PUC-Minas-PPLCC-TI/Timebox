@@ -8,7 +8,7 @@ Com a chegada da pandemia, a população mundial teve que readequar seus hábito
 Com isso, trazemos aqui o Timebox, que possui o intuito de ajudar na organização e criação de uma rotina capaz de equilibrar vida pessoal e profissional dessas pessoas para que elas tenham um melhor aproveitamento de seu tempo e, dessa forma, consigam realizar não somente suas tarefas profissionais, mas também suas rotinas pessoais, conquistando um estado saudável de equilíbrio entre trabalho e lazer. 
 Os principais afetados pelo problema em questão são todas as pessoas que se sentem pressionadas com a sensação de falta de tempo para realizar suas demandas ou seus próprios hobbies e que não conseguem organizar seu tempo, conciliando suas tarefas de trabalho, estudos à suas rotinas de casa, saúde e bem-estar.
 
-## Referências: 
+## Referências
 - [Com a pandemia, trabalhador brasileiro quer conciliar vida pessoal e profissional](https://www.terra.com.br/economia/com-a-pandemia-trabalhador-brasileiro-quer-conciliar-vida-pessoal-e-profissional,f39e7faae849765840fd736508efd91a301utrhq.html)
 - [Análise: Falta de tempo virou virtude](https://lifestyle.r7.com/patricia-lages/analise-falta-de-tempo-virou-virtude-05092021)
 - [O cansaço do home office e a explosão dos casos de burnout](https://vejario.abril.com.br/blog/gilberto-ururahy/cansaco-home-office-explosao-burnout/)
@@ -16,30 +16,30 @@ Os principais afetados pelo problema em questão são todas as pessoas que se se
 - [Burnout: o desafio corporativo pós-pandemia](https://www.em.com.br/app/noticia/opiniao/2021/09/24/interna_opiniao,1308539/burnout-o-desafio-corporativo-pos-pandemia.shtml)
 
 
-## Problemas:
+## Problemas
 - Dificuldade em conseguir organizar o próprio tempo disponível no dia para conseguir realizar todas as tarefas de trabalho, estudos, casa e de hábitos pessoais.
 - Dificuldade em se lembrar de todas as tarefas diárias que devem ser realizadas.
 - Sensação de falta de tempo para realização de tantas demandas.
 - Exclusão de rotinas de saúde e bem-estar por ocupar todo o seu tempo realizando demandas profissionais. 
 
-## Público alvo:
+## Público alvo
 - Estudantes que se veem perdidos em meio a tantas tarefas a serem realizadas
 - Trabalhadores com muitas tarefas diárias 
 - Pessoas com dificuldade de memória, que acabam esquecendo de fazer tarefas que deveriam fazer
 
-## Justificativa:
+## Justificativa
 Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir estresse e procrastinação. Por essa razão, a utilização de uma ferramenta como essa pode ser fundamental para pessoas com uma rotina cheia.
 
-## Referências: 
+## Referências
 - [Aumente sua produtividade por meio da rotina](https://forbes.com.br/colunas/2017/05/como-aumentar-sua-produtividade-por-meio-da-rotina/)
 - [7 Dicas Para Aumentar a Produtividade e Otimizar Sua Rotina](https://okaycoworking.com.br/dicas-para-aumentar-a-produtividade-e-otimizar-sua-rotina/)
 - [Como o uso dos Processos e acessórios podem melhorar a sua produtividade](https://www.contabeis.com.br/noticias/49544/como-o-uso-dos-processos-e-acessorios-podem-melhorar-a-sua-produtividade/)
 - [Como aumentar a sua produtividade no home office](https://www.migalhas.com.br/depeso/355693/como-aumentar-a-sua-produtividade-no-home-office)
 
-# Solução Proposta: 
+# Solução Proposta
 ## [Personas e Histórias de usuário](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/b64ec579a9dc6516dc686876a368063786f83204/Artefatos/Personas%20e%20Hist%C3%B3rias%20de%20Usu%C3%A1rios.md)
 
-## Objetivo:
+## Objetivo
 Fazer com que os usuários da plataforma consigam se organizar de forma a criar um equilíbrio entre o tempo gasto com suas rotinas profissionais e o tempo gasto com suas rotinas pessoais.
 Para isso, criar uma plataforma web onde as pessoas possam criar rotinas e adicionar a elas suas tarefas com a possibilidade de atrelar descrições nas mesmas como prazo, recorrência, alarme, progresso e importância.
 Funcionalidades:
