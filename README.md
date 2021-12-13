@@ -27,7 +27,6 @@ Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir e
 - [Análise: Falta de tempo virou virtude](https://lifestyle.r7.com/patricia-lages/analise-falta-de-tempo-virou-virtude-05092021)
 - [O cansaço do home office e a explosão dos casos de burnout](https://vejario.abril.com.br/blog/gilberto-ururahy/cansaco-home-office-explosao-burnout/)
 - [Atenção: a pandemia pode estar afetando sua percepção de tempo](https://www.consumidormoderno.com.br/2020/05/11/nocao-tempo-afetada-pandemia-coronavirus/)
-- [Burnout: o desafio corporativo pós-pandemia](https://www.consumidormoderno.com.br/2020/05/11/nocao-tempo-afetada-pandemia-coronavirus/)
 - [Aumente sua produtividade por meio da rotina](https://forbes.com.br/colunas/2017/05/como-aumentar-sua-produtividade-por-meio-da-rotina/)
 - [Burnout: o desafio corporativo pós-pandemia](https://www.em.com.br/app/noticia/opiniao/2021/09/24/interna_opiniao,1308539/burnout-o-desafio-corporativo-pos-pandemia.shtml)
 - [7 Dicas Para Aumentar a Produtividade e Otimizar Sua Rotina](https://okaycoworking.com.br/dicas-para-aumentar-a-produtividade-e-otimizar-sua-rotina/)
