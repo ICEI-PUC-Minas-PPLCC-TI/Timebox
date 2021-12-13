@@ -78,7 +78,6 @@ Funcionalidades:
 ## Alunos integrantes da equipe
 * Edmar de Oliveira Melandes Junior
 * Thais Andreatta da Silva Carmo 
-* Jonathan Magalhães de Medeiros
 
 ## Professores responsáveis
 * Rommel Vieira Carneiro 
