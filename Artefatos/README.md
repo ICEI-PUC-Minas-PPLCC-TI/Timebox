@@ -23,10 +23,9 @@ https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1
 ## [Mapa de Stakeholders](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/3a7983145b268448608b4b1557c3d26a2c05963e/Artefatos/Mapa%20de%20Stakeholders.pdf)
 ![Administração de tempo 3 - Frame 1](https://user-images.githubusercontent.com/89612369/145881432-111e5873-86a7-4eed-9e15-430ea886d312.jpg)
 
+## [Mapa de Empatia](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/87a1283957e5f9a2be027d15e8be07ab5de42291/Artefatos/Mapa%20de%20empatia.pdf)
+[Mapa de empatia.pdf](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/files/7706692/Mapa.de.empatia.pdf)
 
-
-
-## Mapa de Empatia
 
 ## Matriz CSD
 
