@@ -47,17 +47,27 @@ Funcionalidades:
  - Menu principal contendo resumo diário
 
 ## Requisitos
-- É necessária a realização do cadastro do usuário para que ele possa salvar e acessar suas rotinas tanto pelo computador, quanto por dispositivos móveis. 
+- Cadastro do usuário para que ele possa salvar e acessar suas rotinas tanto pelo computador, quanto por dispositivos móveis.
+- Apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias.
+- Enviar notificações / alarme ao usuário.
+- Criar relatórios contendo os resumos das tarefas realizadas pelo usuário. 
+- Ao concluir tarefas, desbloquear conquistas para manter o usuário.
+- Site compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
+- Site responsivo.
+- Site de simples usabilidade.
+- Site leve e rápido. 
 
 ## Restrições 
-- Artefatos/Requisitos e Restrições.md
+- A equipe não pode subcontratar o desenvolvimento do trabalho.
+-	O aplicativo deve se restringir às tecnologias básicas da Web no Frontend.
+-	O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final.
 
 # Projeto de Interfaces
 ## Fluxo de Telas
 ## Wireframes 
 ## Protótipo interativo
 
-
+# Informações Gerais
 ## Alunos integrantes da equipe
 
 * Edmar de Oliveira Melandes Junior
