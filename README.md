@@ -8,7 +8,7 @@ Com a chegada da pandemia, a população mundial teve que readequar seus hábito
 Com isso, trazemos aqui o Timebox, que possui o intuito de ajudar na organização e criação de uma rotina capaz de equilibrar vida pessoal e profissional dessas pessoas para que elas tenham um melhor aproveitamento de seu tempo e, dessa forma, consigam realizar não somente suas tarefas profissionais, mas também suas rotinas pessoais, conquistando um estado saudável de equilíbrio entre trabalho e lazer. 
 Os principais afetados pelo problema em questão são todas as pessoas que se sentem pressionadas com a sensação de falta de tempo para realizar suas demandas ou seus próprios hobbies e que não conseguem organizar seu tempo, conciliando suas tarefas de trabalho, estudos à suas rotinas de casa, saúde e bem-estar.
 
-## Referências
+### Referências
 - [Com a pandemia, trabalhador brasileiro quer conciliar vida pessoal e profissional](https://www.terra.com.br/economia/com-a-pandemia-trabalhador-brasileiro-quer-conciliar-vida-pessoal-e-profissional,f39e7faae849765840fd736508efd91a301utrhq.html)
 - [Análise: Falta de tempo virou virtude](https://lifestyle.r7.com/patricia-lages/analise-falta-de-tempo-virou-virtude-05092021)
 - [O cansaço do home office e a explosão dos casos de burnout](https://vejario.abril.com.br/blog/gilberto-ururahy/cansaco-home-office-explosao-burnout/)
@@ -30,7 +30,7 @@ Os principais afetados pelo problema em questão são todas as pessoas que se se
 ## Justificativa
 Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir estresse e procrastinação. Por essa razão, a utilização de uma ferramenta como essa pode ser fundamental para pessoas com uma rotina cheia.
 
-## Referências
+### Referências
 - [Aumente sua produtividade por meio da rotina](https://forbes.com.br/colunas/2017/05/como-aumentar-sua-produtividade-por-meio-da-rotina/)
 - [7 Dicas Para Aumentar a Produtividade e Otimizar Sua Rotina](https://okaycoworking.com.br/dicas-para-aumentar-a-produtividade-e-otimizar-sua-rotina/)
 - [Como o uso dos Processos e acessórios podem melhorar a sua produtividade](https://www.contabeis.com.br/noticias/49544/como-o-uso-dos-processos-e-acessorios-podem-melhorar-a-sua-produtividade/)
