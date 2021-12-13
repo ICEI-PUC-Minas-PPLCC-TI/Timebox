@@ -40,7 +40,7 @@ Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir e
 ## [Personas e Histórias de usuário](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/b64ec579a9dc6516dc686876a368063786f83204/Artefatos/Personas%20e%20Hist%C3%B3rias%20de%20Usu%C3%A1rios.md)
 
 ## Objetivo:
-Fazer com que as pessoas consigam se organizar de forma a criar um equilíbrio entre o tempo gasto com suas rotinas profissionais e o tempo gasto com suas rotinas pessoais.
+Fazer com que os usuários da plataforma consigam se organizar de forma a criar um equilíbrio entre o tempo gasto com suas rotinas profissionais e o tempo gasto com suas rotinas pessoais.
 Para isso, criar uma plataforma web onde as pessoas possam criar rotinas e adicionar a elas suas tarefas com a possibilidade de atrelar descrições nas mesmas como prazo, recorrência, alarme, progresso e importância.
 Funcionalidades:
  - Sistema de recompensas para incentivo da utilização da ferramenta
