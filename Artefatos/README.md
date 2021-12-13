@@ -16,7 +16,7 @@ https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1
 - Rommel
 - Rosilane
 #### Grupo
-- Edmar: Desenvolvimento de interface e interações CSS
+- Edmar: Desenvolvimento de interface, códigos e interações HTML, CSS e JavaScript
 - Thais: Documentação do projeto, códigos e interações HTML, CSS e JavaScript
 
 ## [Mapa de Stakeholders:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/3a7983145b268448608b4b1557c3d26a2c05963e/Artefatos/Mapa%20de%20Stakeholders.pdf)
