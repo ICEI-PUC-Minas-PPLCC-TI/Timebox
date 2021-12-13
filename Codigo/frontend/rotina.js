@@ -107,7 +107,7 @@ const createTask = () => {
                         <div class="info-item" id="campo-categoria">
                             <div class="info-item-title"><span class="icon">label</span>Categoria:</div>
                             <select>
-                                ${rotinaLS.subtitulos.map(subtitulo => `<option>${subtitulo}</option>`).join('')}
+                                ${rotinasSalvas[rotinaID].subtitulos.map(subtitulo => `<option>${subtitulo}</option>`).join('')}
                             </select>
                         </div>
                     </div>
@@ -200,7 +200,7 @@ const editTask = (tarefa) => {
                             <div class="info-item-title"><span class="icon">calendar_today</span>Data:</div>
                             <input type="date" id="date" value="${tarefa.data}">
                         <div class="info-item" id="campo-repetir">
-                            <input type="checkbox" checked="${tarefa.repetir}" id="repetir">
+                            <input type="checkbox" ${tarefa.repetir ? 'checked' : ''} id="repetir">
                             <label for="repetir">Repetir a cada</label>
                             <input type="number" value="${tarefa.repetirValue}"> dia(s)
                         </div>
@@ -225,7 +225,9 @@ const editTask = (tarefa) => {
                         <div class="info-item" id="campo-categoria">
                             <div class="info-item-title"><span class="icon">label</span>Categoria:</div>
                             <select>
-                                ${rotinaLS.subtitulos.map(subtitulo => `<option>${subtitulo}</option>`).join('')}
+                                ${rotinasSalvas[rotinaID].subtitulos.map(subtitulo => {
+        return `<option ${tarefa.categoria === subtitulo.replace('\n', ' ') ? 'selected' : ''}>${subtitulo}</option>`
+    })}
                             </select>
                         </div>
                     </div>
@@ -381,11 +383,11 @@ const mostrarTarefas = () => {
                 `
 
         if (document.querySelector('.editavel').querySelector(`.tarefa-${index + 1}`) === null && tarefa.concluido !== true) {
-            if (document.querySelector('.editavel').querySelector(`textarea[data-value="${tarefa.categoria}"]`) === null) {
+            if (Array.from(document.querySelector('.editavel').querySelectorAll(`textarea`)).filter(a => a.value.replace('\n', ' ').includes(`${tarefa.categoria}`))[0] === undefined) {
                 document.body.querySelector('.editavel').appendChild(tarefaDiv)
             }
             else {
-                insertAfter(document.querySelector('.editavel').querySelector(`textarea[data-value="${tarefa.categoria}"]`), tarefaDiv)
+                insertAfter(Array.from(document.querySelector('.editavel').querySelectorAll(`textarea`)).filter(a => a.value.replace('\n', ' ').includes(`${tarefa.categoria}`))[0], tarefaDiv)
             }
         }
         tarefaDiv.querySelector('#edit-task').addEventListener('click', () => { editTask(tarefa) })
