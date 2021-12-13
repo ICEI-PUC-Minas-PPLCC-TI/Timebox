@@ -49,7 +49,7 @@ Funcionalidades:
  - Sistema de alarmes e notificações
  - Menu principal contendo resumo diário
 
-## Requisitos
+## [Requisitos](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/a3f3a2edc6c57adc7a19a6f60fe1d8c25e1ed2c5/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
 - Cadastro do usuário para que ele possa salvar e acessar suas rotinas tanto pelo computador, quanto por dispositivos móveis.
 - Apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias.
 - Enviar notificações / alarme ao usuário.
@@ -60,12 +60,12 @@ Funcionalidades:
 - Site de simples usabilidade.
 - Site leve e rápido. 
 
-## Restrições 
+## [Restrições](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/a3f3a2edc6c57adc7a19a6f60fe1d8c25e1ed2c5/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
 - A equipe não pode subcontratar o desenvolvimento do trabalho.
 -	O aplicativo deve se restringir às tecnologias básicas da Web no Frontend.
 -	O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final.
 
-# Projeto de Interfaces:
+# [Projeto de Interfaces:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/tree/master/Artefatos/Projeto%20de%20interface)
 ## Fluxo de Telas
 ![image](https://user-images.githubusercontent.com/57562448/135178985-ff9f667d-ec65-4627-a281-b702f901507a.png)
 
