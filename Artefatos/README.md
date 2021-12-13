@@ -7,8 +7,7 @@ Repositório | Projeto de interface | Código
 GitHub | Figma| Visual Studio Code
 
 ### Gerenciamento de tarefas
-Feito por Kanban no próprio GitHub
-https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1
+[Feito por Kanban no próprio GitHub](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1)
 
 ### Organização da equipe de desenvolvimento
 
