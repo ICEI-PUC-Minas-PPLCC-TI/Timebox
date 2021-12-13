@@ -26,15 +26,13 @@ Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir e
 - [Com a pandemia, trabalhador brasileiro quer conciliar vida pessoal e profissional](https://www.terra.com.br/economia/com-a-pandemia-trabalhador-brasileiro-quer-conciliar-vida-pessoal-e-profissional,f39e7faae849765840fd736508efd91a301utrhq.html)
 - [Análise: Falta de tempo virou virtude](https://lifestyle.r7.com/patricia-lages/analise-falta-de-tempo-virou-virtude-05092021)
 - [O cansaço do home office e a explosão dos casos de burnout](https://vejario.abril.com.br/blog/gilberto-ururahy/cansaco-home-office-explosao-burnout/)
-- [Atenção: a pandemia pode estar afetando sua percepção de tempo](https://vejario.abril.com.br/blog/gilberto-ururahy/cansaco-home-office-explosao-burnout/)
+- [Atenção: a pandemia pode estar afetando sua percepção de tempo](https://www.consumidormoderno.com.br/2020/05/11/nocao-tempo-afetada-pandemia-coronavirus/)
 - [Burnout: o desafio corporativo pós-pandemia](https://www.consumidormoderno.com.br/2020/05/11/nocao-tempo-afetada-pandemia-coronavirus/)
 - [Aumente sua produtividade por meio da rotina](https://forbes.com.br/colunas/2017/05/como-aumentar-sua-produtividade-por-meio-da-rotina/)
-- 
-- https://www.em.com.br/app/noticia/opiniao/2021/09/24/interna_opiniao,1308539/burnout-o-desafio-corporativo-pos-pandemia.shtml
-- https://forbes.com.br/colunas/2017/05/como-aumentar-sua-produtividade-por-meio-da-rotina/
-- https://okaycoworking.com.br/dicas-para-aumentar-a-produtividade-e-otimizar-sua-rotina/
-- https://www.contabeis.com.br/noticias/49544/como-o-uso-dos-processos-e-acessorios-podem-melhorar-a-sua-produtividade/
-- https://www.migalhas.com.br/depeso/355693/como-aumentar-a-sua-produtividade-no-home-office
+- [Burnout: o desafio corporativo pós-pandemia](https://www.em.com.br/app/noticia/opiniao/2021/09/24/interna_opiniao,1308539/burnout-o-desafio-corporativo-pos-pandemia.shtml)
+- [7 Dicas Para Aumentar a Produtividade e Otimizar Sua Rotina](https://okaycoworking.com.br/dicas-para-aumentar-a-produtividade-e-otimizar-sua-rotina/)
+- [Como o uso dos Processos e acessórios podem melhorar a sua produtividade](https://www.contabeis.com.br/noticias/49544/como-o-uso-dos-processos-e-acessorios-podem-melhorar-a-sua-produtividade/)
+- [Como aumentar a sua produtividade no home office](https://www.migalhas.com.br/depeso/355693/como-aumentar-a-sua-produtividade-no-home-office)
 
 # Solução Proposta: 
 
