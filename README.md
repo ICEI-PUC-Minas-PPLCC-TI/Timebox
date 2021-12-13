@@ -4,30 +4,57 @@
 # Contexto do Projeto:
 
 ## Introdução
-Com a chegada da pandemia, a população mundial teve que readequar seus hábitos, passando, inclusive, a realizar as tarefas de trabalho e de estudos dentro de suas próprias casas. Sendo assim, muitas se viram “perdidas” com tantas tarefas a serem realizadas e passaram a ter a sensação de falta de tempo. Com isso, trazemos aqui o Timebox, que possui o intuito de ajudar na organização da rotina e das tarefas das pessoas para que elas tenham um melhor aproveitamento de seu tempo. 
-Os principais afetados pelo problema em questão são as pessoas que não conseguem organizar seu tempo, conciliando suas tarefas de trabalho, estudos e até mesmo de casa. Essas pessoas se sentem pressionadas com a sensação de falta de tempo para realizar suas demandas ou seus próprios hobbies.
+Com a chegada da pandemia, a população mundial teve que readequar seus hábitos, passando, inclusive, a realizar as tarefas de trabalho e de estudos dentro de suas próprias casas. Sendo assim, muitas se viram “perdidas” com tantas tarefas a serem realizadas e passaram a ter a sensação de falta de tempo para conciliar a realização de suas tarefas diárias com suas rotinas de saúde e bem-estar. Algumas pessoas chegam, até mesmo, a deixar de lado suas rotinas pessoais por utilizarem todo o seu tempo disponível realizando suas tarefas profissionais. 
+Com isso, trazemos aqui o Timebox, que possui o intuito de ajudar na organização e criação de uma rotina capaz de equilibrar vida pessoal e profissional dessas pessoas para que elas tenham um melhor aproveitamento de seu tempo e, dessa forma, consigam realizar não somente suas tarefas profissionais, mas também suas rotinas pessoais, conquistando um estado saudável de equilíbrio entre trabalho e lazer. 
+Os principais afetados pelo problema em questão são todas as pessoas que se sentem pressionadas com a sensação de falta de tempo para realizar suas demandas ou seus próprios hobbies e que não conseguem organizar seu tempo, conciliando suas tarefas de trabalho, estudos à suas rotinas de casa, saúde e bem-estar.
 
-## Problema:
-Conseguir organizar o tempo disponível no dia para conciliar as tarefas de trabalho, estudos, de casa e hábitos pessoais, ou se lembrar a fazer, para uma maior produtividade e bem-estar.
+## Problemas:
+- Dificuldade em conseguir organizar o próprio tempo disponível no dia para conseguir realizar todas as tarefas de trabalho, estudos, casa e de hábitos pessoais.
+- Dificuldade em se lembrar de todas as tarefas diárias que devem ser realizadas.
+- Sensação de falta de tempo para realização de tantas demandas.
+- Exclusão de rotinas de saúde e bem-estar por ocupar todo o seu tempo realizando demandas profissionais. 
+
+## Público alvo:
+- Estudantes que se veem perdidos em meio a tantas tarefas a serem realizadas
+- Trabalhadores com muitas tarefas diárias 
+- Pessoas com dificuldade de memória, que acabam esquecendo de fazer tarefas que deveriam fazer
+
+## Justificativa:
+Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir estresse e procrastinação. Por essa razão, a utilização de uma ferramenta como essa pode ser fundamental para pessoas com uma rotina cheia.
+
+## Referências: 
+https://www.terra.com.br/economia/com-a-pandemia-trabalhador-brasileiro-quer-conciliar-vida-pessoal-e-profissional,f39e7faae849765840fd736508efd91a301utrhq.html
+https://lifestyle.r7.com/patricia-lages/analise-falta-de-tempo-virou-virtude-05092021
+https://vejario.abril.com.br/blog/gilberto-ururahy/cansaco-home-office-explosao-burnout/
+https://www.consumidormoderno.com.br/2020/05/11/nocao-tempo-afetada-pandemia-coronavirus/
+https://www.em.com.br/app/noticia/opiniao/2021/09/24/interna_opiniao,1308539/burnout-o-desafio-corporativo-pos-pandemia.shtml
+https://forbes.com.br/colunas/2017/05/como-aumentar-sua-produtividade-por-meio-da-rotina/
+https://okaycoworking.com.br/dicas-para-aumentar-a-produtividade-e-otimizar-sua-rotina/
+https://www.contabeis.com.br/noticias/49544/como-o-uso-dos-processos-e-acessorios-podem-melhorar-a-sua-produtividade/
+https://www.migalhas.com.br/depeso/355693/como-aumentar-a-sua-produtividade-no-home-office
+
+# Solução Proposta: 
 
 ## Objetivo:
-Fazer com que as pessoas possam se organizar o suficiente para que consigam realizar suas tarefas com tempo de sobra.
+Fazer com que as pessoas consigam se organizar de forma a criar um equilíbrio entre o tempo gasto com suas rotinas profissionais e o tempo gasto com suas rotinas pessoais.
 Para isso:
-Criar uma plataforma web onde as pessoas conseguem organizar suas tarefas e fazer anotações gerais, permitindo estudos, compromissos, eventos, tarefas de casa, hábitos, permitindo anexar arquivos, links e descrições dos mesmos.
+Criar uma plataforma web onde as pessoas possam criar rotinas e adicionar a elas suas tarefas com a possibilidade de atrelar descrições nas mesmas como prazo, recorrência, alarme, progresso e importância.
 Funcionalidades:
  - Sistema de recompensas para incentivo da utilização da ferramenta
  - Diversidades e templates para melhor usabilidade
  - Relatórios de tempo gasto
  - Sistema de alarmes e notificações
+ - Menu principal contendo resumo diário
 
-## Justificativa:
-Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir estresse e procrastinação. Por essa razão, a utilização de uma ferramenta como essa pode ser indispensável para muitas pessoas com uma rotina cheia.
+## Requisitos
 
-## Público alvo:
-- Jovens de 15-29 anos de idade
-- Estudantes
-- Trabalhadores com muitas tarefas pendentes
-- Pessoas com dificuldade de memória
+## Restrições 
+
+# Projeto de Interfaces
+## Fluxo de Telas
+## Wireframes 
+## Protótipo interativo
+
 
 ## Alunos integrantes da equipe
 
