@@ -50,7 +50,7 @@ Funcionalidades:
  - Menu principal contendo resumo diário
 
 ## [Requisitos](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/a3f3a2edc6c57adc7a19a6f60fe1d8c25e1ed2c5/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
-- Cadastro do usuário para que ele possa salvar e acessar suas rotinas tanto pelo computador, quanto por dispositivos móveis.
+- Cadastro do usuário para que ele possa salvar e acessar suas rotinas quando quiser. 
 - Apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias.
 - Enviar notificações / alarme ao usuário.
 - Criar relatórios contendo os resumos das tarefas realizadas pelo usuário. 
