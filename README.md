@@ -47,8 +47,10 @@ Funcionalidades:
  - Menu principal contendo resumo diário
 
 ## Requisitos
+- É necessária a realização do cadastro do usuário para que ele possa salvar e acessar suas rotinas tanto pelo computador, quanto por dispositivos móveis. 
 
 ## Restrições 
+- Artefatos/Requisitos e Restrições.md
 
 # Projeto de Interfaces
 ## Fluxo de Telas
