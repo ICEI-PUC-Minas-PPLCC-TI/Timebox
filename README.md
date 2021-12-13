@@ -23,15 +23,15 @@ Os principais afetados pelo problema em questão são todas as pessoas que se se
 Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir estresse e procrastinação. Por essa razão, a utilização de uma ferramenta como essa pode ser fundamental para pessoas com uma rotina cheia.
 
 ## Referências: 
-https://www.terra.com.br/economia/com-a-pandemia-trabalhador-brasileiro-quer-conciliar-vida-pessoal-e-profissional,f39e7faae849765840fd736508efd91a301utrhq.html
-https://lifestyle.r7.com/patricia-lages/analise-falta-de-tempo-virou-virtude-05092021
-https://vejario.abril.com.br/blog/gilberto-ururahy/cansaco-home-office-explosao-burnout/
-https://www.consumidormoderno.com.br/2020/05/11/nocao-tempo-afetada-pandemia-coronavirus/
-https://www.em.com.br/app/noticia/opiniao/2021/09/24/interna_opiniao,1308539/burnout-o-desafio-corporativo-pos-pandemia.shtml
-https://forbes.com.br/colunas/2017/05/como-aumentar-sua-produtividade-por-meio-da-rotina/
-https://okaycoworking.com.br/dicas-para-aumentar-a-produtividade-e-otimizar-sua-rotina/
-https://www.contabeis.com.br/noticias/49544/como-o-uso-dos-processos-e-acessorios-podem-melhorar-a-sua-produtividade/
-https://www.migalhas.com.br/depeso/355693/como-aumentar-a-sua-produtividade-no-home-office
+- https://www.terra.com.br/economia/com-a-pandemia-trabalhador-brasileiro-quer-conciliar-vida-pessoal-e-profissional,f39e7faae849765840fd736508efd91a301utrhq.html
+- https://lifestyle.r7.com/patricia-lages/analise-falta-de-tempo-virou-virtude-05092021
+- https://vejario.abril.com.br/blog/gilberto-ururahy/cansaco-home-office-explosao-burnout/
+- https://www.consumidormoderno.com.br/2020/05/11/nocao-tempo-afetada-pandemia-coronavirus/
+- https://www.em.com.br/app/noticia/opiniao/2021/09/24/interna_opiniao,1308539/burnout-o-desafio-corporativo-pos-pandemia.shtml
+- https://forbes.com.br/colunas/2017/05/como-aumentar-sua-produtividade-por-meio-da-rotina/
+- https://okaycoworking.com.br/dicas-para-aumentar-a-produtividade-e-otimizar-sua-rotina/
+- https://www.contabeis.com.br/noticias/49544/como-o-uso-dos-processos-e-acessorios-podem-melhorar-a-sua-produtividade/
+- https://www.migalhas.com.br/depeso/355693/como-aumentar-a-sua-produtividade-no-home-office
 
 # Solução Proposta: 
 
