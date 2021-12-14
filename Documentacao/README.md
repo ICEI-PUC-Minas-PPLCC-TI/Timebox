@@ -346,7 +346,7 @@ Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3)
 Critérios de Êxito | O site deve funcionar nos navegadores Google Chrome, Firefox, Edge e Safari. <br /> O site deve carregar rápido. <br /> O site deve se adequar a dispositivos com diferentes tamanhos de telas. 
 
 
-## Registro de Testes de Usabilidade
+## Registro de Testes de Software e Usabilidade
 Os resultados obtidos nos testes de software e usabilidade realizados são descritos na Tabela a seguir. 
 ### Usuários envolvidos no teste
 Número de usuários: 7
@@ -357,7 +357,7 @@ Carlos | 38 anos, empresário, tem noções básicas de informática | Firefox |
 Mariana | 25 anos, estudante do curso de Sistemas de informação, tem conhecimento avançado de informática | Safari | Criar a opção de repetir a tarefa ocasionalmente
 Pedro | 21 anos, estudante do curso de História, tem conhecimento mediano de informática | Edge | Opção de edição do usuário 
 Luiza | 23 anos, estudante do curso de Ciência da Computação, possui conhecimento avançado de informática | Opera GX | Opção de descrição da tarefa
-Vitor: 23 anos, jornalista, possui conhecimento intermediário de informática | Chrome | Colocar cores diferentes nas rotinas
+Vitor | 23 anos, jornalista, possui conhecimento intermediário de informática | Chrome | Colocar cores diferentes nas rotinas
 Fernanda | 40 anos, médica, tem noções básicas de informática | Firefox | Opção de editar tarefa
 
 # Informações Gerais:
