@@ -295,10 +295,11 @@ A tela principal mobile do sistema apresenta as rotinas do usuário, o relatóri
 
 # Avaliação da Solução 
 O processo de realização dos testes da solução desenvolvida está documentado na seção que se segue e traz os planos de testes de software e de usabilidade, na sequência, o registro dos testes realizados.
+
 ## Plano de Testes de Software 
 Requisitos para realização do teste:
 - Site publicado na Internet
-- Navegador da Internet - Chrome, Firefox ou Edge
+- Navegador da Internet - Chrome, Firefox, Edge, Opera GX
 - Cadastro de usuário 
 
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
@@ -306,7 +307,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ### Tela login/cadastro
 Caso de Teste | Verificar cadastro e login
 --- | --- |
-Requisitos Associados | 5	- O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
+Requisitos Associados | 5	- O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
 Objetivo do Teste | Verificar se as funcionalidades de cadastro e login do site estão acontecendo corretamente. 
 Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o cadastro <br /> 4) Fazer login <br /> 
 Critérios de Êxito | O usuário deve conseguir logar na plataforma. 
@@ -335,24 +336,9 @@ Objetivo do Teste | Verificar se o site cria notificações ao usuário corretam
 Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o login <br /> 4) Criar rotinas <br /> 5) Criar tarefas dentro das rotinas e marcar a opção de criar notificação no mesmo dia <br /> 6) Ir à tela inicial <br /> 7) Clicar na aba de notificações
 Critérios de Êxito | Devem haver notificações na aba de notificações da tela inicial 
 
-## Registro de Testes de Software
-Os resultados obtidos nos testes de software realizados são descritos na Tabela a seguir.
-### Usuários envolvidos no teste
-Número de usuários: 7
-Nome | Informações | Sugestões 
---- | --- |--- | 
-Ana | 18 anos, estudante, possui noções básicas de informática | Desenvolver um botão para exclusão de rotinas
-Carlos | 38 anos, empresário, tem noções básicas de informática | Criar uma opção de progresso da tarefa
-Mariana | 25 anos, estudante do curso de Sistemas de informação, tem conhecimento avançado de informática | Criar a opção de repetir a tarefa ocasionalmente
-Pedro | 21 anos, estudante do curso de História, tem conhecimento mediano de informática | Opção de edição do usuário 
-Luiza | 23 anos, estudante do curso de Ciência da Computação, possui conhecimento avançado de informática | Opção de descrição da tarefa
-Vitor: 23 anos, jornalista, possui conhecimento intermediário de informática | Colocar cores diferentes nas rotinas
-Fernanda | 40 anos, médica, tem noções básicas de informática | Opção de editar tarefa
-
-
 ## Plano de Testes de Usabilidade
 
-Caso de Teste | Verificar desempenho do site
+Caso de Teste | Verificar desempenho e responsividade do site
 --- | --- |
 Requisitos Associados | 6- O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). <br /> 7- O site deverá ser responsivo. <br />  8- O site deverá ser fácil de usar. <br />  9- O site deverá ser leve e rápido.
 Objetivo do Teste | Verificar se o site é responsivo, compatível com os principais navegadores do mercado e de fácil usabilidade. 
@@ -361,12 +347,18 @@ Critérios de Êxito | O site deve funcionar nos navegadores Google Chrome, Fire
 
 
 ## Registro de Testes de Usabilidade
-
-Os resultados obtidos nos testes de usabilidade realizados são descritos na Tabela a seguir.
-
-Relatório com detalhamento das pessoas envolvidas no teste (indicar claramente o número de usuários que testaram o sistema)
-Relatório com registro dos testes feitos: fotos, prints de telas, relatos dos usuários
-Relatório de problemas identificados nos testes e propostas de correções/ajustes
+Os resultados obtidos nos testes de software e usabilidade realizados são descritos na Tabela a seguir. 
+### Usuários envolvidos no teste
+Número de usuários: 7
+Nome | Informações | Nevagador utilizado | Sugestões | 
+--- | --- |--- | 
+Ana | 18 anos, estudante, possui noções básicas de informática | Chrome | Desenvolver um botão para exclusão de rotinas
+Carlos | 38 anos, empresário, tem noções básicas de informática | Firefox | Criar uma opção de progresso da tarefa
+Mariana | 25 anos, estudante do curso de Sistemas de informação, tem conhecimento avançado de informática | Safari | Criar a opção de repetir a tarefa ocasionalmente
+Pedro | 21 anos, estudante do curso de História, tem conhecimento mediano de informática | Edge | Opção de edição do usuário 
+Luiza | 23 anos, estudante do curso de Ciência da Computação, possui conhecimento avançado de informática | Opera GX | Opção de descrição da tarefa
+Vitor: 23 anos, jornalista, possui conhecimento intermediário de informática | Chrome | Colocar cores diferentes nas rotinas
+Fernanda | 40 anos, médica, tem noções básicas de informática | Firefox | Opção de editar tarefa
 
 # Informações Gerais:
 ## Alunos integrantes da equipe
