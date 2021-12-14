@@ -271,6 +271,7 @@ Requisitos para realização do teste:
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 Caso de Teste | Visualizar notícias principais
+--- | --- |
 Requisitos Associados | 1 - O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias. 2 - O site deve enviar notificações ao usuário. 3 - O site deverá criar relatórios. 4 - O site deverá desbloquear conquistas para manter o usuário.
 Objetivo do Teste | Verificar se as funcionalidades do site estão acontecendo corretamente. 
 Passos | 1) Acessar o Navegador 2) Informar o endereço do Site 3) Fazer o cadastro/login 4) Criar rotinas 5) Criar tarefas dentro das rotinas e marcar a opção de criar notificação 6) Checar o checkbox das rotinas 7) Voltar à página inicial
