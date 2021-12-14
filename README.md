@@ -22,6 +22,16 @@ Os principais afetados pelo problema em questão são todas as pessoas que se se
 - Sensação de falta de tempo para realização de tantas demandas.
 - Exclusão de rotinas de saúde e bem-estar por ocupar todo o seu tempo realizando demandas profissionais. 
 
+## Objetivos
+Fazer com que os usuários da plataforma consigam se organizar de forma a criar um equilíbrio entre o tempo gasto com suas rotinas profissionais e o tempo gasto com suas rotinas pessoais.
+Para isso, criar uma plataforma web onde as pessoas possam criar rotinas e adicionar a elas suas tarefas com a possibilidade de atrelar descrições nas mesmas como prazo, recorrência, alarme, progresso e importância.
+Funcionalidades:
+ - Sistema de recompensas para incentivo da utilização da ferramenta
+ - Diversidades e templates para melhor usabilidade
+ - Relatórios de tempo gasto
+ - Sistema de alarmes e notificações
+ - Menu principal contendo resumo diário
+
 ## Público alvo
 - Estudantes que se veem perdidos em meio a tantas tarefas a serem realizadas
 - Trabalhadores com muitas tarefas diárias 
@@ -39,15 +49,6 @@ Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir e
 # Solução Proposta:
 ### [Personas e Histórias de usuários](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/b64ec579a9dc6516dc686876a368063786f83204/Artefatos/Personas%20e%20Hist%C3%B3rias%20de%20Usu%C3%A1rios.md)
 
-## Objetivo
-Fazer com que os usuários da plataforma consigam se organizar de forma a criar um equilíbrio entre o tempo gasto com suas rotinas profissionais e o tempo gasto com suas rotinas pessoais.
-Para isso, criar uma plataforma web onde as pessoas possam criar rotinas e adicionar a elas suas tarefas com a possibilidade de atrelar descrições nas mesmas como prazo, recorrência, alarme, progresso e importância.
-Funcionalidades:
- - Sistema de recompensas para incentivo da utilização da ferramenta
- - Diversidades e templates para melhor usabilidade
- - Relatórios de tempo gasto
- - Sistema de alarmes e notificações
- - Menu principal contendo resumo diário
 
 ## [Requisitos](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/a3f3a2edc6c57adc7a19a6f60fe1d8c25e1ed2c5/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
 - Cadastro do usuário para que ele possa salvar e acessar suas rotinas quando quiser. 
@@ -65,10 +66,11 @@ Funcionalidades:
 -	O aplicativo deve se restringir às tecnologias básicas da Web no Frontend.
 -	O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final.
 
-# [Interfaces do projeto:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/tree/master/Artefatos/Interface)
-## Fluxo de Telas
-### [Protótipo Interativo](https://www.figma.com/proto/qplVlOZw3bnBCfI3p4B1Fc/Untitled?node-id=2%3A46&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A46)
+## [Interfaces do projeto:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/tree/master/Artefatos/Interface)
+### Fluxo de Telas
+O diagrama a seguir mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse o [Wireframe Interativo](https://www.figma.com/proto/qplVlOZw3bnBCfI3p4B1Fc/Untitled?node-id=2%3A46&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A46)
 ![fluxo](https://user-images.githubusercontent.com/89612369/145910787-b44e4f08-e7dd-42bb-a58e-7a9a5505d06b.jpg)
+
 
 
 ### [Wireframe](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/f4b004f01e2c64e4906618d0fad9b65f4826b14e/Artefatos/Interface/README.md)
