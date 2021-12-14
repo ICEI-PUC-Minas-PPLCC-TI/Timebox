@@ -93,18 +93,18 @@ ID | Descrição | Prioridade
 
 ID | Descrição | Prioridade
 --- | --- | --- |
-1 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). | ALTA |
-2 | O site deverá ser responsivo. | ALTA |
-3 | O site deverá ser fácil de usar. | ALTA |
-4 | O site deverá ser leve e rápido. | ALTA |
+5 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). | ALTA |
+6 | O site deverá ser responsivo. | ALTA |
+7 | O site deverá ser fácil de usar. | ALTA |
+8 | O site deverá ser leve e rápido. | ALTA |
 
 ### Restrições do Projeto
 
 ID | Descrição
 --- | --- |
-1 | A equipe não pode subcontratar o desenvolvimento do trabalho.|
-2 | O aplicativo deve se restringir às tecnologias básicas da Web no Frontend |
-3 | O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final |
+9 | A equipe não pode subcontratar o desenvolvimento do trabalho.|
+10 | O aplicativo deve se restringir às tecnologias básicas da Web no Frontend |
+11 | O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final |
 
 # [Metodologia](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/master/Artefatos/Metodologia.md)
 A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
