@@ -93,18 +93,18 @@ ID | Descrição | Prioridade
 
 ID | Descrição | Prioridade
 --- | --- | --- |
-5 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). | ALTA |
-6 | O site deverá ser responsivo. | ALTA |
-7 | O site deverá ser fácil de usar. | ALTA |
-8 | O site deverá ser leve e rápido. | ALTA |
+1 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). | ALTA |
+2 | O site deverá ser responsivo. | ALTA |
+3 | O site deverá ser fácil de usar. | ALTA |
+4 | O site deverá ser leve e rápido. | ALTA |
 
 ### Restrições do Projeto
 
 ID | Descrição
 --- | --- |
-9 | A equipe não pode subcontratar o desenvolvimento do trabalho.|
-10 | O aplicativo deve se restringir às tecnologias básicas da Web no Frontend |
-11 | O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final |
+1 | A equipe não pode subcontratar o desenvolvimento do trabalho.|
+2 | O aplicativo deve se restringir às tecnologias básicas da Web no Frontend |
+3 | O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final |
 
 # [Metodologia](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/master/Artefatos/Metodologia.md)
 A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
@@ -227,7 +227,7 @@ Link: https://timebox.thaisandreatta.repl.co/login.html
 -
 
 ### Tela Home-Page
-Link: https://timebox.thaisandreatta.repl.co/
+Link: https://timebox.thaisandreatta.repl.co/ <br />
 A tela principal do sistema apresenta as rotinas do usuário, o relatório das tarefas concluídas pelo mesmo e suas conquistas. Essas informações são armazenadas no LocalStorage com estruturas dados baseados em JSON. Um exemplo da tela é apresentado a seguir. 
 ![10](https://user-images.githubusercontent.com/89612369/145923227-cddf72e1-fc26-40b8-83d8-9e031ff182a6.jpg)
 #### Requisitos atendidos
@@ -264,29 +264,17 @@ Link: https://timebox.thaisandreatta.repl.co/rotina.html?id=1
 O processo de realização dos testes da solução desenvolvida está documentado na seção que se segue e traz os planos de testes de software e de usabilidade, na sequência, o registro dos testes realizados.
 ## Plano de Testes de Software 
 Requisitos para realização do teste:
-Site publicado na Internet
-Navegador da Internet - Chrome, Firefox ou Edge
-Conectividade de Internet para acesso às plataformas (APIs)
+- Site publicado na Internet
+- Navegador da Internet - Chrome, Firefox ou Edge
+- Cadastro de usuário 
 
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
-Caso de Teste
-CT-01 - Visualizar notícias principais
-Requisitos Associados
-RF-01 - O site deve apresentar na página principal notícias dinâmicas obtidas por meio de canais de notícias da Internet (API)
-RF-02 - O site deve apresentar, para cada notícia, uma imagem correspondente ao assunto apresentado (thumbnail)
-Objetivo do Teste
-Verificar se a carga de notícias está acontecendo corretamente
-Passos
-1) Acessar o Navegador
-2) Informar o endereço do Site
-3) Visualizar a página principal
-4) Verificar o processo de carga 
-Critérios de Êxito
-Deve haver uma requisição AJAX no painel NETWORK das ferramentas do Desenvolvedor (recurso do Navegador).
-As notícias devem ser exibidas corretamente no site, sendo necessárias pelo menos 3 notícias sendo apresentadas
-As notícias devem trazer imagens visíveis associadas ao assunto da notícia
-
+Caso de Teste | Visualizar notícias principais
+Requisitos Associados | 1 - O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias. <br /> 2 - O site deve enviar notificações ao usuário. <br /> 3 - O site deverá criar relatórios. <br /> 4 - O site deverá desbloquear conquistas para manter o usuário.
+Objetivo do Teste | Verificar se as funcionalidades do site estão acontecendo corretamente. 
+Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o cadastro/login <br /> 4) Criar rotinas <br /> 5) Criar tarefas dentro das rotinas e marcar a opção de criar notificação <br /> 6) Checar o checkbox das rotinas <br /> 7) Voltar à página inicial
+Critérios de Êxito | - Devem haver tarefas concluídas no relatório da página inicial. <br /> - Devem haver conquistas na aba de Conquistas da página inicial. 
 
 
 Caso de Teste
