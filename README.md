@@ -171,6 +171,170 @@ A solução implementada conta com os seguintes módulos:
      - Usuário logado: checagem se o usuário está logado
      - Rotinas: lista de rotinas do usuário
        - Tarefas: lista de tarefas em cada rotina do usuário
+### Hospedagem 
+O site utiliza a plataforma do Replit como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL: 
+[Timebox](https://timebox.thaisandreatta.repl.co/)
+
+A publicação do site no Replit é feita por meio de uma submissão do projeto (push) via git para o repositório remoto que se encontra no endereço: 
+https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox
+
+## Template do Site 
+O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente, conforme a figura a seguir. 
+![image](https://user-images.githubusercontent.com/89612369/145916448-ca0219d0-e097-49b6-9b29-3b0b9504a1dd.png)
+
+O template criado está disponível [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/master/Artefatos/Interface/10.jpg) e é composto pelos seguintes layouts: 
+- Cabeçalho
+- Tela de rotinas
+- Tela de resumo
+A responsividade segue o padrão do Bootstrap.
+
+### Cabeçalho
+Tela que abrange todas as visualizações iniciais do site.
+![cabecalho](https://user-images.githubusercontent.com/89612369/145922420-8654f023-bcdd-42a2-aaa3-be65504148d6.jpg)
+
+
+### Tela de rotinas
+Tela que abrange as rotinas do usuário. 
+![telarotinas](https://user-images.githubusercontent.com/89612369/145922480-7f27a56f-a3a0-4a61-83b8-c7c7bdad2a04.jpg)
+
+
+### Tela de resumo
+Tela que contém o resumo de tarefas a serem concluídas pelo usuário. 
+![Resumo](https://user-images.githubusercontent.com/89612369/145922456-488b57be-9141-4ba5-bb24-313295ffb89b.jpg)
+
+## Funcionalidades do Sistema (Telas) 
+Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades do sistema. O respectivo endereço (URL) e outras orientações de acesso são apresentadas na sequência.
+
+### Tela Login
+Link: https://timebox.thaisandreatta.repl.co/login.html
+![2](https://user-images.githubusercontent.com/89612369/145923459-c7663f68-815d-4ab7-b953-cbece7e11f1f.jpg)
+#### Requisitos atendidos
+-
+-
+#### Artefatos da funcionalidade
+-
+-
+-
+
+### Tela Cadastro 
+Link: https://timebox.thaisandreatta.repl.co/login.html
+![3](https://user-images.githubusercontent.com/89612369/145923478-4b53334c-3ae2-4868-9cb4-2a587ea16263.jpg)
+#### Requisitos atendidos
+-
+-
+#### Artefatos da funcionalidade
+-
+-
+-
+
+### Tela Home-Page
+Link: https://timebox.thaisandreatta.repl.co/
+A tela principal do sistema apresenta as rotinas do usuário, o relatório das tarefas concluídas pelo mesmo e suas conquistas. Essas informações são armazenadas no LocalStorage com estruturas dados baseados em JSON. Um exemplo da tela é apresentado a seguir. 
+![10](https://user-images.githubusercontent.com/89612369/145923227-cddf72e1-fc26-40b8-83d8-9e031ff182a6.jpg)
+#### Requisitos atendidos
+-
+-
+#### Artefatos da funcionalidade
+-
+-
+-
+
+### Tela Rotina
+Link: https://timebox.thaisandreatta.repl.co/rotina.html?id=1
+![8](https://user-images.githubusercontent.com/89612369/145923635-2faa035b-6406-4c82-8989-11e6c341c527.jpg)
+#### Requisitos atendidos
+-
+-
+#### Artefatos da funcionalidade
+-
+-
+-
+
+### Tela Tarefa
+Link: https://timebox.thaisandreatta.repl.co/rotina.html?id=1
+![image](https://user-images.githubusercontent.com/89612369/145923724-7438498e-a3b6-4a51-a331-71e7ba036308.png)
+#### Requisitos atendidos
+-
+-
+#### Artefatos da funcionalidade
+-
+-
+-
+
+# Avaliação da Solução 
+O processo de realização dos testes da solução desenvolvida está documentado na seção que se segue e traz os planos de testes de software e de usabilidade, na sequência, o registro dos testes realizados.
+## Plano de Testes de Software 
+Requisitos para realização do teste:
+Site publicado na Internet
+Navegador da Internet - Chrome, Firefox ou Edge
+Conectividade de Internet para acesso às plataformas (APIs)
+
+Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
+
+Caso de Teste
+CT-01 - Visualizar notícias principais
+Requisitos Associados
+RF-01 - O site deve apresentar na página principal notícias dinâmicas obtidas por meio de canais de notícias da Internet (API)
+RF-02 - O site deve apresentar, para cada notícia, uma imagem correspondente ao assunto apresentado (thumbnail)
+Objetivo do Teste
+Verificar se a carga de notícias está acontecendo corretamente
+Passos
+1) Acessar o Navegador
+2) Informar o endereço do Site
+3) Visualizar a página principal
+4) Verificar o processo de carga 
+Critérios de Êxito
+Deve haver uma requisição AJAX no painel NETWORK das ferramentas do Desenvolvedor (recurso do Navegador).
+As notícias devem ser exibidas corretamente no site, sendo necessárias pelo menos 3 notícias sendo apresentadas
+As notícias devem trazer imagens visíveis associadas ao assunto da notícia
+
+
+
+Caso de Teste
+CT-02 - Visualizar detalhes da notícia
+Requisitos Associados
+RF-03 - O site deve permitir ao usuário visualizar o texto completo da notícia com todos os detalhes da publicação
+Objetivo do Teste
+Verificar se as notícias estão sendo apresentadas completamente na página de leitura da notícia
+Passos
+1) Acessar o Navegador
+2) Informar o endereço do Site
+3) Visualizar a página principal
+4) Clicar em uma notícia
+Critérios de Êxito
+A página deve apresentar o título da notícia, imagem de destaque da notícia, data da notícia, autor da notícia e o texto completo da notícia
+
+
+
+---------------  IMPORTANTE  ---------------
+Coloque todos os casos de testes planejados para o projeto.
+----------------------------------------------------
+
+6.2 Registro de Testes de Software
+Os resultados obtidos nos testes de software realizados são descritos na Tabela a seguir.
+
+
+6.3 Plano de Testes de Usabilidade
+
+O planejamento dos testes de usabilidade a serem realizados com usuários são descritos na Tabela a seguir.
+
+Identificação de objetivos do teste de usabilidade
+Detalhes do público envolvido nos testes
+Roteiro detalhado das tarefas que foram desempenhadas pelos usuários
+
+
+6.4 Registro de Testes de Usabilidade
+
+Os resultados obtidos nos testes de usabilidade realizados são descritos na Tabela a seguir.
+
+Relatório com detalhamento das pessoas envolvidas no teste (indicar claramente o número de usuários que testaram o sistema)
+Relatório com registro dos testes feitos: fotos, prints de telas, relatos dos usuários
+Relatório de problemas identificados nos testes e propostas de correções/ajustes
+
+
+
+
+
 
 ### [Protótipo interativo](https://www.figma.com/proto/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?page-id=0%3A1&node-id=2%3A2&viewport=241%2C48%2C0.45&scaling=min-zoom&starting-point-node-id=2%3A204)
 
@@ -193,18 +357,6 @@ A solução implementada conta com os seguintes módulos:
 - Jonathan: Códigos e interações HTML, CSS e JavaScript
 
 - Thais: Códigos e interações HTML, CSS e JavaScript
-
-## [Interfaces do projeto:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/tree/master/Artefatos/Interface)
-### Fluxo de Telas
-O diagrama a seguir mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse o [Wireframe Interativo](https://www.figma.com/proto/qplVlOZw3bnBCfI3p4B1Fc/Untitled?node-id=2%3A46&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A46)
-![fluxo](https://user-images.githubusercontent.com/89612369/145910787-b44e4f08-e7dd-42bb-a58e-7a9a5505d06b.jpg)
-
-
-
-### [Wireframe](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/f4b004f01e2c64e4906618d0fad9b65f4826b14e/Artefatos/Interface/README.md)
-![10](https://user-images.githubusercontent.com/89612369/145893260-21a1c8d8-7618-42af-ac2b-c8a7b47656b5.jpg)
-![8](https://user-images.githubusercontent.com/89612369/145910832-f975ab9f-d612-4dd0-916c-434998ffec31.jpg)
-![7](https://user-images.githubusercontent.com/89612369/145910843-ecd73d5c-8c6a-4004-934e-d3b557eb1d6a.jpg)
 
 
 # Informações Gerais:
