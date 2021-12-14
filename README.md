@@ -17,25 +17,21 @@ Os principais afetados pelo problema em questão são todas as pessoas que se se
 
 
 ## Problemas
+Conforme exposto, os problemas que se buscam resolver com este projeto são:
 - Dificuldade em conseguir organizar o próprio tempo disponível no dia para conseguir realizar todas as tarefas de trabalho, estudos, casa e de hábitos pessoais.
 - Dificuldade em se lembrar de todas as tarefas diárias que devem ser realizadas.
 - Sensação de falta de tempo para realização de tantas demandas.
 - Exclusão de rotinas de saúde e bem-estar por ocupar todo o seu tempo realizando demandas profissionais. 
 
 ## Objetivos
-Fazer com que os usuários da plataforma consigam se organizar de forma a criar um equilíbrio entre o tempo gasto com suas rotinas profissionais e o tempo gasto com suas rotinas pessoais.
-Para isso, criar uma plataforma web onde as pessoas possam criar rotinas e adicionar a elas suas tarefas com a possibilidade de atrelar descrições nas mesmas como prazo, recorrência, alarme, progresso e importância.
-Funcionalidades:
+O objetivo geral deste trabalho é a criação de uma plataforma web que apresente funcionalidades capazes de fazer com que seus usuários consigam se organizar de forma a criar um equilíbrio entre o tempo gasto com suas rotinas profissionais e o tempo gasto com suas rotinas pessoais. Na plataforma o usuário pode criar rotinas e adicionar a elas suas tarefas com a possibilidade de atrelar descrições nas mesmas como prazo, recorrência, alarme, progresso e importância.
+
+Como objetivos específicos, implementamos as seguintes funcionalidades:
  - Sistema de recompensas para incentivo da utilização da ferramenta
  - Diversidades e templates para melhor usabilidade
  - Relatórios de tempo gasto
  - Sistema de alarmes e notificações
  - Menu principal contendo resumo diário
-
-## Público alvo
-- Estudantes que se veem perdidos em meio a tantas tarefas a serem realizadas
-- Trabalhadores com muitas tarefas diárias 
-- Pessoas com dificuldade de memória, que acabam esquecendo de fazer tarefas que deveriam fazer
 
 ## Justificativa
 Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir estresse e procrastinação. Por essa razão, a utilização de uma ferramenta como essa pode ser fundamental para pessoas com uma rotina cheia.
@@ -46,25 +42,125 @@ Seguir uma rotina pode aumentar sua produtividade, qualidade de vida, diminuir e
 - [Como o uso dos Processos e acessórios podem melhorar a sua produtividade](https://www.contabeis.com.br/noticias/49544/como-o-uso-dos-processos-e-acessorios-podem-melhorar-a-sua-produtividade/)
 - [Como aumentar a sua produtividade no home office](https://www.migalhas.com.br/depeso/355693/como-aumentar-a-sua-produtividade-no-home-office)
 
-# Solução Proposta:
-### [Personas e Histórias de usuários](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/b64ec579a9dc6516dc686876a368063786f83204/Artefatos/Personas%20e%20Hist%C3%B3rias%20de%20Usu%C3%A1rios.md)
+## Público alvo
+Embora a plataforma possa ser utilizada por qualquer pessoa, o foco deste projeto está nas seguintes pessoas:
+- Estudantes que se veem perdidos em meio a tantas tarefas a serem realizadas
+- Trabalhadores com muitas tarefas diárias 
+- Pessoas com dificuldade de memória, que acabam esquecendo de fazer tarefas que deveriam fazer
+
+# Especificação do Projeto:
+Os membros da equipe realizaram pesquisas com 24 voluntários e a partir dos resultados foi possível compreender exatamente qual é o problema a ser lidado. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários, dados a seguir. 
+## Personas
+![Screenshot 2021-10-01 224459](https://user-images.githubusercontent.com/57562448/135700024-4d77e219-d80d-4282-9553-b6bf1f32b8b8.png) | Carolina Alves | Idade: 19 |Ocupação: estudante e estagiária |
+--- | --- | --- | ---|
+Motivações | Maximizar o aprendizado | Melhorar a qualidade de vida | Alcançar um cargo bom aonde trabalha |
+Frustrações | Procrastinação | Muito tempo no celular | Não tem tempo para o próprio lazer |
+Hobbies | Assistir filmes e séries | Escutar música | Caminhar |
+Ferramentas | Notion | Trello | Google Agenda | MIRO
+
+![Screenshot 2021-10-01 224508](https://user-images.githubusercontent.com/57562448/135700160-3ced0552-46d7-47a3-b073-d3b20f366785.png) | Diogo Costa | Idade: 20 |Ocupação:  estudante e CLT |
+--- | --- | --- | ---|
+Motivações |Ter sua própria empresa de TI | Poder tirar mais proveito de seu tempo e de suas habilidades| Melhorar sua saúde mental |
+Frustrações | Desorganização | Muitas tarefas pra fazer | Esquecimento de algumas tarefas importantes |
+Hobbies | Jogar videogame | Sair com os amigos | Jogar futebol |
+Ferramentas | Bloco de notas do celular | Planilhas do Excel | Alarme do celular | 
+
+## Histórias de Usuários
+A partir da compreensão do dia a dia das personas identificadas para o projeto, foram
+registradas as seguintes histórias de usuários.
+
+Eu... |... quero/desejo ... |... para ...|
+--- | --- | --- | 
+Carolina Alves | Ter uma rotina organizada e sem estresse | Melhorar a minha qualidade de vida e produtividade| 
+Diogo Costa | Realizar todas as minhas tarefas no menor tempo possível | Poder fazer exercícios físicos e descansar mais |
+Carolina Alves | Organizar minhas tarefas | Poder dimensionar melhor o que eu tenho para fazer |
+Diogo Costa | Receber notificações com o que tenho que fazer | Poder focar no meu trabalho sem ter que procurar |
+Carolina Alves | Uma ferramenta com metas e recompensas | Me sentir mais motivada a realizar minhas tarefas |
+Diogo Costa | Lembrar de todas as tarefas que preciso realizar | Ser bem visto pelos meus chefes e professores |
+Carolina Alves | Visualizar um resumo das minhas tarefas diárias | Poder realizá-las sem a sensação de que estou esquecendo algo |
 
 
-## [Requisitos](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/a3f3a2edc6c57adc7a19a6f60fe1d8c25e1ed2c5/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
-- Cadastro do usuário para que ele possa salvar e acessar suas rotinas quando quiser. 
-- Apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias.
-- Enviar notificações / alarme ao usuário.
-- Criar relatórios contendo os resumos das tarefas realizadas pelo usuário. 
-- Ao concluir tarefas, desbloquear conquistas para manter o usuário.
-- Site compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
-- Site responsivo.
-- Site de simples usabilidade.
-- Site leve e rápido. 
+## [Requisitos do Projeto](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/a3f3a2edc6c57adc7a19a6f60fe1d8c25e1ed2c5/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
+### Requisitos Funcionais
 
-## [Restrições](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/a3f3a2edc6c57adc7a19a6f60fe1d8c25e1ed2c5/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
-- A equipe não pode subcontratar o desenvolvimento do trabalho.
--	O aplicativo deve se restringir às tecnologias básicas da Web no Frontend.
--	O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final.
+ID | Descrição | Prioridade
+--- | --- | --- |
+1 | O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias. | ALTA |
+2 | O site deve enviar notificações / alarme ao usuário. | ALTA |
+3 | O site deverá criar relatórios. | ALTA |
+4 | O site devera desbloquear conquistas para manter o usuário | ALTA |
+
+### Requisitos não Funcionais
+
+ID | Descrição | Prioridade
+--- | --- | --- |
+1 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). | ALTA |
+2 | O site deverá ser responsivo. | ALTA |
+3 | O site deverá ser fácil de usar. | ALTA |
+4 | O site deverá ser leve e rápido. | ALTA |
+
+### Restrições do Projeto
+
+ID | Descrição
+--- | --- |
+1 | A equipe não pode subcontratar o desenvolvimento do trabalho.|
+2 | O aplicativo deve se restringir às tecnologias básicas da Web no Frontend |
+3 | O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final |
+
+# [Metodologia](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/master/Artefatos/Metodologia.md)
+A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
+## Relação de Ambientes de Trabalho
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela a seguir.
+
+Ambiente | Plataforma | Link de Acesso 
+Repositório de Código Fonte | GitHub | https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox 
+Projeto de Interface e Wireframes | Figma | https://www.figma.com/file/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?node-id=2%3A204
+Interface e Wireframes | Figma | https://www.figma.com/file/qplVlOZw3bnBCfI3p4B1Fc/Timebox
+Gerenciamento do Projeto | Kanban no GitHub | https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1
+
+## Gestão de código fonte
+Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Feature Branch Workflow, mostrado na Figura a seguir. Desta forma, todas as manutenções no código são realizadas em branches separados.
+![image](https://user-images.githubusercontent.com/89612369/145914699-48d78998-38fe-4028-83aa-92058b45457d.png)
+
+## Gerenciamento do Projeto 
+
+
+# Organização da equipe de desenvolvimento
+
+## Mentores
+- Rommel
+- Rosilane
+## Grupo
+- Edmar: Desenvolvimento de interface e interações CSS
+
+- Jonathan: Códigos e interações HTML, CSS e JavaScript
+
+- Thais: Códigos e interações HTML, CSS e JavaScript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## [Interfaces do projeto:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/tree/master/Artefatos/Interface)
 ### Fluxo de Telas
