@@ -1,3 +1,4 @@
+# Wireframe do projeto: 
 ![1](https://user-images.githubusercontent.com/89612369/145900259-27833d6b-d1d3-479b-9074-cafe7b7d5f89.jpg)
 ![2](https://user-images.githubusercontent.com/89612369/145900270-effb6db7-0c74-48d8-8ef9-b4bd6bc86be9.jpg)
 ![3](https://user-images.githubusercontent.com/89612369/145900274-908e53a0-60f7-43dc-aa7f-2b1085c562b0.jpg)
@@ -8,3 +9,7 @@
 ![8](https://user-images.githubusercontent.com/89612369/145900283-68781fa0-26c9-46c3-b196-9a2ae84bdc68.jpg)
 ![9](https://user-images.githubusercontent.com/89612369/145900284-68fea25a-0848-472f-8c0b-548e1a01d981.jpg)
 ![10](https://user-images.githubusercontent.com/89612369/145900288-409f9d6b-5437-45c4-9ca6-3001e36014b8.jpg)
+
+# Fluxo de Telas:
+## [Protótipo Interativo](https://www.figma.com/proto/qplVlOZw3bnBCfI3p4B1Fc/Untitled?node-id=2%3A46&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A46)
+![fluxo](https://user-images.githubusercontent.com/89612369/145910787-b44e4f08-e7dd-42bb-a58e-7a9a5505d06b.jpg)
