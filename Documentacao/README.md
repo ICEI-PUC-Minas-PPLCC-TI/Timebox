@@ -267,7 +267,7 @@ A tela principal mobile do sistema apresenta as rotinas do usuário, o relatóri
 [Link](https://timebox.thaisandreatta.repl.co/rotina.html?id=1)
 ![8](https://user-images.githubusercontent.com/89612369/145923635-2faa035b-6406-4c82-8989-11e6c341c527.jpg)
 #### Requisitos atendidos
-- 1:	O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias.
+- 1:	O site deve apresentar opções que permitam o usuário organizar suas tarefas diárias.
 - 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
 - 8:	O site deverá ser fácil de usar.	
 - 9:	O site deverá ser leve e rápido.
