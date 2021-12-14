@@ -1,5 +1,4 @@
 # Wireframe do projeto: 
-![1](https://user-images.githubusercontent.com/89612369/145900259-27833d6b-d1d3-479b-9074-cafe7b7d5f89.jpg)
 ![2](https://user-images.githubusercontent.com/89612369/145900270-effb6db7-0c74-48d8-8ef9-b4bd6bc86be9.jpg)
 ![3](https://user-images.githubusercontent.com/89612369/145900274-908e53a0-60f7-43dc-aa7f-2b1085c562b0.jpg)
 ![4](https://user-images.githubusercontent.com/89612369/145900277-873aeedc-56e5-49af-9513-0a665fb8dc8d.jpg)
