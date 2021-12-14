@@ -270,39 +270,26 @@ Requisitos para realização do teste:
 
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
-Caso de Teste | Visualizar notícias principais
+Caso de Teste | Verificar funcionalidades
 --- | --- |
 Requisitos Associados | 1 - O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias. <br /> 2 - O site deve enviar notificações ao usuário.<br />  3 - O site deverá criar relatórios.<br />  4 - O site deverá desbloquear conquistas para manter o usuário.
 Objetivo do Teste | Verificar se as funcionalidades do site estão acontecendo corretamente. 
 Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o cadastro/login <br /> 4) Criar rotinas <br /> 5) Criar tarefas dentro das rotinas e marcar a opção de criar notificação <br /> 6) Checar o checkbox das rotinas <br /> 7) Voltar à página inicial
 Critérios de Êxito | Devem haver tarefas concluídas no relatório da página inicial. <br /> Devem haver conquistas na aba de Conquistas da página inicial. 
 
-
-Caso de Teste
-CT-02 - Visualizar detalhes da notícia
-Requisitos Associados
-RF-03 - O site deve permitir ao usuário visualizar o texto completo da notícia com todos os detalhes da publicação
-Objetivo do Teste
-Verificar se as notícias estão sendo apresentadas completamente na página de leitura da notícia
-Passos
-1) Acessar o Navegador
-2) Informar o endereço do Site
-3) Visualizar a página principal
-4) Clicar em uma notícia
-Critérios de Êxito
-A página deve apresentar o título da notícia, imagem de destaque da notícia, data da notícia, autor da notícia e o texto completo da notícia
+Caso de Teste | Verificar desempenho do site
+--- | --- |
+Requisitos Associados | 5 - O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). <br /> 6 - O site deverá ser responsivo. <br />  7 - O site deverá ser fácil de usar. <br />  8 - O site deverá ser leve e rápido.
+Objetivo do Teste | Verificar se o site é responsivo, compatível com os principais navegadores do mercado e de fácil usabilidade. 
+Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o cadastro/login <br /> 4) Clicar com o botão direito do mouse em 'Inspecionar' <br /> 5) Arrastar a aba Inspecionar e checar se o conteúdo do site se ajusta a diferentes tamanhos de tela. 
+Critérios de Êxito | O site deve funcionar nos navegadores Google Chrome, Firefox, Edge e Safari. <br /> O site deve carregar rápido. <br /> O site deve se adequar a dispositivos com diferentes tamanhos de telas. 
 
 
-
----------------  IMPORTANTE  ---------------
-Coloque todos os casos de testes planejados para o projeto.
-----------------------------------------------------
-
-6.2 Registro de Testes de Software
+## Registro de Testes de Software
 Os resultados obtidos nos testes de software realizados são descritos na Tabela a seguir.
 
 
-6.3 Plano de Testes de Usabilidade
+## Plano de Testes de Usabilidade
 
 O planejamento dos testes de usabilidade a serem realizados com usuários são descritos na Tabela a seguir.
 
@@ -311,41 +298,13 @@ Detalhes do público envolvido nos testes
 Roteiro detalhado das tarefas que foram desempenhadas pelos usuários
 
 
-6.4 Registro de Testes de Usabilidade
+## Registro de Testes de Usabilidade
 
 Os resultados obtidos nos testes de usabilidade realizados são descritos na Tabela a seguir.
 
 Relatório com detalhamento das pessoas envolvidas no teste (indicar claramente o número de usuários que testaram o sistema)
 Relatório com registro dos testes feitos: fotos, prints de telas, relatos dos usuários
 Relatório de problemas identificados nos testes e propostas de correções/ajustes
-
-
-
-
-
-
-### [Protótipo interativo](https://www.figma.com/proto/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?page-id=0%3A1&node-id=2%3A2&viewport=241%2C48%2C0.45&scaling=min-zoom&starting-point-node-id=2%3A204)
-
-### [Link Interativo](https://www.figma.com/file/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?node-id=2%3A204)
-
-## Fluxo de Telas
-![image](https://user-images.githubusercontent.com/57562448/135178985-ff9f667d-ec65-4627-a281-b702f901507a.png)
-
-
-
-
-# Organização da equipe de desenvolvimento
-
-## Mentores
-- Rommel
-- Rosilane
-## Grupo
-- Edmar: Desenvolvimento de interface e interações CSS
-
-- Jonathan: Códigos e interações HTML, CSS e JavaScript
-
-- Thais: Códigos e interações HTML, CSS e JavaScript
-
 
 # Informações Gerais:
 ## Alunos integrantes da equipe
