@@ -48,7 +48,7 @@ Embora a plataforma possa ser utilizada por qualquer pessoa, o foco deste projet
 - Trabalhadores com muitas tarefas diárias 
 - Pessoas com dificuldade de memória, que acabam esquecendo de fazer tarefas que deveriam fazer
 
-# Especificação do Projeto:
+# [Especificação do Projeto:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/a3f3a2edc6c57adc7a19a6f60fe1d8c25e1ed2c5/Artefatos/Personas%20e%20Hist%C3%B3rias%20de%20Usu%C3%A1rios.md)
 Os membros da equipe realizaram pesquisas com 24 voluntários e a partir dos resultados foi possível compreender exatamente qual é o problema a ser lidado. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários, dados a seguir. 
 ## Personas
 ![Screenshot 2021-10-01 224459](https://user-images.githubusercontent.com/57562448/135700024-4d77e219-d80d-4282-9553-b6bf1f32b8b8.png) | Carolina Alves | Idade: 19 |Ocupação: estudante e estagiária |
@@ -123,6 +123,63 @@ Para gestão do código fonte do software desenvolvido pela equipe, o grupo util
 ![image](https://user-images.githubusercontent.com/89612369/145914699-48d78998-38fe-4028-83aa-92058b45457d.png)
 
 ## Gerenciamento do Projeto 
+- Edmar: Desenvolvimento de interface, códigos e interações HTML, CSS e JavaScript
+- Thais: Documentação do projeto, códigos e interações HTML, CSS e JavaScript
+
+# Projeto de Interface: 
+## Fluxo do Usuário 
+O diagrama a seguir mostra o protótipo do fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse o [Wireframe Interativo](https://www.figma.com/file/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?node-id=2%3A204)
+![image](https://user-images.githubusercontent.com/57562448/135178985-ff9f667d-ec65-4627-a281-b702f901507a.png)
+
+## Wireframes 
+Conforme fluxo de telas do projeto apresentado no item anterior, as telas do sistema são apresentadas em detalhes nos itens a seguir. Elas apresentam uma estrutura comum que é apresentada na Figura a seguir. Nessa estrutura, existem 3 grandes blocos, descritos a seguir.
+- Menu: apresenta os elementos de navegação secundária, geralmente associados aos elementos do bloco de conteúdo.
+- Cabeçalho: local onde são dispostos elementos fixos de identidade (logo) e navegação principal do site (menu da aplicação);
+- Conteúdo: apresenta o conteúdo da tela em questão;
+![image](https://user-images.githubusercontent.com/89612369/145915902-4d9d4420-b3da-4773-8889-3a900542f15f.png)
+
+### Tela - Home-Page
+A tela de home-page mostra:
+- No menu: o resumo das tarefas e um calendário;
+- No conteúdo: as rotinas e o relatório do usuário;
+- No cabeçalho: a logo do projeto, o dia, horário e clima, as notificações e a foto de perfil do usuário. 
+![image](https://user-images.githubusercontent.com/89612369/145916448-ca0219d0-e097-49b6-9b29-3b0b9504a1dd.png)
+
+### Tela - Rotina
+A tela de rotina mostra: 
+- No cabeçalho: a logo do projeto, o dia, horário e clima, as notificações e a foto de perfil do usuário;
+- No conteúdo: a rotina do usuário, seus subtítulos, suas tarefas e o botão de adicionar um novo campo. 
+![image](https://user-images.githubusercontent.com/89612369/145917039-e790be39-6743-4bb9-a348-33cfc5f3d87d.png)
+
+### Tela - Tarefa: 
+A tela de tarefa mostra: 
+- No conteúdo, as especificações da tarefa. 
+![image](https://user-images.githubusercontent.com/89612369/145918382-8d2f8cb0-4d5b-4cee-b60f-afadb44efa1e.png)
+
+# Implementação da solução:
+Nesta seção são apresentados os detalhes técnicos da solução criada pelo equipe, tratando da Arquitetura da Solução, as estruturas de dados e as telas já implementadas.
+## Arquitetura da solução 
+### Diagrama de Componentes
+Os componentes que fazem parte da solução são apresentados a seguir. 
+![Untitled - Frame 1](https://user-images.githubusercontent.com/89612369/145920077-91d10f0e-e261-494b-badf-164f2976d7f6.jpg)
+
+A solução implementada conta com os seguintes módulos:
+- Navegador - Interface básica do sistema
+  - Páginas Web: - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema.
+  - Local Storage: armazenamento mantido no Navegador, onde são implementados bancos de dados baseados em JSON. São eles: 
+     - Usuário: credenciais de acesso do usuário
+     - Usuário logado: checagem se o usuário está logado
+     - Rotinas: lista de rotinas do usuário
+       - Tarefas: lista de tarefas em cada rotina do usuário
+
+### [Protótipo interativo](https://www.figma.com/proto/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?page-id=0%3A1&node-id=2%3A2&viewport=241%2C48%2C0.45&scaling=min-zoom&starting-point-node-id=2%3A204)
+
+### [Link Interativo](https://www.figma.com/file/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?node-id=2%3A204)
+
+## Fluxo de Telas
+![image](https://user-images.githubusercontent.com/57562448/135178985-ff9f667d-ec65-4627-a281-b702f901507a.png)
+
+
 
 
 # Organização da equipe de desenvolvimento
@@ -136,31 +193,6 @@ Para gestão do código fonte do software desenvolvido pela equipe, o grupo util
 - Jonathan: Códigos e interações HTML, CSS e JavaScript
 
 - Thais: Códigos e interações HTML, CSS e JavaScript
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## [Interfaces do projeto:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/tree/master/Artefatos/Interface)
 ### Fluxo de Telas
