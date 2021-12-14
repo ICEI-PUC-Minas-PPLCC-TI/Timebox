@@ -305,14 +305,14 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 Caso de Teste | Verificar funcionalidades
 --- | --- |
-Requisitos Associados | 1 - O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias. <br /> 2 - O site deve enviar notificações ao usuário.<br />  3 - O site deverá criar relatórios.<br />  4 - O site deverá desbloquear conquistas para manter o usuário.
+Requisitos Associados | 1 - O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias. <br /> 2 - O site deve enviar notificações ao usuário.<br />  3 - O site deverá criar relatórios.<br />  4 - O site deverá desbloquear conquistas para manter o usuário.<br />5	- O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
 Objetivo do Teste | Verificar se as funcionalidades do site estão acontecendo corretamente. 
 Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o cadastro/login <br /> 4) Criar rotinas <br /> 5) Criar tarefas dentro das rotinas e marcar a opção de criar notificação <br /> 6) Checar o checkbox das rotinas <br /> 7) Voltar à página inicial
 Critérios de Êxito | Devem haver tarefas concluídas no relatório da página inicial. <br /> Devem haver conquistas na aba de Conquistas da página inicial. 
 
 Caso de Teste | Verificar desempenho do site
 --- | --- |
-Requisitos Associados | 5 - O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). <br /> 6 - O site deverá ser responsivo. <br />  7 - O site deverá ser fácil de usar. <br />  8 - O site deverá ser leve e rápido.
+Requisitos Associados | 6- O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). <br /> 7- O site deverá ser responsivo. <br />  8- O site deverá ser fácil de usar. <br />  9- O site deverá ser leve e rápido.
 Objetivo do Teste | Verificar se o site é responsivo, compatível com os principais navegadores do mercado e de fácil usabilidade. 
 Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o cadastro/login <br /> 4) Clicar com o botão direito do mouse em 'Inspecionar' <br /> 5) Arrastar a aba Inspecionar e checar se o conteúdo do site se ajusta a diferentes tamanhos de tela. 
 Critérios de Êxito | O site deve funcionar nos navegadores Google Chrome, Firefox, Edge e Safari. <br /> O site deve carregar rápido. <br /> O site deve se adequar a dispositivos com diferentes tamanhos de telas. 
