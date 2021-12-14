@@ -65,13 +65,16 @@ Funcionalidades:
 -	O aplicativo deve se restringir às tecnologias básicas da Web no Frontend.
 -	O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final.
 
-# [Projeto de Interfaces:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/tree/master/Artefatos/Projeto%20de%20interface)
+# [Interfaces do projeto:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/tree/master/Artefatos/Interface)
 ## Fluxo de Telas
-### [Protótipo Interativo](https://www.figma.com/proto/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?page-id=0%3A1&node-id=2%3A2&viewport=241%2C48%2C0.45&scaling=min-zoom&starting-point-node-id=2%3A204)
-![image](https://user-images.githubusercontent.com/57562448/135178985-ff9f667d-ec65-4627-a281-b702f901507a.png)
+### [Protótipo Interativo](https://www.figma.com/proto/qplVlOZw3bnBCfI3p4B1Fc/Untitled?node-id=2%3A46&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A46)
+![fluxo](https://user-images.githubusercontent.com/89612369/145910787-b44e4f08-e7dd-42bb-a58e-7a9a5505d06b.jpg)
+
 
 ### [Wireframe](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/f4b004f01e2c64e4906618d0fad9b65f4826b14e/Artefatos/Interface/README.md)
 ![10](https://user-images.githubusercontent.com/89612369/145893260-21a1c8d8-7618-42af-ac2b-c8a7b47656b5.jpg)
+![8](https://user-images.githubusercontent.com/89612369/145910832-f975ab9f-d612-4dd0-916c-434998ffec31.jpg)
+![7](https://user-images.githubusercontent.com/89612369/145910843-ecd73d5c-8c6a-4004-934e-d3b557eb1d6a.jpg)
 
 
 # Informações Gerais:
