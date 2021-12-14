@@ -127,7 +127,7 @@ Para gestão do código fonte do software desenvolvido pela equipe, o grupo util
 - Edmar: Desenvolvimento de interface, códigos e interações HTML, CSS e JavaScript
 - Thais: Documentação do projeto, códigos e interações HTML, CSS e JavaScript
 
-# Projeto de Interface: 
+# [Projeto de Interface:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/tree/master/Artefatos/Projeto%20de%20interface) 
 ## Fluxo do Usuário 
 O diagrama a seguir mostra o protótipo do fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse: [Wireframe Interativo](https://www.figma.com/file/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?node-id=2%3A204).
 ![image](https://user-images.githubusercontent.com/57562448/135178985-ff9f667d-ec65-4627-a281-b702f901507a.png)
