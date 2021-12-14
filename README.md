@@ -209,6 +209,10 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 ![2](https://user-images.githubusercontent.com/89612369/145923459-c7663f68-815d-4ab7-b953-cbece7e11f1f.jpg)
 #### Requisito atendido
 - 5: O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
+- 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).	
+- 7:	O site deverá ser responsivo.	
+- 8:	O site deverá ser fácil de usar.	
+- 9:	O site deverá ser leve e rápido.
 #### Artefatos da funcionalidade
 - Função de cadastro e login. 
 
@@ -217,6 +221,10 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 ![3](https://user-images.githubusercontent.com/89612369/145923478-4b53334c-3ae2-4868-9cb4-2a587ea16263.jpg)
 #### Requisito atendido
 - 5: O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
+- 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).	
+- 7:	O site deverá ser responsivo.	
+- 8:	O site deverá ser fácil de usar.	
+- 9:	O site deverá ser leve e rápido.
 #### Artefatos da funcionalidade
 - Função de cadastro e login. 
 
@@ -225,6 +233,7 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 A tela principal do sistema apresenta as rotinas do usuário, o relatório das tarefas concluídas pelo mesmo e suas conquistas. Essas informações são armazenadas no LocalStorage com estruturas dados baseados em JSON. Um exemplo da tela é apresentado a seguir. 
 ![image](https://user-images.githubusercontent.com/89612369/146038084-cfb111cd-2d53-406d-8eaf-ed28d9aa209d.png)
 #### Requisitos atendidos
+- 2: O site deve enviar notificações/alarme ao usuário.
 - 3: O site deverá criar relatórios.
 - 4	O site devera desbloquear conquistas para manter o usuário.
 - 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
@@ -241,7 +250,12 @@ A tela principal mobile do sistema apresenta as rotinas do usuário, o relatóri
 ![image](https://user-images.githubusercontent.com/89612369/146038773-02e1c836-ee4a-4704-8427-ac6433dca430.png)
 
 #### Requisito atendido
-- 6:	O site deverá ser responsivo.
+- 2: O site deve enviar notificações/alarme ao usuário.
+- 3: O site deverá criar relatórios.
+- 4	O site devera desbloquear conquistas para manter o usuário.
+- 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
+- 8:	O site deverá ser fácil de usar.	
+- 9:	O site deverá ser leve e rápido.
 
 #### Artefatos da funcionalidade
 - Tela de rotinas do usuário. 
@@ -253,6 +267,9 @@ A tela principal mobile do sistema apresenta as rotinas do usuário, o relatóri
 ![8](https://user-images.githubusercontent.com/89612369/145923635-2faa035b-6406-4c82-8989-11e6c341c527.jpg)
 #### Requisito atendido
 - 1:	O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias.
+- 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
+- 8:	O site deverá ser fácil de usar.	
+- 9:	O site deverá ser leve e rápido.
 
 #### Artefatos da funcionalidade
 - Tela da rotina especificada pelo usuário. 
@@ -266,6 +283,9 @@ A tela principal mobile do sistema apresenta as rotinas do usuário, o relatóri
 ![image](https://user-images.githubusercontent.com/89612369/145923724-7438498e-a3b6-4a51-a331-71e7ba036308.png)
 #### Requisito atendido
 - 2: O site deve enviar notificações/alarme ao usuário.
+- 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
+- 8:	O site deverá ser fácil de usar.	
+- 9:	O site deverá ser leve e rápido.
 
 #### Artefatos da funcionalidade
 - Tela de criação/edição de uma tarefa. 
