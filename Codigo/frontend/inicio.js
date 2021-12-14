@@ -9,6 +9,7 @@ if (isLogged) {
         <div class="user-info">
             Bem vindo, <span style="font-family:inherit" class="user-name">${JSON.parse(localStorage.getItem('usuario_logado')).user}</span>
         </div>
+        <span id="editar-usuario" style="font-size:1.4rem;user-select:none;cursor:pointer">edit</span>
         <div class="button">
             Sair
         </div>
@@ -20,6 +21,130 @@ if (isLogged) {
     userDiv.querySelector('.button').addEventListener('click', () => {
         localStorage.removeItem('usuario_logado')
         document.location.reload(true)
+    })
+    userDiv.querySelector('#editar-usuario').addEventListener('click', () => {
+        const popupDiv = document.createElement('div'),
+            saveButton = document.createElement('div'),
+            cancelButton = document.createElement('div')
+
+        popupDiv.classList.add('popup')
+        saveButton.className = 'button'
+        cancelButton.className = 'button'
+        saveButton.innerHTML = 'Salvar'
+        cancelButton.innerHTML = 'Cancelar'
+
+        cancelButton.addEventListener('click', () => {
+            popupDiv.style.opacity = '0'
+            setTimeout(() => { popupDiv.remove() }, 200)
+        })
+        popupDiv.innerHTML = `
+        <div class="popup-content">
+            <h3>Editar cadastro</h3>
+            <form id="cadastro">
+                            <div  class="form-group">
+                                <label for="user">Usuário</label>
+                                <input
+                                    type="text"
+                                    name="user"
+                                    id="user"
+                                    class="form-control"
+                                    placeholder="Usuário"
+                                    value="${JSON.parse(localStorage.getItem('usuario_logado')).user}"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="E-mail"
+                                    value="${JSON.parse(localStorage.getItem('usuario_logado')).email}"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="senhaAtual">Senha atual</label>
+                                <input
+                                    type="password"
+                                    name="senhaAtual"
+                                    id="senhaAtual"
+                                    class="form-control"
+                                    placeholder="Senha Atual"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Nova senha</label>
+                                <input
+                                    type="password"
+                                    name="senha"
+                                    id="senha"
+                                    class="form-control"
+                                    placeholder="Senha"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="rsenha">Repetir nova senha</label>
+                                <input
+                                    type="password"
+                                    name="rsenha"
+                                    id="rsenha"
+                                    class="form-control"
+                                    placeholder="Confirmar senha"
+                                />
+                            </div>
+            </form>
+            <div id="buttons"></div>
+        </div>
+    `
+        const close = (mouse) => {
+            if (mouse.target === popupDiv) {
+                popupDiv.style.opacity = '0'
+                setTimeout(() => { popupDiv.remove() }, 200)
+            }
+        }
+
+        document.body.appendChild(popupDiv)
+        popupDiv.querySelector('#buttons').appendChild(saveButton)
+        popupDiv.querySelector('#buttons').appendChild(cancelButton)
+        setTimeout(() => { popupDiv.style.opacity = '1' }, 1)
+        popupDiv.addEventListener('click', close)
+
+        saveButton.addEventListener('click', () => {
+            const user = popupDiv.querySelector('#cadastro #user').value,
+                email = popupDiv.querySelector('#cadastro #email').value,
+                senha = popupDiv.querySelector('#cadastro #senha').value,
+                rsenha = popupDiv.querySelector('#cadastro #rsenha').value,
+                senhaAtual = popupDiv.querySelector('#cadastro #senhaAtual').value
+
+            if (user === '' || email === '' || senha === '' || rsenha === '') {
+                alert('Preencha todos os campos')
+            }
+            else if (senhaAtual !== JSON.parse(localStorage.getItem('usuario_logado')).senha) {
+                alert('Senha atual incorreta')
+            }
+            else if (senha !== rsenha) {
+                alert('As senhas não conferem')
+            }
+            else if (!email.includes('@')) {
+                alert('E-mail inválido')
+            }
+            else {
+                let usuarios = JSON.parse(localStorage.getItem('usuarios_ls'))
+                let usuario = JSON.parse(localStorage.getItem('usuario_logado'))
+                let index = usuarios.findIndex(u => u.id === usuario.id)
+                usuario.user = user
+                usuario.email = email
+                usuario.senha = senha
+                usuarios[index] = usuario
+                localStorage.setItem('usuarios_ls', JSON.stringify(usuarios))
+                localStorage.setItem('usuario_logado', JSON.stringify(usuario))
+
+                popupDiv.style.opacity = '0'
+                setTimeout(() => { popupDiv.remove() }, 200)
+                window.location.reload(true)
+            }
+        })
     })
 }
 else {
