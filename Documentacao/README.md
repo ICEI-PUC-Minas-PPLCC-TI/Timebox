@@ -351,7 +351,7 @@ Os resultados obtidos nos testes de software e usabilidade realizados são descr
 ### Usuários envolvidos no teste
 Número de usuários: 7
 Nome | Informações | Nevagador utilizado | Sugestões | 
---- | --- |--- | 
+--- | --- |--- | --- |
 Ana | 18 anos, estudante, possui noções básicas de informática | Chrome | Desenvolver um botão para exclusão de rotinas
 Carlos | 38 anos, empresário, tem noções básicas de informática | Firefox | Criar uma opção de progresso da tarefa
 Mariana | 25 anos, estudante do curso de Sistemas de informação, tem conhecimento avançado de informática | Safari | Criar a opção de repetir a tarefa ocasionalmente
