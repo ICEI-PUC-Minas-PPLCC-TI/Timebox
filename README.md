@@ -83,27 +83,28 @@ Carolina Alves | Visualizar um resumo das minhas tarefas diárias | Poder realiz
 
 ID | Descrição | Prioridade
 --- | --- | --- |
-1 | O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias. | ALTA |
+1 | O site deve apresentar opções que permitam o usuário organizar suas tarefas diárias. | ALTA |
 2 | O site deve enviar notificações / alarme ao usuário. | ALTA |
 3 | O site deverá criar relatórios. | ALTA |
-4 | O site devera desbloquear conquistas para manter o usuário | ALTA |
+4 | O site deverá desbloquear conquistas para manter o usuário. | ALTA |
+5 | O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage. | ALTA |
 
 ### Requisitos não Funcionais
 
 ID | Descrição | Prioridade
 --- | --- | --- |
-5 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). | ALTA |
-6 | O site deverá ser responsivo. | ALTA |
-7 | O site deverá ser fácil de usar. | ALTA |
-8 | O site deverá ser leve e rápido. | ALTA |
+6 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari). | ALTA |
+7 | O site deverá ser responsivo. | ALTA |
+8 | O site deverá ser fácil de usar. | ALTA |
+9 | O site deverá ser leve e rápido. | ALTA |
 
 ### Restrições do Projeto
 
 ID | Descrição
 --- | --- |
-9 | A equipe não pode subcontratar o desenvolvimento do trabalho.|
-10 | O aplicativo deve se restringir às tecnologias básicas da Web no Frontend |
-11 | O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final |
+10 | A equipe não pode subcontratar o desenvolvimento do trabalho.|
+11 | O aplicativo deve se restringir às tecnologias básicas da Web no Frontend |
+12 | O projeto deverá ser entregue no final do Período letivo, não podendo extrapolar a data final |
 
 # [Metodologia](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/master/Artefatos/Metodologia.md)
 A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
@@ -204,44 +205,49 @@ Tela que contém o resumo de tarefas a serem concluídas pelo usuário. <br />
 Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades do sistema. O respectivo endereço (URL) e outras orientações de acesso são apresentadas na sequência.
 
 ### Tela Login
-Link: https://timebox.thaisandreatta.repl.co/login.html
+[Link](https://timebox.thaisandreatta.repl.co/login.html)
 ![2](https://user-images.githubusercontent.com/89612369/145923459-c7663f68-815d-4ab7-b953-cbece7e11f1f.jpg)
 #### Requisitos atendidos
--
--
+- 5: O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
 #### Artefatos da funcionalidade
--
--
--
+- Função de cadastro e login. 
 
 ### Tela Cadastro 
 [Link](https://timebox.thaisandreatta.repl.co/login.html)
 ![3](https://user-images.githubusercontent.com/89612369/145923478-4b53334c-3ae2-4868-9cb4-2a587ea16263.jpg)
 #### Requisitos atendidos
--
--
+- 5: O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
 #### Artefatos da funcionalidade
--
--
--
+- Função de cadastro e login. 
 
 ### Tela Home-Page
 [Link](https://timebox.thaisandreatta.repl.co/) <br />
 A tela principal do sistema apresenta as rotinas do usuário, o relatório das tarefas concluídas pelo mesmo e suas conquistas. Essas informações são armazenadas no LocalStorage com estruturas dados baseados em JSON. Um exemplo da tela é apresentado a seguir. 
 ![image](https://user-images.githubusercontent.com/89612369/146038084-cfb111cd-2d53-406d-8eaf-ed28d9aa209d.png)
+#### Requisitos atendidos
+- 3: O site deverá criar relatórios.
+- 4	O site devera desbloquear conquistas para manter o usuário.
+- 5:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
+- 7	O site deverá ser fácil de usar.	
+- 8:	O site deverá ser leve e rápido.
+#### Artefatos da funcionalidade
+- Menu contendo resumo das tarefas a serem concluídas pelo usuário.
+- Tela de rotinas do usuário. 
+- Sessão de Relatório das tarefas concluídas pelo usuário. 
+- Sessão de conquistas realizadas pelo usuário. 
 
 ## Tela Home-Page Mobile 
 A tela principal mobile do sistema apresenta as rotinas do usuário, o relatório das tarefas concluídas pelo mesmo e suas conquistas.
 ![image](https://user-images.githubusercontent.com/89612369/146038773-02e1c836-ee4a-4704-8427-ac6433dca430.png)
 
-
 #### Requisitos atendidos
-- 3: O site deverá criar relatórios.
-- 4	O site devera desbloquear conquistas para manter o usuário.
+- 6:	O site deverá ser responsivo.
+-
 #### Artefatos da funcionalidade
 -
 -
 -
+
 
 ### Tela Rotina
 [Link](https://timebox.thaisandreatta.repl.co/rotina.html?id=1)
