@@ -168,11 +168,12 @@ const toggleMenu = () => {
 menuButton.addEventListener('mousedown', toggleMenu)
 
 //Campos de texto
-const rotinaID = window.location.search.split('=')[1]
+let rotinaID = window.location.search.split('=')[1]
 
 let rotinasSalvas = JSON.parse(localStorage.getItem('rotinas')),
     rotinaLS = rotinasSalvas.filter(rotina => rotina.id == rotinaID)[0],
     rotinaTitle = document.querySelector('#title')
+rotinaID = rotinasSalvas.indexOf(rotinaLS)
 
 const allTextFields = Array.from(document.querySelectorAll('textarea'))
 
