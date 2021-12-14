@@ -303,12 +303,54 @@ Requisitos para realização do teste:
 
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
+### Tela login/cadastro
+Caso de Teste | Verificar cadastro e login
+--- | --- |
+Requisitos Associados | 5	- O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
+Objetivo do Teste | Verificar se as funcionalidades de cadastro e login do site estão acontecendo corretamente. 
+Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o cadastro <br /> 4) Fazer login <br /> 
+Critérios de Êxito | O usuário deve conseguir logar na plataforma. 
+
+### Tela Home-Page
 Caso de Teste | Verificar funcionalidades
 --- | --- |
-Requisitos Associados | 1 - O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias. <br /> 2 - O site deve enviar notificações ao usuário.<br />  3 - O site deverá criar relatórios.<br />  4 - O site deverá desbloquear conquistas para manter o usuário.<br />5	- O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
+Requisitos Associados | 2 - O site deve enviar notificações ao usuário.<br />  3 - O site deverá criar relatórios.<br />  4 - O site deverá desbloquear conquistas para manter o usuário.<br />
 Objetivo do Teste | Verificar se as funcionalidades do site estão acontecendo corretamente. 
-Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o cadastro/login <br /> 4) Criar rotinas <br /> 5) Criar tarefas dentro das rotinas e marcar a opção de criar notificação <br /> 6) Checar o checkbox das rotinas <br /> 7) Voltar à página inicial
-Critérios de Êxito | Devem haver tarefas concluídas no relatório da página inicial. <br /> Devem haver conquistas na aba de Conquistas da página inicial. 
+Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o login <br /> 4) Criar rotinas <br /> 5) Criar tarefas dentro das rotinas <br /> 6) Checar o checkbox das rotinas <br /> 7) Voltar à página inicial
+Critérios de Êxito | Devem haver tarefas concluídas no relatório da página inicial. <br /> Devem haver conquistas na aba de Conquistas da página inicial. <br /> Devem haver notificações na página inicial. 
+
+### Tela Rotinas
+Caso de Teste | Verificar funcionalidades
+--- | --- |
+Requisitos Associados | 1 - O site deve apresentar opções que permitam o usuário organizar suas tarefas diárias.
+Objetivo do Teste | Verificar se é possível organizar as tarefas do usuário 
+Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o login <br /> 4) Criar rotinas <br /> 5) Criar tarefas dentro das rotinas e marcar a opção de criar notificação <br /> 6) Clicar em editar tarefa <br /> 7) Alterar a tarefa
+Critérios de Êxito | A tarefa deve ser atualizada com o novo conteúdo <br /> 
+
+### Tela Tarefas
+Caso de Teste | Verificar se é possível organizar as tarefas do usuário
+--- | --- |
+Requisitos Associados | 2 - O site deve enviar notificações/alarme ao usuário.
+Objetivo do Teste | Verificar se o site cria notificações ao usuário corretamente. 
+Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o login <br /> 4) Criar rotinas <br /> 5) Criar tarefas dentro das rotinas e marcar a opção de criar notificação no mesmo dia <br /> 6) Ir à tela inicial <br /> 7) Clicar na aba de notificações
+Critérios de Êxito | Devem haver notificações na aba de notificações da tela inicial 
+
+## Registro de Testes de Software
+Os resultados obtidos nos testes de software realizados são descritos na Tabela a seguir.
+### Usuários envolvidos no teste
+Número de usuários: 7
+Nome | Informações | Sugestões 
+--- | --- |--- | 
+Ana | 18 anos, estudante, possui noções básicas de informática | Desenvolver um botão para exclusão de rotinas
+Carlos | 38 anos, empresário, tem noções básicas de informática | Criar uma opção de progresso da tarefa
+Mariana | 25 anos, estudante do curso de Sistemas de informação, tem conhecimento avançado de informática | Criar a opção de repetir a tarefa ocasionalmente
+Pedro | 21 anos, estudante do curso de História, tem conhecimento mediano de informática | Opção de edição do usuário 
+Luiza | 23 anos, estudante do curso de Ciência da Computação, possui conhecimento avançado de informática | Opção de descrição da tarefa
+Vitor: 23 anos, jornalista, possui conhecimento intermediário de informática | Colocar cores diferentes nas rotinas
+Fernanda | 40 anos, médica, tem noções básicas de informática | Opção de editar tarefa
+
+
+## Plano de Testes de Usabilidade
 
 Caso de Teste | Verificar desempenho do site
 --- | --- |
@@ -316,19 +358,6 @@ Requisitos Associados | 6- O site deve ser compatível com os principais navegad
 Objetivo do Teste | Verificar se o site é responsivo, compatível com os principais navegadores do mercado e de fácil usabilidade. 
 Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o cadastro/login <br /> 4) Clicar com o botão direito do mouse em 'Inspecionar' <br /> 5) Arrastar a aba Inspecionar e checar se o conteúdo do site se ajusta a diferentes tamanhos de tela. 
 Critérios de Êxito | O site deve funcionar nos navegadores Google Chrome, Firefox, Edge e Safari. <br /> O site deve carregar rápido. <br /> O site deve se adequar a dispositivos com diferentes tamanhos de telas. 
-
-
-## Registro de Testes de Software
-Os resultados obtidos nos testes de software realizados são descritos na Tabela a seguir.
-
-
-## Plano de Testes de Usabilidade
-
-O planejamento dos testes de usabilidade a serem realizados com usuários são descritos na Tabela a seguir.
-
-Identificação de objetivos do teste de usabilidade
-Detalhes do público envolvido nos testes
-Roteiro detalhado das tarefas que foram desempenhadas pelos usuários
 
 
 ## Registro de Testes de Usabilidade
