@@ -370,8 +370,8 @@ Ao clicar em ‘Nova tarefa’, o usuário deve adicionar um título à tarefa q
 Ao clicar em salvar a tarefa estará salva. Para concluir uma tarefa, basta clicar em seu checkbox. 
  ![8](https://user-images.githubusercontent.com/89612369/145893224-541061a1-522c-4492-b87c-00172f4edf4f.jpg)
 
-Na aba de início, agora, é possível visualizar as rotinas do usuário e o seu relatório. 
- ![9](https://user-images.githubusercontent.com/89612369/145893241-706646d3-6fa7-4090-b1a3-0ec3da1b74f5.jpg)
+Na aba de início, agora, é possível visualizar as rotinas do usuário, seu relatório de conclusão de tarefas e suas conquistas. 
+ ![image](https://user-images.githubusercontent.com/89612369/146038084-cfb111cd-2d53-406d-8eaf-ed28d9aa209d.png)
 
 Ao clicar na seta no canto superior esquerdo da aba de início, abre-se o resumo das tarefas do usuário a serem concluídas. 
 ![10](https://user-images.githubusercontent.com/89612369/145893260-21a1c8d8-7618-42af-ac2b-c8a7b47656b5.jpg)
