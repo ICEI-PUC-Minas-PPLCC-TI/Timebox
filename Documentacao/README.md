@@ -378,10 +378,10 @@ Ao clicar em ‘Novo usuário’, o usuário deve cadastrar suas informações n
  ![3](https://user-images.githubusercontent.com/89612369/145893157-500acd92-3e93-4d11-86f1-2336ce394887.jpg)
 
 Ao ser logado, o usuário será direcionado à página inicial onde poderá visualizar suas rotinas, seu relatório e o resumo das tarefas a serem realizadas. Para criar uma nova rotina, o usuário deve clicar em nova rotina, digitar o nome da mesma e apertar a tecla “Enter” ou clicar no botão “+”.
- ![4](https://user-images.githubusercontent.com/89612369/145893174-36240843-47c6-4270-8a7b-8fa842826baa.jpg)
+ ![image](https://user-images.githubusercontent.com/89612369/146091279-ee0c8ecd-5519-40e3-bba9-91633cb993d9.png)
 
 Após a criação da rotina, o usuário deve clicar na rotina desejada para editá-la. 
- ![5](https://user-images.githubusercontent.com/89612369/145893181-b3a9b969-904c-41c2-b788-4cfcda1c1925.jpg)
+![image](https://user-images.githubusercontent.com/89612369/146091303-b85913e1-f53a-4cf8-86e0-8bff29345b35.png)
 
 Ao clicar na rotina, o usuário poderá clicar em ‘Criar subtítulo’ para adicionar subtítulos à rotina e em ‘Nova tarefa’ para adicionar tarefas a cada subtítulo.
  ![6](https://user-images.githubusercontent.com/89612369/145893202-aff0a12b-adca-45f2-89e2-5a96f1e29626.jpg)
@@ -393,7 +393,7 @@ Ao clicar em salvar a tarefa estará salva. Para concluir uma tarefa, basta clic
  ![8](https://user-images.githubusercontent.com/89612369/145893224-541061a1-522c-4492-b87c-00172f4edf4f.jpg)
 
 Na aba de início, agora, é possível visualizar as rotinas do usuário, seu relatório de conclusão de tarefas e suas conquistas. 
- ![image](https://user-images.githubusercontent.com/89612369/146038084-cfb111cd-2d53-406d-8eaf-ed28d9aa209d.png)
+![image](https://user-images.githubusercontent.com/89612369/146091343-193c688a-a565-4217-ac9f-6fc716227c5d.png)
 
 Ao clicar na seta no canto superior esquerdo da aba de início, abre-se o resumo das tarefas do usuário a serem concluídas. 
-![10](https://user-images.githubusercontent.com/89612369/145893260-21a1c8d8-7618-42af-ac2b-c8a7b47656b5.jpg)
+![image](https://user-images.githubusercontent.com/89612369/146091364-4774709f-3817-416d-a175-9541c99f1131.png)
