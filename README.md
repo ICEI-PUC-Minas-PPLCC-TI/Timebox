@@ -207,7 +207,7 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 ### Tela Login
 [Link](https://timebox.thaisandreatta.repl.co/login.html)
 ![2](https://user-images.githubusercontent.com/89612369/145923459-c7663f68-815d-4ab7-b953-cbece7e11f1f.jpg)
-#### Requisito atendido
+#### Requisitos atendidos
 - 5: O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
 - 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).	
 - 7:	O site deverá ser responsivo.	
@@ -219,7 +219,7 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 ### Tela Cadastro 
 [Link](https://timebox.thaisandreatta.repl.co/login.html)
 ![3](https://user-images.githubusercontent.com/89612369/145923478-4b53334c-3ae2-4868-9cb4-2a587ea16263.jpg)
-#### Requisito atendido
+#### Requisitos atendidos
 - 5: O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
 - 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).	
 - 7:	O site deverá ser responsivo.	
@@ -249,7 +249,7 @@ A tela principal do sistema apresenta as rotinas do usuário, o relatório das t
 A tela principal mobile do sistema apresenta as rotinas do usuário, o relatório das tarefas concluídas pelo mesmo e suas conquistas.
 ![image](https://user-images.githubusercontent.com/89612369/146038773-02e1c836-ee4a-4704-8427-ac6433dca430.png)
 
-#### Requisito atendido
+#### Requisitos atendidos
 - 2: O site deve enviar notificações/alarme ao usuário.
 - 3: O site deverá criar relatórios.
 - 4	O site devera desbloquear conquistas para manter o usuário.
@@ -265,7 +265,7 @@ A tela principal mobile do sistema apresenta as rotinas do usuário, o relatóri
 ### Tela Rotina
 [Link](https://timebox.thaisandreatta.repl.co/rotina.html?id=1)
 ![8](https://user-images.githubusercontent.com/89612369/145923635-2faa035b-6406-4c82-8989-11e6c341c527.jpg)
-#### Requisito atendido
+#### Requisitos atendidos
 - 1:	O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias.
 - 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
 - 8:	O site deverá ser fácil de usar.	
@@ -281,7 +281,7 @@ A tela principal mobile do sistema apresenta as rotinas do usuário, o relatóri
 ### Tela Tarefa
 [Link](https://timebox.thaisandreatta.repl.co/rotina.html?id=1)
 ![image](https://user-images.githubusercontent.com/89612369/145923724-7438498e-a3b6-4a51-a331-71e7ba036308.png)
-#### Requisito atendido
+#### Requisitos atendidos
 - 2: O site deve enviar notificações/alarme ao usuário.
 - 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
 - 8:	O site deverá ser fácil de usar.	
