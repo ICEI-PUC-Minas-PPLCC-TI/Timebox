@@ -207,7 +207,7 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 ### Tela Login
 [Link](https://timebox.thaisandreatta.repl.co/login.html)
 ![2](https://user-images.githubusercontent.com/89612369/145923459-c7663f68-815d-4ab7-b953-cbece7e11f1f.jpg)
-#### Requisitos atendidos
+#### Requisito atendido
 - 5: O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
 #### Artefatos da funcionalidade
 - Função de cadastro e login. 
@@ -215,7 +215,7 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 ### Tela Cadastro 
 [Link](https://timebox.thaisandreatta.repl.co/login.html)
 ![3](https://user-images.githubusercontent.com/89612369/145923478-4b53334c-3ae2-4868-9cb4-2a587ea16263.jpg)
-#### Requisitos atendidos
+#### Requisito atendido
 - 5: O site deverá ter a opção de cadastro do usuário para que suas informações fiquem salvas no LocalStorage.
 #### Artefatos da funcionalidade
 - Função de cadastro e login. 
@@ -227,9 +227,9 @@ A tela principal do sistema apresenta as rotinas do usuário, o relatório das t
 #### Requisitos atendidos
 - 3: O site deverá criar relatórios.
 - 4	O site devera desbloquear conquistas para manter o usuário.
-- 5:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
-- 7	O site deverá ser fácil de usar.	
-- 8:	O site deverá ser leve e rápido.
+- 6:	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari).
+- 8:	O site deverá ser fácil de usar.	
+- 9:	O site deverá ser leve e rápido.
 #### Artefatos da funcionalidade
 - Menu contendo resumo das tarefas a serem concluídas pelo usuário.
 - Tela de rotinas do usuário. 
@@ -240,36 +240,37 @@ A tela principal do sistema apresenta as rotinas do usuário, o relatório das t
 A tela principal mobile do sistema apresenta as rotinas do usuário, o relatório das tarefas concluídas pelo mesmo e suas conquistas.
 ![image](https://user-images.githubusercontent.com/89612369/146038773-02e1c836-ee4a-4704-8427-ac6433dca430.png)
 
-#### Requisitos atendidos
+#### Requisito atendido
 - 6:	O site deverá ser responsivo.
--
-#### Artefatos da funcionalidade
--
--
--
 
+#### Artefatos da funcionalidade
+- Tela de rotinas do usuário. 
+- Sessão de Relatório das tarefas concluídas pelo usuário. 
+- Sessão de conquistas realizadas pelo usuário. 
 
 ### Tela Rotina
 [Link](https://timebox.thaisandreatta.repl.co/rotina.html?id=1)
 ![8](https://user-images.githubusercontent.com/89612369/145923635-2faa035b-6406-4c82-8989-11e6c341c527.jpg)
-#### Requisitos atendidos
+#### Requisito atendido
 - 1:	O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias.
--
+
 #### Artefatos da funcionalidade
--
--
--
+- Tela da rotina especificada pelo usuário. 
+- Possibilidade de adição de subtítulos e tarefas atreladas a eles. 
+- Opção de exclusão da rotina.
+- Opção de checkbox para conclusão da tarefa.
+- Opção de edição da tarefa. 
 
 ### Tela Tarefa
 [Link](https://timebox.thaisandreatta.repl.co/rotina.html?id=1)
 ![image](https://user-images.githubusercontent.com/89612369/145923724-7438498e-a3b6-4a51-a331-71e7ba036308.png)
-#### Requisitos atendidos
+#### Requisito atendido
 - 2: O site deve enviar notificações/alarme ao usuário.
--
+
 #### Artefatos da funcionalidade
--
--
--
+- Tela de criação/edição de uma tarefa. 
+- Especificações opcionais da tarefa, como data, recursividade, notificação, descrição, progresso e categoria. 
+- Opção de exclusão da tarefa. 
 
 # Avaliação da Solução 
 O processo de realização dos testes da solução desenvolvida está documentado na seção que se segue e traz os planos de testes de software e de usabilidade, na sequência, o registro dos testes realizados.
