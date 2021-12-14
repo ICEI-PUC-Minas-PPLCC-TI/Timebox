@@ -228,9 +228,10 @@ Link: https://timebox.thaisandreatta.repl.co/login.html
 ### Tela Home-Page
 [Link](https://timebox.thaisandreatta.repl.co/) <br />
 A tela principal do sistema apresenta as rotinas do usuário, o relatório das tarefas concluídas pelo mesmo e suas conquistas. Essas informações são armazenadas no LocalStorage com estruturas dados baseados em JSON. Um exemplo da tela é apresentado a seguir. 
-![10](https://user-images.githubusercontent.com/89612369/145923227-cddf72e1-fc26-40b8-83d8-9e031ff182a6.jpg)
+![image](https://user-images.githubusercontent.com/89612369/146038084-cfb111cd-2d53-406d-8eaf-ed28d9aa209d.png)
+
 #### Requisitos atendidos
--
+- 3: O site deverá criar relatórios.
 -
 #### Artefatos da funcionalidade
 -
@@ -241,7 +242,7 @@ A tela principal do sistema apresenta as rotinas do usuário, o relatório das t
 [Link](https://timebox.thaisandreatta.repl.co/rotina.html?id=1)
 ![8](https://user-images.githubusercontent.com/89612369/145923635-2faa035b-6406-4c82-8989-11e6c341c527.jpg)
 #### Requisitos atendidos
--
+- 1:	O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias.
 -
 #### Artefatos da funcionalidade
 -
@@ -252,7 +253,7 @@ A tela principal do sistema apresenta as rotinas do usuário, o relatório das t
 [Link](https://timebox.thaisandreatta.repl.co/rotina.html?id=1)
 ![image](https://user-images.githubusercontent.com/89612369/145923724-7438498e-a3b6-4a51-a331-71e7ba036308.png)
 #### Requisitos atendidos
--
+- 2: O site deve enviar notificações/alarme ao usuário.
 -
 #### Artefatos da funcionalidade
 -
