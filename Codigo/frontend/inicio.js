@@ -349,11 +349,11 @@ const conquistas = () => {
     if (qntTarefasConcluidas === 0) {
         completeTarefas.querySelector('.conq-area-desc').innerHTML = `Complete uma tarefa, você consegue!`
     } else if (qntTarefasConcluidas > 0 && qntTarefasConcluidas < 5) {
-        completeTarefas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntTarefasConcluidas} tarefa(s) concluida(s), crie 5 para avançar.`
+        completeTarefas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntTarefasConcluidas} tarefa(s) concluida(s), complete 5 para avançar.`
         completeTarefas.querySelector('.conq-area-stars').firstElementChild.innerHTML = `star`
         completeTarefas.querySelector('.conq-area-stars').firstElementChild.classList.add('active')
     } else if (qntTarefasConcluidas >= 5 && qntTarefasConcluidas < 10) {
-        completeTarefas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntTarefasConcluidas} tarefas concluidas, crie 10 para avançar.`
+        completeTarefas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntTarefasConcluidas} tarefas concluidas, complete 10 para avançar.`
         completeTarefas.querySelector('.conq-area-stars').firstElementChild.innerHTML = `star`
         completeTarefas.querySelector('.conq-area-stars').firstElementChild.classList.add('active')
         completeTarefas.querySelector('.conq-area-stars').children[1].innerHTML = `star`
