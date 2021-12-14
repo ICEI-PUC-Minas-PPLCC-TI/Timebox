@@ -79,7 +79,6 @@ Carolina Alves | Uma ferramenta com metas e recompensas | Me sentir mais motivad
 Diogo Costa | Lembrar de todas as tarefas que preciso realizar | Ser bem visto pelos meus chefes e professores |
 Carolina Alves | Visualizar um resumo das minhas tarefas diárias | Poder realizá-las sem a sensação de que estou esquecendo algo |
 
-
 ## [Requisitos do Projeto](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/a3f3a2edc6c57adc7a19a6f60fe1d8c25e1ed2c5/Artefatos/Requisitos%20e%20Restri%C3%A7%C3%B5es.md)
 ### Requisitos Funcionais
 
@@ -153,7 +152,7 @@ A tela de rotina mostra:
 
 ### Tela - Tarefa: 
 A tela de tarefa mostra: 
-- No conteúdo, as especificações da tarefa. 
+- No conteúdo, as especificações da tarefa. <br />
 ![image](https://user-images.githubusercontent.com/89612369/145918382-8d2f8cb0-4d5b-4cee-b60f-afadb44efa1e.png)
 
 # Implementação da solução:
@@ -194,12 +193,12 @@ Tela que abrange todas as visualizações iniciais do site.
 
 
 ### Tela de rotinas
-Tela que abrange as rotinas do usuário. 
+Tela que abrange as rotinas do usuário. <br />
 ![telarotinas](https://user-images.githubusercontent.com/89612369/145922480-7f27a56f-a3a0-4a61-83b8-c7c7bdad2a04.jpg)
 
 
 ### Tela de resumo
-Tela que contém o resumo de tarefas a serem concluídas pelo usuário. 
+Tela que contém o resumo de tarefas a serem concluídas pelo usuário. <br />
 ![Resumo](https://user-images.githubusercontent.com/89612369/145922456-488b57be-9141-4ba5-bb24-313295ffb89b.jpg)
 
 ## Funcionalidades do Sistema (Telas) 
