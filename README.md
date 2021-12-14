@@ -112,13 +112,14 @@ A metodologia contempla as definições de ferramental utilizado pela equipe tan
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela a seguir.
 
 Ambiente | Plataforma | Link de Acesso 
+--- | --- | --- |
 Repositório de Código Fonte | GitHub | https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox 
 Projeto de Interface e Wireframes | Figma | https://www.figma.com/file/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?node-id=2%3A204
 Interface e Wireframes | Figma | https://www.figma.com/file/qplVlOZw3bnBCfI3p4B1Fc/Timebox
 Gerenciamento do Projeto | Kanban no GitHub | https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1
 
 ## Gestão de código fonte
-Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Feature Branch Workflow, mostrado na Figura a seguir. Desta forma, todas as manutenções no código são realizadas em branches separados.
+Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Feature Branch Workflow, mostrado na Figura a seguir. Desta forma, todas as manutenções no código são realizadas em branches separados. <br />
 ![image](https://user-images.githubusercontent.com/89612369/145914699-48d78998-38fe-4028-83aa-92058b45457d.png)
 
 ## Gerenciamento do Projeto 
@@ -127,7 +128,7 @@ Para gestão do código fonte do software desenvolvido pela equipe, o grupo util
 
 # Projeto de Interface: 
 ## Fluxo do Usuário 
-O diagrama a seguir mostra o protótipo do fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse o [Wireframe Interativo](https://www.figma.com/file/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?node-id=2%3A204)
+O diagrama a seguir mostra o protótipo do fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse: [Wireframe Interativo](https://www.figma.com/file/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?node-id=2%3A204).
 ![image](https://user-images.githubusercontent.com/57562448/135178985-ff9f667d-ec65-4627-a281-b702f901507a.png)
 
 ## Wireframes 
@@ -174,8 +175,7 @@ A solução implementada conta com os seguintes módulos:
 O site utiliza a plataforma do Replit como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL: 
 [Timebox](https://timebox.thaisandreatta.repl.co/)
 
-A publicação do site no Replit é feita por meio de uma submissão do projeto (push) via git para o repositório remoto que se encontra no endereço: 
-https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox
+A publicação do site no Replit é feita por meio de uma submissão do projeto (push) via git para o [repositório remoto](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox).
 
 ## Template do Site 
 O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente, conforme a figura a seguir. 
@@ -216,7 +216,7 @@ Link: https://timebox.thaisandreatta.repl.co/login.html
 -
 
 ### Tela Cadastro 
-Link: https://timebox.thaisandreatta.repl.co/login.html
+[Link](https://timebox.thaisandreatta.repl.co/login.html)
 ![3](https://user-images.githubusercontent.com/89612369/145923478-4b53334c-3ae2-4868-9cb4-2a587ea16263.jpg)
 #### Requisitos atendidos
 -
@@ -227,7 +227,7 @@ Link: https://timebox.thaisandreatta.repl.co/login.html
 -
 
 ### Tela Home-Page
-Link: https://timebox.thaisandreatta.repl.co/ <br />
+[Link](https://timebox.thaisandreatta.repl.co/) <br />
 A tela principal do sistema apresenta as rotinas do usuário, o relatório das tarefas concluídas pelo mesmo e suas conquistas. Essas informações são armazenadas no LocalStorage com estruturas dados baseados em JSON. Um exemplo da tela é apresentado a seguir. 
 ![10](https://user-images.githubusercontent.com/89612369/145923227-cddf72e1-fc26-40b8-83d8-9e031ff182a6.jpg)
 #### Requisitos atendidos
@@ -239,7 +239,7 @@ A tela principal do sistema apresenta as rotinas do usuário, o relatório das t
 -
 
 ### Tela Rotina
-Link: https://timebox.thaisandreatta.repl.co/rotina.html?id=1
+[Link](https://timebox.thaisandreatta.repl.co/rotina.html?id=1)
 ![8](https://user-images.githubusercontent.com/89612369/145923635-2faa035b-6406-4c82-8989-11e6c341c527.jpg)
 #### Requisitos atendidos
 -
@@ -250,7 +250,7 @@ Link: https://timebox.thaisandreatta.repl.co/rotina.html?id=1
 -
 
 ### Tela Tarefa
-Link: https://timebox.thaisandreatta.repl.co/rotina.html?id=1
+[Link](https://timebox.thaisandreatta.repl.co/rotina.html?id=1)
 ![image](https://user-images.githubusercontent.com/89612369/145923724-7438498e-a3b6-4a51-a331-71e7ba036308.png)
 #### Requisitos atendidos
 -
@@ -272,10 +272,10 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 Caso de Teste | Visualizar notícias principais
 --- | --- |
-Requisitos Associados | 1 - O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias. 2 - O site deve enviar notificações ao usuário. 3 - O site deverá criar relatórios. 4 - O site deverá desbloquear conquistas para manter o usuário.
+Requisitos Associados | 1 - O site deve apresentar na página principal opções que permitam o usuário organizar suas tarefas diárias. <br /> 2 - O site deve enviar notificações ao usuário.<br />  3 - O site deverá criar relatórios.<br />  4 - O site deverá desbloquear conquistas para manter o usuário.
 Objetivo do Teste | Verificar se as funcionalidades do site estão acontecendo corretamente. 
-Passos | 1) Acessar o Navegador 2) Informar o endereço do Site 3) Fazer o cadastro/login 4) Criar rotinas 5) Criar tarefas dentro das rotinas e marcar a opção de criar notificação 6) Checar o checkbox das rotinas 7) Voltar à página inicial
-Critérios de Êxito | Devem haver tarefas concluídas no relatório da página inicial. Devem haver conquistas na aba de Conquistas da página inicial. 
+Passos | 1) Acessar o Navegador <br /> 2) Informar o endereço do Site <br /> 3) Fazer o cadastro/login <br /> 4) Criar rotinas <br /> 5) Criar tarefas dentro das rotinas e marcar a opção de criar notificação <br /> 6) Checar o checkbox das rotinas <br /> 7) Voltar à página inicial
+Critérios de Êxito | Devem haver tarefas concluídas no relatório da página inicial. <br /> Devem haver conquistas na aba de Conquistas da página inicial. 
 
 
 Caso de Teste
