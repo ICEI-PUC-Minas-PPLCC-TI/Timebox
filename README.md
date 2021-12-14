@@ -316,6 +316,7 @@ Relatório de problemas identificados nos testes e propostas de correções/ajus
 * Rosilane Ribeiro da Mota
 
 ## Instruções de utilização
+O usuário deve entrar no Timebox acessando o link: https://timebox.thaisandreatta.repl.co/ <br />
 Ao entrar no Timebox, o usuário deve logar com sua conta. Caso ainda não possua uma, deve clicar em ‘Novo usuário’. 
  ![2](https://user-images.githubusercontent.com/89612369/145893143-d11d73e8-d1b5-4837-a581-06d1ad5cdbae.jpg)
 
