@@ -46,7 +46,7 @@ menuButton.addEventListener('mousedown', toggleMenu)
 const rotinaID = window.location.search.split('=')[1]
 
 let rotinasSalvas = JSON.parse(localStorage.getItem('rotinas')),
-    rotinaLS = rotinasSalvas[rotinaID],
+    rotinaLS = rotinasSalvas.filter(rotina => rotina.id == rotinaID)[0],
     rotinaTitle = document.querySelector('#title')
 
 const allTextFields = Array.from(document.querySelectorAll('textarea'))
@@ -526,7 +526,7 @@ rotinaTitle.addEventListener('input', () => {
 })
 
 document.querySelector('#delete-rotina').addEventListener('click', () => {
-    rotinasSalvas.splice(rotinaID, 1)
+    rotinasSalvas.splice(rotinasSalvas.indexOf(rotinaLS), 1)
     localStorage.setItem('rotinas', JSON.stringify(rotinasSalvas))
     rotinasSalvas = JSON.parse(localStorage.getItem('rotinas'))
     window.location.href = './inicio.html'

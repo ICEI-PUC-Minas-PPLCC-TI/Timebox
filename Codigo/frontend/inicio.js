@@ -125,33 +125,7 @@ adicionarRotinaInput.addEventListener('keyup', (key) => {
 
 adicionarRotinaButton.addEventListener('click', criarRotina)
 
-const criarRotinas = () => {
-    const rotinasCriadas = JSON.parse(localStorage.getItem('rotinas')) || []
-    const usuarioLogado = JSON.parse(localStorage.getItem('usuario_logado')).id
-    const rotinas = document.querySelector('#listarotinas')
 
-    rotinasCriadas.forEach(rotina => {
-        if (rotina.usuario == usuarioLogado && rotinas.querySelector(`#rotina-${rotina.id}`) === null) {
-            const rotinaDiv = document.createElement('li')
-            rotinaDiv.classList.add('rotinas')
-            rotinaDiv.id = `rotina-${rotina.id}`
-            rotinaDiv.innerHTML = `
-            <button class="botaorotina" style="background-color:${rotina.cor}">
-                <i class="fa fa-cube"></i>
-                <div class="rotina-title">
-                    ${rotina.titulo}
-                </div>
-            </button>
-        `
-            rotinas.insertBefore(rotinaDiv, rotinas.firstChild)
-
-            rotinaDiv.addEventListener('click', () => {
-                window.location.href = `./rotina.html?id=${rotina.id}`
-            })
-        }
-    })
-}
-criarRotinas()
 
 const resumoRotinas = () => {
     const rotinasCriadas = JSON.parse(localStorage.getItem('rotinas')) || []
@@ -251,7 +225,7 @@ const relatorioRotinasComplete = () => {
     }
 
     if (qntTarefasConcluidas === 0 && rotinasCriadas.length > 0) {
-        relAreaDesc.innerHTML += `
+        relAreaDesc.innerHTML = `
             <div class="rel-area-title">
                 Você ainda não completou nenhuma tarefa
                 <br>
@@ -261,7 +235,7 @@ const relatorioRotinasComplete = () => {
     }
 
     if (qntTarefasConcluidas === 0 && rotinasCriadas.length === 0) {
-        relAreaDesc.innerHTML += `
+        relAreaDesc.innerHTML = `
             <div class="rel-area-title">
                 Não há tarefas para serem exibidas
                 <br>
@@ -269,8 +243,8 @@ const relatorioRotinasComplete = () => {
             </div>
         `
     }
-    else if (qntTarefas === qntTarefasConcluidas) {
-        relAreaDesc.innerHTML += `
+    else if (qntTarefas === qntTarefasConcluidas && qntTarefas > 0) {
+        relAreaDesc.innerHTML = `
             <div class="rel-area-title">
                 Você concluiu todas as tarefas
                 <br>
@@ -279,7 +253,7 @@ const relatorioRotinasComplete = () => {
         `
     }
     else if (qntTarefas > 0 && qntTarefasConcluidas > 0) {
-        relAreaDesc.innerHTML += `
+        relAreaDesc.innerHTML = `
             <div class="rel-area-title">
                 Você concluiu ${qntTarefasConcluidas} de ${qntTarefas} tarefas
                 <br>
@@ -312,3 +286,116 @@ const notificacoesRotina = () => {
     })
 }
 notificacoesRotina()
+
+const conquistas = () => {
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuario_logado')).id
+    const rotinasCriadas = (JSON.parse(localStorage.getItem('rotinas')) || []).filter(rotina => rotina.usuario == usuarioLogado)
+    const novasRotinas = document.body.querySelector('#novasrotinas')
+    const novasTarefas = document.body.querySelector('#novastarefas')
+    const completeTarefas = document.body.querySelector('#completetarefas')
+
+    let qntRotinas = rotinasCriadas.length
+    let qntTarefas = 0
+    let qntTarefasConcluidas = 0
+    rotinasCriadas.forEach(rotina => {
+        qntTarefas += rotina.tarefas.length
+        qntTarefasConcluidas += rotina.tarefas.filter(tarefa => tarefa.concluido == true).length
+    })
+
+    if (qntRotinas === 0) {
+        novasRotinas.querySelector('.conq-area-desc').innerHTML = `Comece criando uma rotina.`
+    } else if (qntRotinas > 0 && qntRotinas < 3) {
+        novasRotinas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntRotinas} rotina(s) criada(s), crie 3 para avançar.`
+        novasRotinas.querySelector('.conq-area-stars').firstElementChild.innerHTML = `star`
+        novasRotinas.querySelector('.conq-area-stars').firstElementChild.classList.add('active')
+    } else if (qntRotinas >= 3 && qntRotinas < 5) {
+        novasRotinas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntRotinas} rotinas criadas, crie 5 para avançar.`
+        novasRotinas.querySelector('.conq-area-stars').firstElementChild.innerHTML = `star`
+        novasRotinas.querySelector('.conq-area-stars').firstElementChild.classList.add('active')
+        novasRotinas.querySelector('.conq-area-stars').children[1].innerHTML = `star`
+        novasRotinas.querySelector('.conq-area-stars').children[1].classList.add('active')
+    } else if (qntRotinas >= 5) {
+        novasRotinas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntRotinas} rotinas criadas, parabéns!`
+        novasRotinas.querySelector('.conq-area-stars').firstElementChild.innerHTML = `star`
+        novasRotinas.querySelector('.conq-area-stars').firstElementChild.classList.add('active')
+        novasRotinas.querySelector('.conq-area-stars').children[1].innerHTML = `star`
+        novasRotinas.querySelector('.conq-area-stars').children[1].classList.add('active')
+        novasRotinas.querySelector('.conq-area-stars').children[2].innerHTML = `star`
+        novasRotinas.querySelector('.conq-area-stars').children[2].classList.add('active')
+    }
+
+    if (qntTarefas === 0) {
+        novasTarefas.querySelector('.conq-area-desc').innerHTML = `Comece criando uma tarefa.`
+    } else if (qntTarefas > 0 && qntTarefas < 5) {
+        novasTarefas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntTarefas} tarefa(s) criada(s), crie 5 para avançar.`
+        novasTarefas.querySelector('.conq-area-stars').firstElementChild.innerHTML = `star`
+        novasTarefas.querySelector('.conq-area-stars').firstElementChild.classList.add('active')
+    } else if (qntTarefas >= 5 && qntTarefas < 10) {
+        novasTarefas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntTarefas} tarefas criadas, crie 10 para avançar.`
+        novasTarefas.querySelector('.conq-area-stars').firstElementChild.innerHTML = `star`
+        novasTarefas.querySelector('.conq-area-stars').firstElementChild.classList.add('active')
+        novasTarefas.querySelector('.conq-area-stars').children[1].innerHTML = `star`
+        novasTarefas.querySelector('.conq-area-stars').children[1].classList.add('active')
+    } else if (qntTarefas >= 10) {
+        novasTarefas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntTarefas} tarefas criadas, parabéns!`
+        novasTarefas.querySelector('.conq-area-stars').firstElementChild.innerHTML = `star`
+        novasTarefas.querySelector('.conq-area-stars').firstElementChild.classList.add('active')
+        novasTarefas.querySelector('.conq-area-stars').children[1].innerHTML = `star`
+        novasTarefas.querySelector('.conq-area-stars').children[1].classList.add('active')
+        novasTarefas.querySelector('.conq-area-stars').children[2].innerHTML = `star`
+        novasTarefas.querySelector('.conq-area-stars').children[2].classList.add('active')
+    }
+
+    if (qntTarefasConcluidas === 0) {
+        completeTarefas.querySelector('.conq-area-desc').innerHTML = `Complete uma tarefa, você consegue!`
+    } else if (qntTarefasConcluidas > 0 && qntTarefasConcluidas < 5) {
+        completeTarefas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntTarefasConcluidas} tarefa(s) concluida(s), crie 5 para avançar.`
+        completeTarefas.querySelector('.conq-area-stars').firstElementChild.innerHTML = `star`
+        completeTarefas.querySelector('.conq-area-stars').firstElementChild.classList.add('active')
+    } else if (qntTarefasConcluidas >= 5 && qntTarefasConcluidas < 10) {
+        completeTarefas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntTarefasConcluidas} tarefas concluidas, crie 10 para avançar.`
+        completeTarefas.querySelector('.conq-area-stars').firstElementChild.innerHTML = `star`
+        completeTarefas.querySelector('.conq-area-stars').firstElementChild.classList.add('active')
+        completeTarefas.querySelector('.conq-area-stars').children[1].innerHTML = `star`
+        completeTarefas.querySelector('.conq-area-stars').children[1].classList.add('active')
+    } else if (qntTarefasConcluidas >= 10) {
+        completeTarefas.querySelector('.conq-area-desc').innerHTML = `Você tem ${qntTarefasConcluidas} tarefas concluidas, parabéns!`
+        completeTarefas.querySelector('.conq-area-stars').firstElementChild.innerHTML = `star`
+        completeTarefas.querySelector('.conq-area-stars').firstElementChild.classList.add('active')
+        completeTarefas.querySelector('.conq-area-stars').children[1].innerHTML = `star`
+        completeTarefas.querySelector('.conq-area-stars').children[1].classList.add('active')
+        completeTarefas.querySelector('.conq-area-stars').children[2].innerHTML = `star`
+        completeTarefas.querySelector('.conq-area-stars').children[2].classList.add('active')
+    }
+}
+conquistas()
+
+const criarRotinas = () => {
+    const rotinasCriadas = JSON.parse(localStorage.getItem('rotinas')) || []
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuario_logado')).id
+    const rotinas = document.querySelector('#listarotinas')
+
+    rotinasCriadas.forEach(rotina => {
+        if (rotina.usuario == usuarioLogado && rotinas.querySelector(`#rotina-${rotina.id}`) === null) {
+            const rotinaDiv = document.createElement('li')
+            rotinaDiv.classList.add('rotinas')
+            rotinaDiv.id = `rotina-${rotina.id}`
+            rotinaDiv.innerHTML = `
+            <button class="botaorotina" style="background-color:${rotina.cor}">
+                <i class="fa fa-cube"></i>
+                <div class="rotina-title">
+                    ${rotina.titulo}
+                </div>
+            </button>
+        `
+            rotinas.insertBefore(rotinaDiv, rotinas.firstChild)
+
+            rotinaDiv.addEventListener('click', () => {
+                window.location.href = `./rotina.html?id=${rotina.id}`
+            })
+        }
+    })
+
+    conquistas()
+}
+criarRotinas()
