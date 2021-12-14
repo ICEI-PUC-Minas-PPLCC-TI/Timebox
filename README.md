@@ -230,9 +230,14 @@ Link: https://timebox.thaisandreatta.repl.co/login.html
 A tela principal do sistema apresenta as rotinas do usuário, o relatório das tarefas concluídas pelo mesmo e suas conquistas. Essas informações são armazenadas no LocalStorage com estruturas dados baseados em JSON. Um exemplo da tela é apresentado a seguir. 
 ![image](https://user-images.githubusercontent.com/89612369/146038084-cfb111cd-2d53-406d-8eaf-ed28d9aa209d.png)
 
+## Tela Home-Page Mobile 
+A tela principal mobile do sistema apresenta as rotinas do usuário, o relatório das tarefas concluídas pelo mesmo e suas conquistas.
+![image](https://user-images.githubusercontent.com/89612369/146038773-02e1c836-ee4a-4704-8427-ac6433dca430.png)
+
+
 #### Requisitos atendidos
 - 3: O site deverá criar relatórios.
--
+- 4	O site devera desbloquear conquistas para manter o usuário.
 #### Artefatos da funcionalidade
 -
 -
