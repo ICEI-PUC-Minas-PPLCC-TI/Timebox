@@ -1,13 +1,14 @@
 # Artefatos do projeto
 ## [Metodologia:](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/blob/3a7983145b268448608b4b1557c3d26a2c05963e/Artefatos/Metodologia.md)
-### Plataformas
+## Relação de Ambientes de Trabalho
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela a seguir.
 
-Repositório | Projeto de interface | Código
----|---|---|
-GitHub | Figma| Visual Studio Code
-
-### Gerenciamento de tarefas
-[Feito por Kanban no próprio GitHub](https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1)
+Ambiente | Plataforma | Link de Acesso 
+--- | --- | --- |
+Repositório de Código Fonte | GitHub | https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox 
+Projeto de Interface e Wireframes | Figma | https://www.figma.com/file/gNtIb0ChdJ2fpL76LTYGqk/Wireframe-SPRINT-1?node-id=2%3A204
+Interface e Wireframes | Figma | https://www.figma.com/file/qplVlOZw3bnBCfI3p4B1Fc/Timebox
+Gerenciamento do Projeto | Kanban no GitHub | https://github.com/ICEI-PUC-Minas-PPLCC-TI/Timebox/projects/1
 
 ### Organização da equipe de desenvolvimento
 
